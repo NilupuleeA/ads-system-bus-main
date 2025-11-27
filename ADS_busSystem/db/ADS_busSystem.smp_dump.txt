@@ -1,0 +1,93 @@
+
+State Machine - |demo_top|bus_m2_s3:bus|addr_decoder:decoder|state
+Name state.WAIT state.CONNECT state.ADDR state.IDLE 
+state.IDLE 0 0 0 0 
+state.ADDR 0 0 1 1 
+state.CONNECT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |demo_top|bus_m2_s3:bus|arbiter:bus_arbiter|split_owner
+Name split_owner.NONE split_owner.SM2 split_owner.SM1 
+split_owner.NONE 0 0 0 
+split_owner.SM1 1 0 1 
+split_owner.SM2 1 1 0 
+
+State Machine - |demo_top|bus_m2_s3:bus|arbiter:bus_arbiter|state
+Name state.IDLE state.M2 state.M1 
+state.IDLE 0 0 0 
+state.M1 1 0 1 
+state.M2 1 1 0 
+
+State Machine - |demo_top|slave_with_bram:slave3|slave_port:sp|state
+Name state.RVALID state.WAIT state.SREADY state.SPLIT state.WDATA state.RDATA state.ADDR state.IDLE state.DEBUG 
+state.IDLE 0 0 0 0 0 0 0 0 0 
+state.ADDR 0 0 0 0 0 0 1 1 0 
+state.RDATA 0 0 0 0 0 1 0 1 0 
+state.WDATA 0 0 0 0 1 0 0 1 0 
+state.SPLIT 0 0 0 1 0 0 0 1 0 
+state.SREADY 0 0 1 0 0 0 0 1 0 
+state.WAIT 0 1 0 0 0 0 0 1 0 
+state.RVALID 1 0 0 0 0 0 0 1 0 
+state.DEBUG 0 0 0 0 0 0 0 1 1 
+
+State Machine - |demo_top|slave_with_bram:slave2|slave_port:sp|state
+Name state.RVALID state.WAIT state.SREADY state.SPLIT state.WDATA state.RDATA state.ADDR state.IDLE state.DEBUG 
+state.IDLE 0 0 0 0 0 0 0 0 0 
+state.ADDR 0 0 0 0 0 0 1 1 0 
+state.RDATA 0 0 0 0 0 1 0 1 0 
+state.WDATA 0 0 0 0 1 0 0 1 0 
+state.SPLIT 0 0 0 1 0 0 0 1 0 
+state.SREADY 0 0 1 0 0 0 0 1 0 
+state.WAIT 0 1 0 0 0 0 0 1 0 
+state.RVALID 1 0 0 0 0 0 0 1 0 
+state.DEBUG 0 0 0 0 0 0 0 1 1 
+
+State Machine - |demo_top|slave_with_bram:slave1|slave_port:sp|state
+Name state.RVALID state.WAIT state.SREADY state.SPLIT state.WDATA state.RDATA state.ADDR state.IDLE state.DEBUG 
+state.IDLE 0 0 0 0 0 0 0 0 0 
+state.ADDR 0 0 0 0 0 0 1 1 0 
+state.RDATA 0 0 0 0 0 1 0 1 0 
+state.WDATA 0 0 0 0 1 0 0 1 0 
+state.SPLIT 0 0 0 1 0 0 0 1 0 
+state.SREADY 0 0 1 0 0 0 0 1 0 
+state.WAIT 0 1 0 0 0 0 0 1 0 
+state.RVALID 1 0 0 0 0 0 0 1 0 
+state.DEBUG 0 0 0 0 0 0 0 1 1 
+
+State Machine - |demo_top|demo_master:master2|state
+Name state.DONE state.SEND state.READ state.IDLE state.DEBUG 
+state.IDLE 0 0 0 0 0 
+state.READ 0 0 1 1 0 
+state.SEND 0 1 0 1 0 
+state.DONE 1 0 0 1 0 
+state.DEBUG 0 0 0 1 1 
+
+State Machine - |demo_top|demo_master:master2|master_port:dut|state
+Name state.SPLIT state.WAIT state.SADDR state.REQ state.WDATA state.RDATA state.ADDR state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.ADDR 0 0 0 0 0 0 1 1 
+state.RDATA 0 0 0 0 0 1 0 1 
+state.WDATA 0 0 0 0 1 0 0 1 
+state.REQ 0 0 0 1 0 0 0 1 
+state.SADDR 0 0 1 0 0 0 0 1 
+state.WAIT 0 1 0 0 0 0 0 1 
+state.SPLIT 1 0 0 0 0 0 0 1 
+
+State Machine - |demo_top|demo_master:master1|state
+Name state.DONE state.SEND state.READ state.IDLE state.DEBUG 
+state.IDLE 0 0 0 0 0 
+state.READ 0 0 1 1 0 
+state.SEND 0 1 0 1 0 
+state.DONE 1 0 0 1 0 
+state.DEBUG 0 0 0 1 1 
+
+State Machine - |demo_top|demo_master:master1|master_port:dut|state
+Name state.SPLIT state.WAIT state.SADDR state.REQ state.WDATA state.RDATA state.ADDR state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.ADDR 0 0 0 0 0 0 1 1 
+state.RDATA 0 0 0 0 0 1 0 1 
+state.WDATA 0 0 0 0 1 0 0 1 
+state.REQ 0 0 0 1 0 0 0 1 
+state.SADDR 0 0 1 0 0 0 0 1 
+state.WAIT 0 1 0 0 0 0 0 1 
+state.SPLIT 1 0 0 0 0 0 0 1 

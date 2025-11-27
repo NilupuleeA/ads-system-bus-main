@@ -1,0 +1,97 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "d1_ready",
+					"strict" : false
+				},
+				{
+					"name" : "d2_ready",
+					"strict" : false
+				},
+				{
+					"name" : "demo_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "demo_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "demo_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "demo_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "demo_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "demo_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "demo_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "demo_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "d1_en",
+					"strict" : false
+				},
+				{
+					"name" : "debug",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rstn",
+					"strict" : false
+				},
+				{
+					"name" : "d2_en",
+					"strict" : false
+				},
+				{
+					"name" : "d1_mode",
+					"strict" : false
+				},
+				{
+					"name" : "d2_mode",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

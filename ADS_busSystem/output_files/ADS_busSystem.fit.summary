@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Oct 13 14:53:46 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : ADS_busSystem
+Top-level Entity Name : demo_top
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 1,170 / 22,320 ( 5 % )
+    Total combinational functions : 1,058 / 22,320 ( 5 % )
+    Dedicated logic registers : 683 / 22,320 ( 3 % )
+Total registers : 683
+Total pins : 18 / 154 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 82,432 / 608,256 ( 14 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

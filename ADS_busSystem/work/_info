@@ -1,0 +1,349 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/modelSim
+vaddr_decoder
+!s110 1760195350
+!i10b 1
+!s100 =:HnfZ5mKDTkjBelY[:Ze3
+ICKPBk21?n^QcYc5a`Gb]93
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dF:/downloads/ads-system-bus-main/ADS_busSystem
+Z2 w1737557479
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/addr_decoder.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/addr_decoder.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1760195350.000000
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/addr_decoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/addr_decoder.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+varbiter
+Z7 !s110 1760195351
+!i10b 1
+!s100 LHFP;:W?ibceC_nfOZK1j1
+Ig<XZnJhFlL]?K5B:_0k9o0
+R0
+R1
+R2
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/arbiter.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/arbiter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/arbiter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/arbiter.v|
+!i113 1
+R5
+R6
+vbus_m2_s3
+R7
+!i10b 1
+!s100 iG^@k>TAg:Q;oBG>NSmBK0
+InEZHGJG[lmm:hRcRZTL092
+R0
+R1
+R2
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/bus_m2_s3.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/bus_m2_s3.v
+L0 2
+R3
+r1
+!s85 0
+31
+Z8 !s108 1760195351.000000
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/bus_m2_s3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/bus_m2_s3.v|
+!i113 1
+R5
+R6
+vdec3
+R7
+!i10b 1
+!s100 l;g7j=S5SZAXNmTiaNYCl0
+IKU[J<0HDH5BDU[20kW_Q]2
+R0
+R1
+R2
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/dec3.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/dec3.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/dec3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/dec3.v|
+!i113 1
+R5
+R6
+vdemo_master
+R7
+!i10b 1
+!s100 1Y1Afkl=Fa:lcY^AJfQoH2
+I^@20^1LfiOI`THGbQ`@P60
+R0
+R1
+w1760175305
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/demo_master.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/demo_master.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/demo_master.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/demo_master.v|
+!i113 1
+R5
+R6
+vdemo_top
+R7
+!i10b 1
+!s100 3oYTaIeXZW[6?a?^ZL2Y20
+Ilmfz`I_3O<AI9U>jl5KaV3
+R0
+R1
+w1760175661
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/demo_top.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/demo_top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/demo_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/demo_top.v|
+!i113 1
+R5
+R6
+vdemo_top_tb
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1760195353
+!i10b 1
+!s100 Gm3dR<UK];oe<o2_CHgCN1
+IDb5AKXIC0]2]lnoZ8L[121
+R0
+!s105 demo_top_tb_sv_unit
+S1
+R1
+R2
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/demo_top_tb.sv
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/demo_top_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1760195353.000000
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/demo_top_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/demo_top_tb.sv|
+!i113 1
+o-work work -sv
+R6
+vmaster_bram
+R7
+!i10b 1
+!s100 cbBK4F@ToLd]1ZIPVfZ7N1
+Ij>EFYzI8_PbLJMKVKhg4K2
+R0
+R1
+w1760174010
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/master_bram.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/master_bram.v
+Z9 L0 40
+R3
+r1
+!s85 0
+31
+R8
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/master_bram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/master_bram.v|
+!i113 1
+R5
+R6
+vmaster_port
+R7
+!i10b 1
+!s100 lHniKn3O<H<:NgYDe3TVz2
+ICNm>^3kJzfCKNo4K5@OT00
+R0
+R1
+R2
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/master_port.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/master_port.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/master_port.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/master_port.v|
+!i113 1
+R5
+R6
+vmux2
+Z10 !s110 1760195352
+!i10b 1
+!s100 oLjk@T;hNcMbefiAODood0
+IVSUlI=Ad^JGkW2H_MGD[C2
+R0
+R1
+R2
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/mux2.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/mux2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/mux2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/mux2.v|
+!i113 1
+R5
+R6
+vmux3
+R10
+!i10b 1
+!s100 L^L3JMaVnE50g4TX88[_40
+ITH?oF]Wgk3>MfH`fSXhI_0
+R0
+R1
+R2
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/mux3.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/mux3.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z11 !s108 1760195352.000000
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/mux3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/mux3.v|
+!i113 1
+R5
+R6
+vslave_bram
+R10
+!i10b 1
+!s100 UBj<]:XA`Po[:114QQLE[0
+IQi0^G:`?dG4[6RaHKJjg52
+R0
+R1
+w1760155674
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_bram.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_bram.v
+R9
+R3
+r1
+!s85 0
+31
+R11
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_bram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_bram.v|
+!i113 1
+R5
+R6
+vslave_bram_2k
+R10
+!i10b 1
+!s100 N;dlodZ2n_S]aL9o@k3EE3
+I<;0d:VY:?n_P6CM<h=6@92
+R0
+R1
+w1760142638
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_bram_2k.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_bram_2k.v
+R9
+R3
+r1
+!s85 0
+31
+R11
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_bram_2k.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_bram_2k.v|
+!i113 1
+R5
+R6
+vslave_memory_bram
+R10
+!i10b 1
+!s100 L49PTDGHZKUJ6_=16RD>J1
+I5J^RTkQ78_[7G<Of6Z36Z3
+R0
+R1
+R2
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_memory_bram.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_memory_bram.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_memory_bram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_memory_bram.v|
+!i113 1
+R5
+R6
+vslave_port
+R10
+!i10b 1
+!s100 94aaFk9o[d0WDGc?RXTR[1
+I0<=DKaKldaa8i6ga25EHa0
+R0
+R1
+R2
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_port.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_port.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_port.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_port.v|
+!i113 1
+R5
+R6
+vslave_with_bram
+R10
+!i10b 1
+!s100 HH2V@=XCW;7I<IH^LdM6;0
+IhjXk2A9g]a3^daSXjnf4f1
+R0
+R1
+w1760174896
+8F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_with_bram.v
+FF:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_with_bram.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_with_bram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/downloads/ads-system-bus-main/ADS_busSystem/RTL_files/slave_with_bram.v|
+!i113 1
+R5
+R6
