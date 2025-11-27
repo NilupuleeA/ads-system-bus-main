@@ -1,0 +1,9 @@
+system-bus.*
+system-bus/
+quartus/
+quartus_bb/
+*.bak
+*.wcfg
+Group 01 - System Bus Design.pdf
+figures/
+*.drawio
