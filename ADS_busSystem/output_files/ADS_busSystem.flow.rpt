@@ -1,5 +1,5 @@
 Flow report for ADS_busSystem
-Fri Nov 28 21:26:50 2025
+Fri Nov 28 21:34:58 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,22 +41,22 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Flow Failed - Fri Nov 28 21:26:50 2025         ;
+; Flow Status                        ; Successful - Fri Nov 28 21:34:58 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; ADS_busSystem                                  ;
 ; Top-level Entity Name              ; demo_top_bb                                    ;
 ; Family                             ; Cyclone IV E                                   ;
 ; Device                             ; EP4CE22F17C6                                   ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; N/A until Partition Merge                      ;
-;     Total combinational functions  ; N/A until Partition Merge                      ;
-;     Dedicated logic registers      ; N/A until Partition Merge                      ;
-; Total registers                    ; N/A until Partition Merge                      ;
-; Total pins                         ; N/A until Partition Merge                      ;
-; Total virtual pins                 ; N/A until Partition Merge                      ;
-; Total memory bits                  ; N/A until Partition Merge                      ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
-; Total PLLs                         ; N/A until Partition Merge                      ;
+; Total logic elements               ; 1,560 / 22,320 ( 7 % )                         ;
+;     Total combinational functions  ; 1,419 / 22,320 ( 6 % )                         ;
+;     Dedicated logic registers      ; 992 / 22,320 ( 4 % )                           ;
+; Total registers                    ; 992                                            ;
+; Total pins                         ; 9 / 154 ( 6 % )                                ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 49,408 / 608,256 ( 8 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                                ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                  ;
 +------------------------------------+------------------------------------------------+
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/28/2025 21:26:43 ;
+; Start date & time ; 11/28/2025 21:34:05 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ADS_busSystem       ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 104307304205179.176434540328292        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 104307304205179.176434584512312        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -102,8 +102,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4720 MB             ; 00:00:18                           ;
-; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:18                           ;
+; Analysis & Synthesis ; 00:00:31     ; 1.0                     ; 4968 MB             ; 00:00:55                           ;
+; Fitter               ; 00:00:10     ; 1.2                     ; 6348 MB             ; 00:00:09                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4759 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.3                     ; 4947 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4662 MB             ; 00:00:02                           ;
+; Total                ; 00:00:48     ; --                      ; --                  ; 00:01:10                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,6 +117,10 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; Mavishan         ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Mavishan         ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Mavishan         ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; Mavishan         ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; Mavishan         ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -120,6 +128,10 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off ADS_busSystem -c ADS_busSystem
+quartus_fit --read_settings_files=off --write_settings_files=off ADS_busSystem -c ADS_busSystem
+quartus_asm --read_settings_files=off --write_settings_files=off ADS_busSystem -c ADS_busSystem
+quartus_sta ADS_busSystem -c ADS_busSystem
+quartus_eda --read_settings_files=off --write_settings_files=off ADS_busSystem -c ADS_busSystem
 
 
 
