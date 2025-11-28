@@ -37,7 +37,7 @@ module bus_bridge_master #(
 	// Signals connecting to master port
 	reg [DATA_WIDTH-1:0] dwdata; // write data
 	wire [DATA_WIDTH-1:0] drdata;	// read data
-	wire [ADDR_WIDTH-1:0] daddr;
+	reg [ADDR_WIDTH-1:0] daddr;
 	reg dvalid; 			 		// ready valid interface
 	wire dready;
 	reg dmode;					// 0 - read, 1 - write

@@ -31,15 +31,15 @@ module uart_other #(
 	// 	.clken(Txclk_en)
 	// );
 
-	uart_tx_other transmitter #(
+	uart_tx_other #(
 		.DATA_WIDTH(TX_DATA_WIDTH)
-	)(
-		data_in(data_input),  // Input data as a 32-bit register/vector
-		wr_en(data_en),    // Enable wire to start
-		clk(clk),
-		clken(Txclk_en),    // Clock signal for the transmitter
-		tx(tx),       // A single 1-bit register variable to hold transmitting bit
-		tx_busy(tx_busy)   // Transmitter is busy signal
+	) transmitter (
+		.data_in(data_input),  // Input data as a 32-bit register/vector
+		.wr_en(data_en),    // Enable wire to start
+		.clk(clk),
+		.clken(Txclk_en),    // Clock signal for the transmitter
+		.tx(tx),       // A single 1-bit register variable to hold transmitting bit
+		.tx_busy(tx_busy)   // Transmitter is busy signal
 	);
 
 

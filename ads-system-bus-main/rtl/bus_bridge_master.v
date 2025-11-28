@@ -102,22 +102,39 @@ module bus_bridge_master #(
     );
 
     // UART module
-    uart #(
-        .CLOCKS_PER_PULSE(UART_CLOCKS_PER_PULSE),
-        .TX_DATA_WIDTH(UART_TX_DATA_WIDTH),
-        .RX_DATA_WIDTH(UART_RX_DATA_WIDTH)
-    ) uart_module (
-        .data_input(u_din),
-        .data_en(u_en),
-        .clk(clk),
-        .rstn(rstn),
-        .tx(u_tx),  // Transmitter output (tx)
-        .tx_busy(u_tx_busy),
-        .rx(u_rx),  
-        .ready(u_rx_ready),   
-        .data_output(u_dout)
-    );
+    // uart #(
+        // .CLOCKS_PER_PULSE(UART_CLOCKS_PER_PULSE),
+        // .TX_DATA_WIDTH(UART_TX_DATA_WIDTH),
+        // .RX_DATA_WIDTH(UART_RX_DATA_WIDTH)
+    // ) uart_module (
+        // .data_input(u_din),
+        // .data_en(u_en),
+        // .clk(clk),
+        // .rstn(rstn),
+        // .tx(u_tx),  // Transmitter output (tx)
+        // .tx_busy(u_tx_busy),
+        // .rx(u_rx),  
+        // .ready(u_rx_ready),   
+        // .data_output(u_dout)
+    // );
 
+	uart_other #(
+		.CLOCKS_PER_PULSE(UART_CLOCKS_PER_PULSE),
+		.TX_DATA_WIDTH(UART_TX_DATA_WIDTH) ,
+		.RX_DATA_WIDTH(UART_RX_DATA_WIDTH)
+	)
+	uart_module (
+		.data_input(u_din),
+		.data_en(u_en),
+		.clk(clk),
+		.rstn(rstn),
+		.tx(u_tx),
+		.tx_busy(u_tx_busy),
+		.rx(u_rx),
+		.ready(u_rx_ready),
+		.data_output(u_dout)
+	);
+    
     // Address converter 
     addr_convert #(
         .BB_ADDR_WIDTH(BB_ADDR_WIDTH),

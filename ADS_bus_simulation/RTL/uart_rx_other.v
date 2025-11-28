@@ -2,32 +2,37 @@ module uart_rx_other #(
 	parameter DATA_WIDTH  =  32
 )
 (
-    input  logic rx,
-    output logic ready,       // default 1-bit register
-    input  logic clk,
-    input  logic clken,
-    output logic [DATA_WIDTH-1:0] data_out
+    input  rx,
+    output reg ready,       // default 1-bit register
+    input  clk,
+    input  clken,
+    output reg [DATA_WIDTH-1:0] data_out
 );
+
+// Define the 4 states using 2-bit encoding
+localparam RX_STATE_START    = 2'b00;
+localparam RX_STATE_DATA     = 2'b01;
+localparam RX_STATE_STOP     = 2'b10;
+localparam READY_CLEARING    = 2'b11;
+
+reg [1:0] words;
+reg [1:0] state; // 2-bit register/vector, initially 00
+reg [3:0] sample;             // 4-bit register for sampling
+reg [3:0] bit_pos;            // 4-bit register for bit position
+reg [7:0] scratch;         // 8-bit register initialized to 0
 
 // Initialization
 initial begin
     ready = 1'b0;          // initialize ready to 0
     data_out = 32'b0;     // initialize data_out to 0
+    words = 0;
+    state = RX_STATE_START;
+    sample = 0;
+    bit_pos = 0;
+    scratch = 8'b0;
 end
 
-// Define the 4 states using 2-bit encoding
-parameter RX_STATE_START    = 2'b00;
-parameter RX_STATE_DATA     = 2'b01;
-parameter RX_STATE_STOP     = 2'b10;
-parameter READY_CLEARING    = 2'b11;
-
-logic [1:0] words = 0;
-logic [1:0] state = RX_STATE_START; // 2-bit register/vector, initially 00
-logic [3:0] sample = 0;             // 4-bit register for sampling
-logic [3:0] bit_pos = 0;            // 4-bit register for bit position
-logic [7:0] scratch = 8'b0;         // 8-bit register initialized to 0
-
-always_ff @(posedge clk) begin
+always @(posedge clk) begin
     if (clken) begin
         case (state)
             RX_STATE_START: begin
@@ -58,17 +63,21 @@ always_ff @(posedge clk) begin
             RX_STATE_STOP: begin
                 if (sample == 15 || (sample >= 8 && !rx)) begin
                     state <= READY_CLEARING;
-                    case (words)
-                        2'b00: data_out[7:0]   <= scratch;
-                        2'b01: data_out[15:8]  <= scratch;
-                        2'b10: data_out[23:16] <= scratch;
-                        2'b11: data_out[31:24] <= scratch;
-                    endcase
+                    if (words == 2'b00) begin
+                        data_out[7:0] <= scratch;
+                    end else if (words == 2'b01 && DATA_WIDTH > 8) begin
+                        data_out[15:8] <= scratch;
+                    end else if (words == 2'b10 && DATA_WIDTH > 16) begin
+                        data_out[23:16] <= scratch;
+                    end else if (words == 2'b11 && DATA_WIDTH > 24) begin
+                        data_out[31:24] <= scratch;
+                    end
                     sample <= 0;
                     words <= words + 1'b1;
-                    if (words == 2'b11)
+                    if (words == 2'b11) begin
 						words <= 0;
                         ready <= 1'b1;
+                    end
                 end else begin
                     sample <= sample + 4'b1;
                 end

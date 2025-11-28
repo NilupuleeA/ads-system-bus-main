@@ -1,44 +1,49 @@
 module uart_tx_other #(
 	parameter DATA_WIDTH  =  16
 )(
-    input  logic [DATA_WIDTH-1:0] data_in,  // Input data as a 32-bit register/vector
-    input  logic       wr_en,    // Enable wire to start
-    input  logic       clk,
-    input  logic       clken,    // Clock signal for the transmitter
-    output logic       tx,       // A single 1-bit register variable to hold transmitting bit
-    output logic       tx_busy   // Transmitter is busy signal
+    input  [DATA_WIDTH-1:0] data_in,  // Input data as a 32-bit register/vector
+    input        wr_en,    // Enable wire to start
+    input        clk,
+    input        clken,    // Clock signal for the transmitter
+    output reg   tx,       // A single 1-bit register variable to hold transmitting bit
+    output       tx_busy   // Transmitter is busy signal
 );
+
+// Define the 4 states using 2-bit encoding
+localparam TX_STATE_IDLE  = 2'b00;
+localparam TX_STATE_START = 2'b01;
+localparam TX_STATE_DATA  = 2'b10;
+localparam TX_STATE_STOP  = 2'b11;
+
+reg [43:0] data;           // 44-bit register/vector initialized to 0
+reg [5:0]  bit_pos;        // 6-bit register/vector initialized to 0
+reg [1:0]  state;          // 2-bit register/vector initialized to IDLE
+reg        flag1;
+reg        flag2;
 
 // Initialize tx to 1 to indicate idle state
 initial begin
     tx = 1'b1;
+    data = 32'h0;
+    bit_pos = 6'h0;
+    state = TX_STATE_IDLE;
+    flag1 = 1'b0;
+    flag2 = 1'b1;
 end
 
-// Define the 4 states using 2-bit encoding
-parameter TX_STATE_IDLE  = 2'b00;
-parameter TX_STATE_START = 2'b01;
-parameter TX_STATE_DATA  = 2'b10;
-parameter TX_STATE_STOP  = 2'b11;
-
-logic [43:0] data = 32'h0;           // 44-bit register/vector initialized to 0
-logic [5:0]  bit_pos = 6'h0;         // 6-bit register/vector initialized to 0
-logic [1:0]  state = TX_STATE_IDLE; // 2-bit register/vector initialized to IDLE
-logic        flag1 = 1'b0;
-logic        flag2 = 1'b1;
-
 // Toggle flag1 on write enable signal
-// always_ff @(posedge wr_en) begin
+// always @(posedge wr_en) begin
 //     flag1 <= ~flag1;
 // end
 
 // Main state machine
-always_ff @(posedge clk) begin
+always @(posedge clk) begin
     case (state)
         TX_STATE_IDLE: begin
             if (wr_en) begin
                 state <= TX_STATE_START; // Transition to START state
-                data  <= {2'b11, data_in[15:8], 1'b0, // Word 1
-                          2'b11, data_in[7:0]};        // Word 0
+                data  <= {2'b11, data_in[DATA_WIDTH-1:DATA_WIDTH/2], 1'b0, // Word 1
+                          2'b11, data_in[DATA_WIDTH/2-1:0]};        // Word 0
                 bit_pos <= 6'h0; // Reset bit position
                 // flag2 <= ~flag2;
             end
