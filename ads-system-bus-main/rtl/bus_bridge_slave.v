@@ -86,6 +86,23 @@ module bus_bridge_slave #(
         .data_output(u_dout)
     );
 
+	 module uart_other #(
+		 parameter CLOCKS_PER_PULSE = 5208,
+		 parameter TX_DATA_WIDTH = 8,
+		 parameter RX_DATA_WIDTH = 8
+	)
+	(
+		input  [TX_DATA_WIDTH - 1:0] data_input,
+		input  data_en,
+		input  clk,
+		input  rstn,
+		output tx,
+		output tx_busy,
+		input  rx,
+		output ready,
+		output [RX_DATA_WIDTH -1:0] data_output
+	);
+
     localparam IDLE  = 2'b00,    //0
                WSEND  = 2'b01, 	// Write data
                RSEND = 2'b10,    // Read data

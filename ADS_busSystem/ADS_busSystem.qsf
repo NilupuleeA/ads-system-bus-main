@@ -73,6 +73,14 @@ set_location_assignment PIN_F3 -to demo_data[2]
 set_location_assignment PIN_B1 -to demo_data[1]
 set_location_assignment PIN_L3 -to demo_data[0]
 set_location_assignment PIN_A8 -to debug
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/uart_tx_other.v
+set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/uart_rx_other.v
+set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/uart_other.v
+set_global_assignment -name SYSTEMVERILOG_FILE ../ADS_bus_simulation/RTL/baudrate.sv
 set_global_assignment -name VERILOG_FILE "../ads-system-bus-main/rtl/uart_tx.v"
 set_global_assignment -name VERILOG_FILE "../ads-system-bus-main/rtl/uart_rx.v"
 set_global_assignment -name VERILOG_FILE "../ads-system-bus-main/rtl/uart.v"
@@ -106,7 +114,3 @@ set_global_assignment -name VERILOG_FILE "../ads-system-bus-main/rtl/demo_master
 set_global_assignment -name VERILOG_FILE "../ads-system-bus-main/rtl/bus_m2_s3.v"
 set_global_assignment -name VERILOG_FILE "../ads-system-bus-main/rtl/demo_top.v"
 set_global_assignment -name VERILOG_FILE "../ads-system-bus-main/rtl/dec3.v"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

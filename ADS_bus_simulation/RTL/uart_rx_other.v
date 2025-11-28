@@ -1,4 +1,4 @@
-module uart_rx #(
+module uart_rx_other #(
 	parameter DATA_WIDTH  =  32
 )
 (

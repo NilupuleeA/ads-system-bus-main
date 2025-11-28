@@ -1,4 +1,4 @@
-module uart #(
+module uart_other #(
 	parameter CLOCKS_PER_PULSE = 5208,
     parameter TX_DATA_WIDTH = 8,
 	parameter RX_DATA_WIDTH = 8
@@ -31,7 +31,7 @@ module uart #(
 	// 	.clken(Txclk_en)
 	// );
 
-	uart_tx transmitter #(
+	uart_tx_other transmitter #(
 		.DATA_WIDTH(TX_DATA_WIDTH)
 	)(
 		data_in(data_input),  // Input data as a 32-bit register/vector
@@ -43,7 +43,7 @@ module uart #(
 	);
 
 
-	uart_rx #(
+	uart_rx_other #(
 		.DATA_WIDTH(RX_DATA_WIDTH)
 	) receiver (
 		.clk(clk),
