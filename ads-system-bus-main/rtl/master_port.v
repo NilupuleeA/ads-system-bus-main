@@ -203,7 +203,7 @@ module master_port #(
 	// Signals connecting to master device
 	input [DATA_WIDTH-1:0] dwdata, // write data
 	output [DATA_WIDTH-1:0] drdata, // read data
-	input [ADDR_WIDTH-1:0] daddr,
+	input [ADDR_WIDTH-1:0] daddr,	// 4 - slave ID, 12 - slave's address
 	input dvalid, 			 		// ready valid interface
 	output dready,
 	input dmode,					// 0 - read, 1 - write

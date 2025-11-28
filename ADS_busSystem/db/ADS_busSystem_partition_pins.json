@@ -4,43 +4,15 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "d1_ready",
+					"name" : "ready",
 					"strict" : false
 				},
 				{
-					"name" : "d2_ready",
+					"name" : "m_u_tx",
 					"strict" : false
 				},
 				{
-					"name" : "demo_data[0]",
-					"strict" : false
-				},
-				{
-					"name" : "demo_data[1]",
-					"strict" : false
-				},
-				{
-					"name" : "demo_data[2]",
-					"strict" : false
-				},
-				{
-					"name" : "demo_data[3]",
-					"strict" : false
-				},
-				{
-					"name" : "demo_data[4]",
-					"strict" : false
-				},
-				{
-					"name" : "demo_data[5]",
-					"strict" : false
-				},
-				{
-					"name" : "demo_data[6]",
-					"strict" : false
-				},
-				{
-					"name" : "demo_data[7]",
+					"name" : "s_u_tx",
 					"strict" : false
 				},
 				{
@@ -48,11 +20,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "d1_en",
-					"strict" : false
-				},
-				{
-					"name" : "debug",
+					"name" : "rstn",
 					"strict" : false
 				},
 				{
@@ -60,19 +28,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "rstn",
+					"name" : "mode",
 					"strict" : false
 				},
 				{
-					"name" : "d2_en",
+					"name" : "s_u_rx",
 					"strict" : false
 				},
 				{
-					"name" : "d1_mode",
-					"strict" : false
-				},
-				{
-					"name" : "d2_mode",
+					"name" : "m_u_rx",
 					"strict" : false
 				},
 				{

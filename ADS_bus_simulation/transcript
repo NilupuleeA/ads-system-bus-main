@@ -1,0 +1,757 @@
+# Compile of master_port.v was successful.
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.master_port_tb
+# vsim work.master_port_tb 
+# Start time: 14:45:45 on Nov 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.master_port_tb(fast)
+vsim -voptargs=+acc work.master_port_tb
+# End time: 14:50:46 on Nov 27,2025, Elapsed time: 0:05:01
+# Errors: 0, Warnings: 7
+# vsim -voptargs="+acc" work.master_port_tb 
+# Start time: 14:50:46 on Nov 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "master_port(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.master_port_tb(fast)
+# Loading work.master_port(fast)
+add wave -position insertpoint  \
+sim:/master_port_tb/dut/ADDR_WIDTH \
+sim:/master_port_tb/dut/DATA_WIDTH \
+sim:/master_port_tb/dut/SLAVE_MEM_ADDR_WIDTH \
+sim:/master_port_tb/dut/SLAVE_DEVICE_ADDR_WIDTH \
+sim:/master_port_tb/dut/TIMEOUT_TIME \
+sim:/master_port_tb/dut/IDLE \
+sim:/master_port_tb/dut/ADDR \
+sim:/master_port_tb/dut/RDATA \
+sim:/master_port_tb/dut/WDATA \
+sim:/master_port_tb/dut/REQ \
+sim:/master_port_tb/dut/SADDR \
+sim:/master_port_tb/dut/WAIT \
+sim:/master_port_tb/dut/SPLIT \
+sim:/master_port_tb/dut/clk \
+sim:/master_port_tb/dut/rstn \
+sim:/master_port_tb/dut/dwdata \
+sim:/master_port_tb/dut/drdata \
+sim:/master_port_tb/dut/daddr \
+sim:/master_port_tb/dut/dvalid \
+sim:/master_port_tb/dut/dready \
+sim:/master_port_tb/dut/dmode \
+sim:/master_port_tb/dut/mrdata \
+sim:/master_port_tb/dut/mwdata \
+sim:/master_port_tb/dut/mmode \
+sim:/master_port_tb/dut/mvalid \
+sim:/master_port_tb/dut/svalid \
+sim:/master_port_tb/dut/mbreq \
+sim:/master_port_tb/dut/mbgrant \
+sim:/master_port_tb/dut/msplit \
+sim:/master_port_tb/dut/ack \
+sim:/master_port_tb/dut/wdata \
+sim:/master_port_tb/dut/rdata \
+sim:/master_port_tb/dut/addr \
+sim:/master_port_tb/dut/mode \
+sim:/master_port_tb/dut/counter \
+sim:/master_port_tb/dut/timeout \
+sim:/master_port_tb/dut/state
+run -all
+# Running basic write test
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# Causality operation skipped due to absence of debug database file
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.master_port_tb
+# End time: 14:56:27 on Nov 27,2025, Elapsed time: 0:05:41
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.master_port_tb 
+# Start time: 14:56:27 on Nov 27,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.master_port_tb(fast)
+# Loading work.master_port(fast)
+add wave -position insertpoint  \
+sim:/master_port_tb/dut/clk \
+sim:/master_port_tb/dut/rstn \
+sim:/master_port_tb/dut/dwdata \
+sim:/master_port_tb/dut/drdata \
+sim:/master_port_tb/dut/daddr \
+sim:/master_port_tb/dut/dvalid \
+sim:/master_port_tb/dut/dready \
+sim:/master_port_tb/dut/dmode \
+sim:/master_port_tb/dut/mrdata \
+sim:/master_port_tb/dut/mwdata \
+sim:/master_port_tb/dut/mmode \
+sim:/master_port_tb/dut/mvalid \
+sim:/master_port_tb/dut/svalid \
+sim:/master_port_tb/dut/mbreq \
+sim:/master_port_tb/dut/mbgrant \
+sim:/master_port_tb/dut/msplit \
+sim:/master_port_tb/dut/ack
+run -all
+# Running basic write test
+run -all
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/master_port_tb.v(327): (vopt-7063) Failed to find 'tb_master_port' in hierarchical name 'tb_master_port'.
+#         Region: master_port_tb
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+vsim -voptargs=+acc work.master_port_tb
+# vsim -voptargs="+acc" work.master_port_tb 
+# Start time: 14:56:27 on Nov 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/master_port_tb.v(327): (vopt-7063) Failed to find 'tb_master_port' in hierarchical name 'tb_master_port'.
+#         Region: master_port_tb
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=2.
+# Error loading design
+# End time: 15:01:16 on Nov 27,2025, Elapsed time: 0:04:49
+# Errors: 2, Warnings: 3
+vsim -voptargs=+acc work.tb_master_port
+# vsim -voptargs="+acc" work.tb_master_port 
+# Start time: 15:01:33 on Nov 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "master_port(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_master_port(fast)
+# Loading work.master_port(fast)
+add wave -position insertpoint  \
+sim:/tb_master_port/dut/clk \
+sim:/tb_master_port/dut/rstn \
+sim:/tb_master_port/dut/dwdata \
+sim:/tb_master_port/dut/drdata \
+sim:/tb_master_port/dut/daddr \
+sim:/tb_master_port/dut/dvalid \
+sim:/tb_master_port/dut/dready \
+sim:/tb_master_port/dut/dmode \
+sim:/tb_master_port/dut/mrdata \
+sim:/tb_master_port/dut/mwdata \
+sim:/tb_master_port/dut/mmode \
+sim:/tb_master_port/dut/mvalid \
+sim:/tb_master_port/dut/svalid \
+sim:/tb_master_port/dut/mbreq \
+sim:/tb_master_port/dut/mbgrant \
+sim:/tb_master_port/dut/msplit \
+sim:/tb_master_port/dut/ack
+run -all
+# Time=0 | State=xxx | dready=x | mbreq=x | mvalid=x | mwdata=x | svalid=0 | mrdata=0
+# Time=5000 | State=000 | dready=1 | mbreq=0 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# ========================================
+# Test 1: Write Operation
+# ========================================
+# Time=55000: Bus request asserted
+# Time=55000 | State=100 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=75000 | State=101 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=85000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=95000: SADDR bit[0] = 0
+# Time=95000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=105000: SADDR bit[1] = 1
+# Time=105000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=115000: SADDR bit[2] = 0
+# Time=115000 | State=110 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=125000: SADDR bit[3] = 1
+# Time=125000 | State=110 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=145000 | State=001 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=155000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=165000: ADDR bit[0] = 1
+# Time=175000: ADDR bit[1] = 1
+# Time=175000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=185000: ADDR bit[2] = 0
+# Time=195000: ADDR bit[3] = 0
+# Time=195000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=205000: ADDR bit[4] = 1
+# Time=215000: ADDR bit[5] = 1
+# Time=215000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=225000: ADDR bit[6] = 0
+# Time=225000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=235000: ADDR bit[7] = 1
+# Time=245000: ADDR bit[8] = 1
+# Time=245000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=255000: ADDR bit[9] = 0
+# Time=255000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=265000: ADDR bit[10] = 1
+# Time=265000 | State=011 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=275000: ADDR bit[11] = 0
+# Time=275000 | State=011 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=285000: WDATA bit[0] = 1
+# Time=285000 | State=011 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=295000: WDATA bit[1] = 0
+# Time=295000 | State=011 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=305000: WDATA bit[2] = 1
+# Time=315000: WDATA bit[3] = 1
+# Time=315000 | State=011 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=325000: WDATA bit[4] = 0
+# Time=335000: WDATA bit[5] = 0
+# Time=335000 | State=011 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=345000: WDATA bit[6] = 1
+# Time=345000 | State=000 | dready=1 | mbreq=0 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=355000: WDATA bit[7] = 1
+# Time=355000: Write transaction completed
+# 
+# Time=355000 | State=000 | dready=1 | mbreq=0 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# ========================================
+# Test 2: Read Operation
+# ========================================
+# Time=415000: Bus request asserted
+# Time=415000 | State=100 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=435000 | State=101 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=445000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=455000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=475000 | State=110 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=485000 | State=110 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=505000 | State=001 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=515000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=535000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=545000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=555000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=575000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=605000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=615000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=625000 | State=010 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=635000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=645000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=0
+# Time=655000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=1
+# Time=665000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=0
+# Time=675000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=1
+# Time=695000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=0
+# Time=705000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=1
+# Time=715000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=0
+# Time=725000 | State=000 | dready=1 | mbreq=0 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=735000: Read data CORRECT: Expected=0x5a, Got=0x5a
+# 
+# ========================================
+# Test 3: Read with SPLIT
+# ========================================
+# Time=795000 | State=100 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=815000 | State=101 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=825000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=835000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=855000 | State=110 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=865000 | State=110 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=885000 | State=001 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=895000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=905000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=925000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=935000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=965000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=1005000 | State=010 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=1015000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=1025000: SPLIT asserted
+# Time=1035000 | State=111 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=1125000: SPLIT released, bus granted
+# Time=1125000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=1135000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=1
+# Time=1155000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=0
+# Time=1165000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=1
+# Time=1175000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=0
+# Time=1185000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=1
+# Time=1195000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=0
+# Time=1205000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=1
+# Time=1215000 | State=000 | dready=1 | mbreq=0 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=1
+# Time=1225000: SPLIT Read CORRECT: Expected=0xab, Got=0xab
+# 
+# ========================================
+# Test 4: Timeout Test (No ACK)
+# ========================================
+# Time=1285000 | State=100 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=1
+# Time=1305000 | State=101 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=1
+# Time=1315000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=1
+# Time=1345000 | State=110 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=1
+# Time=1355000: Waiting for timeout...
+# Time=1355000 | State=110 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=1
+# Time=1405000: Timeout occurred, returned to IDLE
+# 
+# Time=1405000 | State=000 | dready=1 | mbreq=0 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=1
+# ========================================
+# All tests completed!
+# ========================================
+# ** Note: $finish    : C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/master_port_tb.v(315)
+#    Time: 1555 ns  Iteration: 0  Instance: /tb_master_port
+# 1
+# Break in Module tb_master_port at C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/master_port_tb.v line 315
+run -all
+run -all
+run -all
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.master_port_tb
+# End time: 15:05:03 on Nov 27,2025, Elapsed time: 0:03:30
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" work.master_port_tb 
+# Start time: 15:05:03 on Nov 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/master_port_tb.v(327): (vopt-7063) Failed to find 'tb_master_port' in hierarchical name 'tb_master_port'.
+#         Region: master_port_tb
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 15:05:04 on Nov 27,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Load canceled
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.master_port_tb
+# vsim -voptargs="+acc" work.master_port_tb 
+# Start time: 15:06:10 on Nov 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/master_port_tb.v(327): (vopt-7063) Failed to find 'tb_master_port' in hierarchical name 'tb_master_port'.
+#         Region: master_port_tb
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 15:06:11 on Nov 27,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.master_port_tb
+# vsim -voptargs="+acc" work.master_port_tb 
+# Start time: 15:07:52 on Nov 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "master_port(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.master_port_tb(fast)
+# Loading work.master_port(fast)
+add wave -position insertpoint  \
+sim:/master_port_tb/dut/clk \
+sim:/master_port_tb/dut/rstn \
+sim:/master_port_tb/dut/dwdata \
+sim:/master_port_tb/dut/drdata \
+sim:/master_port_tb/dut/daddr \
+sim:/master_port_tb/dut/dvalid \
+sim:/master_port_tb/dut/dready \
+sim:/master_port_tb/dut/dmode \
+sim:/master_port_tb/dut/mrdata \
+sim:/master_port_tb/dut/mwdata \
+sim:/master_port_tb/dut/mmode \
+sim:/master_port_tb/dut/mvalid \
+sim:/master_port_tb/dut/svalid \
+sim:/master_port_tb/dut/mbreq \
+sim:/master_port_tb/dut/mbgrant \
+sim:/master_port_tb/dut/msplit \
+sim:/master_port_tb/dut/ack
+run -all
+# Time=0 | State=xxx | dready=x | mbreq=x | mvalid=x | mwdata=x | svalid=0 | mrdata=0
+# Time=5000 | State=000 | dready=1 | mbreq=0 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# ========================================
+# Test 1: Write Operation
+# ========================================
+# Time=55000: Bus request asserted
+# Time=55000 | State=100 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=75000 | State=101 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=85000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=95000: SADDR bit[0] = 0
+# Time=95000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=105000: SADDR bit[1] = 1
+# Time=105000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=115000: SADDR bit[2] = 0
+# Time=115000 | State=110 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=125000: SADDR bit[3] = 1
+# Time=125000 | State=110 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=145000 | State=001 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=155000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=165000: ADDR bit[0] = 1
+# Time=175000: ADDR bit[1] = 1
+# Time=175000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=185000: ADDR bit[2] = 0
+# Time=195000: ADDR bit[3] = 0
+# Time=195000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=205000: ADDR bit[4] = 1
+# Time=215000: ADDR bit[5] = 1
+# Time=215000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=225000: ADDR bit[6] = 0
+# Time=225000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=235000: ADDR bit[7] = 1
+# Time=245000: ADDR bit[8] = 1
+# Time=245000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=255000: ADDR bit[9] = 0
+# Time=255000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=265000: ADDR bit[10] = 1
+# Time=265000 | State=011 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=275000: ADDR bit[11] = 0
+# Time=275000 | State=011 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=285000: WDATA bit[0] = 1
+# Time=285000 | State=011 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=295000: WDATA bit[1] = 0
+# Time=295000 | State=011 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=305000: WDATA bit[2] = 1
+# Time=315000: WDATA bit[3] = 1
+# Time=315000 | State=011 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=325000: WDATA bit[4] = 0
+# Time=335000: WDATA bit[5] = 0
+# Time=335000 | State=011 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=345000: WDATA bit[6] = 1
+# Time=345000 | State=000 | dready=1 | mbreq=0 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=355000: WDATA bit[7] = 1
+# Time=355000: Write transaction completed
+# 
+# Time=355000 | State=000 | dready=1 | mbreq=0 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# ========================================
+# Test 2: Read Operation
+# ========================================
+# Time=415000: Bus request asserted
+# Time=415000 | State=100 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=435000 | State=101 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=445000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=455000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=475000 | State=110 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=485000 | State=110 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=505000 | State=001 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=515000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=535000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=545000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=555000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=575000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=605000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=615000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=625000 | State=010 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=635000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=645000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=0
+# Time=655000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=1
+# Time=665000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=0
+# Time=675000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=1
+# Time=695000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=0
+# Time=705000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=1
+# Time=715000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=1 | mrdata=0
+# Time=725000 | State=000 | dready=1 | mbreq=0 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=735000: Read data CORRECT: Expected=0x5a, Got=0x5a
+# 
+# ========================================
+# Test 3: Read with SPLIT
+# ========================================
+# Time=795000 | State=100 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=815000 | State=101 | dready=0 | mbreq=1 | mvalid=0 | mwdata=0 | svalid=0 | mrdata=0
+# Time=825000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=835000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=855000 | State=110 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=865000 | State=110 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=885000 | State=001 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=895000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=905000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=925000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=935000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=965000 | State=001 | dready=0 | mbreq=1 | mvalid=1 | mwdata=0 | svalid=0 | mrdata=0
+# Time=1005000 | State=010 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=0
+# Time=1015000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=1025000: SPLIT asserted
+# Time=1035000 | State=111 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=1125000: SPLIT released, bus granted
+# Time=1125000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=0
+# Time=1135000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=1
+# Time=1155000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=0
+# Time=1165000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=1
+# Time=1175000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=0
+# Time=1185000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=1
+# Time=1195000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=0
+# Time=1205000 | State=010 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=1 | mrdata=1
+# Time=1215000 | State=000 | dready=1 | mbreq=0 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=1
+# Time=1225000: SPLIT Read CORRECT: Expected=0xab, Got=0xab
+# 
+# ========================================
+# Test 4: Timeout Test (No ACK)
+# ========================================
+# Time=1285000 | State=100 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=1
+# Time=1305000 | State=101 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=1
+# Time=1315000 | State=101 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=1
+# Time=1345000 | State=110 | dready=0 | mbreq=1 | mvalid=1 | mwdata=1 | svalid=0 | mrdata=1
+# Time=1355000: Waiting for timeout...
+# Time=1355000 | State=110 | dready=0 | mbreq=1 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=1
+# Time=1405000: Timeout occurred, returned to IDLE
+# 
+# Time=1405000 | State=000 | dready=1 | mbreq=0 | mvalid=0 | mwdata=1 | svalid=0 | mrdata=1
+# ========================================
+# All tests completed!
+# ========================================
+# ** Note: $finish    : C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/master_port_tb.v(315)
+#    Time: 1555 ns  Iteration: 0  Instance: /master_port_tb
+# 1
+# Break in Module master_port_tb at C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/master_port_tb.v line 315
+run -all
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Load canceled
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# Compile of bus_bridge_master.v was successful.
+# Compile of bb_master_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.bb_master_tb
+# End time: 16:16:21 on Nov 27,2025, Elapsed time: 1:08:29
+# Errors: 0, Warnings: 8
+# vsim -voptargs="+acc" work.bb_master_tb 
+# Start time: 16:16:21 on Nov 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/bus_bridge_master.v(94): Module 'fifo' is not defined.
+#  For instance 'fifo_queue' at path 'bb_master_tb.bb_master'
+# ** Error: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/bus_bridge_master.v(109): Module 'uart' is not defined.
+#  For instance 'uart_module' at path 'bb_master_tb.bb_master'
+# ** Error: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/bus_bridge_master.v(126): Module 'addr_convert' is not defined.
+#  For instance 'addr_convert_module' at path 'bb_master_tb.bb_master'
+# ** Error: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v(86): Module 'uart' is not defined.
+#  For instance 'extuart' at path 'bb_master_tb'
+# ** Error: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v(148): Module 'slave' is not defined.
+#  For instance 'slave1' at path 'bb_master_tb'
+# ** Error: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v(164): Module 'slave' is not defined.
+#  For instance 'slave2' at path 'bb_master_tb'
+# ** Error: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v(181): Module 'slave' is not defined.
+#  For instance 'slave3' at path 'bb_master_tb'
+# ** Error: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v(199): Module 'bus_m2_s3' is not defined.
+#  For instance 'bus' at path 'bb_master_tb'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=8, Warnings=1.
+# Error loading design
+# End time: 16:16:22 on Nov 27,2025, Elapsed time: 0:00:01
+# Errors: 8, Warnings: 2
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# Compile of bus_bridge_master.v was successful.
+# Compile of bb_master_tb.v was successful.
+# Compile of fifo.v was successful.
+# Compile of uart.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_tx.v was successful.
+# Compile of addr_convert.v was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.bb_master_tb
+# vsim -voptargs="+acc" work.bb_master_tb 
+# Start time: 16:19:56 on Nov 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v(148): Module 'slave' is not defined.
+#  For instance 'slave1' at path 'bb_master_tb'
+# ** Error: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v(164): Module 'slave' is not defined.
+#  For instance 'slave2' at path 'bb_master_tb'
+# ** Error: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v(181): Module 'slave' is not defined.
+#  For instance 'slave3' at path 'bb_master_tb'
+# ** Error: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v(199): Module 'bus_m2_s3' is not defined.
+#  For instance 'bus' at path 'bb_master_tb'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=4, Warnings=1.
+# Error loading design
+# End time: 16:19:57 on Nov 27,2025, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 8
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# Compile of bus_bridge_master.v was successful.
+# Compile of bb_master_tb.v was successful.
+# Compile of fifo.v was successful.
+# Compile of uart.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_tx.v was successful.
+# Compile of addr_convert.v was successful.
+# Compile of bus_m2_s3.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# Compile of bus_bridge_master.v was successful.
+# Compile of fifo.v was successful.
+# Compile of uart.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_tx.v was successful.
+# Compile of addr_convert.v was successful.
+# Compile of bb_master_tb.v failed with 4 errors.
+# 9 compiles, 1 failed with 4 errors.
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# Compile of bus_bridge_master.v was successful.
+# Compile of fifo.v was successful.
+# Compile of uart.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_tx.v was successful.
+# Compile of addr_convert.v was successful.
+# Compile of bb_master_tb.v failed with 28 errors.
+# 9 compiles, 1 failed with 28 errors.
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# Compile of bus_bridge_master.v was successful.
+# Compile of fifo.v was successful.
+# Compile of uart.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_tx.v was successful.
+# Compile of addr_convert.v was successful.
+# Compile of bb_master_tb.v failed with 7 errors.
+# 9 compiles, 1 failed with 7 errors.
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# Compile of bus_bridge_master.v was successful.
+# Compile of fifo.v was successful.
+# Compile of uart.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_tx.v was successful.
+# Compile of addr_convert.v was successful.
+# Compile of bb_master_tb.v failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# Compile of bus_bridge_master.v was successful.
+# Compile of fifo.v was successful.
+# Compile of uart.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_tx.v was successful.
+# Compile of addr_convert.v was successful.
+# Compile of bb_master_tb.v was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.bb_master_tb
+# vsim -voptargs="+acc" work.bb_master_tb 
+# Start time: 16:49:57 on Nov 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v(130): (vopt-7063) Failed to find 'tb_bus_bridge_master' in hierarchical name 'tb_bus_bridge_master'.
+#         Region: bb_master_tb
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 16:49:59 on Nov 27,2025, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 12
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# Compile of bus_bridge_master.v was successful.
+# Compile of fifo.v was successful.
+# Compile of uart.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_tx.v was successful.
+# Compile of addr_convert.v was successful.
+# Compile of bb_master_tb.v was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.bb_master_tb
+# vsim -voptargs="+acc" work.bb_master_tb 
+# Start time: 16:51:17 on Nov 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v(130): (vopt-7063) Failed to find 'tb_bus_bridge_master' in hierarchical name 'tb_bus_bridge_master'.
+#         Region: bb_master_tb
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 16:51:18 on Nov 27,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# Compile of bus_bridge_master.v was successful.
+# Compile of fifo.v was successful.
+# Compile of uart.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_tx.v was successful.
+# Compile of addr_convert.v was successful.
+# Compile of bb_master_tb.v was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.bb_master_tb
+# vsim -voptargs="+acc" work.bb_master_tb 
+# Start time: 16:52:34 on Nov 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v(130): (vopt-7063) Failed to find 'tb_bus_bridge_master' in hierarchical name 'tb_bus_bridge_master'.
+#         Region: bb_master_tb
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 16:52:35 on Nov 27,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 5
+# Load canceled
+# Compile of master_port.v was successful.
+# Compile of master_port_tb.v was successful.
+# Compile of bus_bridge_master.v was successful.
+# Compile of fifo.v was successful.
+# Compile of uart.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_tx.v was successful.
+# Compile of addr_convert.v was successful.
+# Compile of bb_master_tb.v was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.bb_master_tb
+# vsim -voptargs="+acc" work.bb_master_tb 
+# Start time: 16:53:47 on Nov 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "master_port(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_tx(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.bb_master_tb(fast)
+# Loading work.bus_bridge_master(fast)
+# Loading work.master_port(fast)
+# Loading work.fifo(fast)
+# Loading work.uart(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.addr_convert(fast)
+add wave -position insertpoint  \
+sim:/bb_master_tb/ADDR_WIDTH \
+sim:/bb_master_tb/DATA_WIDTH \
+sim:/bb_master_tb/SLAVE_MEM_ADDR_WIDTH \
+sim:/bb_master_tb/BB_ADDR_WIDTH \
+sim:/bb_master_tb/UART_CLOCKS_PER_PULSE \
+sim:/bb_master_tb/UART_RX_DATA_WIDTH \
+sim:/bb_master_tb/UART_TX_DATA_WIDTH \
+sim:/bb_master_tb/clk \
+sim:/bb_master_tb/rstn \
+sim:/bb_master_tb/mrdata \
+sim:/bb_master_tb/mwdata \
+sim:/bb_master_tb/mmode \
+sim:/bb_master_tb/mvalid \
+sim:/bb_master_tb/svalid \
+sim:/bb_master_tb/mbreq \
+sim:/bb_master_tb/mbgrant \
+sim:/bb_master_tb/msplit \
+sim:/bb_master_tb/ack \
+sim:/bb_master_tb/u_tx \
+sim:/bb_master_tb/u_rx
+run -all
+# Sending WRITE command...
+# Sending READ command...
+# Test Completed
+# ** Note: $finish    : C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v(159)
+#    Time: 10780 ns  Iteration: 0  Instance: /bb_master_tb
+# 1
+# Break in Module bb_master_tb at C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v line 159

@@ -31,7 +31,7 @@ module bus_bridge_master #(
     output u_tx,
     input u_rx
 );
-    localparam UART_RX_DATA_WIDTH = DATA_WIDTH + BB_ADDR_WIDTH + 1;    // Receive all 3 info
+    localparam UART_RX_DATA_WIDTH = DATA_WIDTH + BB_ADDR_WIDTH + 1;    // Receive all 3 info    8 + 12 + 1 = 21
     localparam UART_TX_DATA_WIDTH = DATA_WIDTH;     // Transmit only read data
     
 	// Signals connecting to master port

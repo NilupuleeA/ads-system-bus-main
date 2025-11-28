@@ -1,0 +1,43 @@
+C:/Users/pasir/Desktop/Github/ads-system-bus-main/ads-system-bus-main/rtl/uart_rx.v {1 {vlog -work work -vopt -stats=none C:/Users/pasir/Desktop/Github/ads-system-bus-main/ads-system-bus-main/rtl/uart_rx.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module uart_rx
+
+Top level modules:
+	uart_rx
+
+} {} {}} C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/bb_master_tb.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module bb_master_tb
+
+Top level modules:
+	bb_master_tb
+
+} {} {}} C:/Users/pasir/Desktop/Github/ads-system-bus-main/ads-system-bus-main/rtl/uart_tx.v {1 {vlog -work work -vopt -stats=none C:/Users/pasir/Desktop/Github/ads-system-bus-main/ads-system-bus-main/rtl/uart_tx.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module uart_tx
+
+Top level modules:
+	uart_tx
+
+} {} {}} C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/master_port_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/TB/master_port_tb.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module master_port_tb
+
+Top level modules:
+	master_port_tb
+
+} {} {}} C:/Users/pasir/Desktop/Github/ads-system-bus-main/ads-system-bus-main/rtl/uart.v {1 {vlog -work work -vopt -stats=none C:/Users/pasir/Desktop/Github/ads-system-bus-main/ads-system-bus-main/rtl/uart.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module uart
+
+Top level modules:
+	uart
+
+} {} {}} C:/Users/pasir/Desktop/Github/ads-system-bus-main/ads-system-bus-main/rtl/fifo.v {1 {vlog -work work -vopt -stats=none C:/Users/pasir/Desktop/Github/ads-system-bus-main/ads-system-bus-main/rtl/fifo.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module fifo
+
+Top level modules:
+	fifo
+
+} {} {}}

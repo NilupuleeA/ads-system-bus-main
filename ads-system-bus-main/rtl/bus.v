@@ -64,7 +64,7 @@ module bus #(
     );
 
     // Address mux
-    mux2 addr_mux #(.DATA_WIDTH(ADDR_WIDTH)) (
+    mux2  #(.DATA_WIDTH(ADDR_WIDTH)) addr_mux (
         .dsel(m_select),
         .d0(m1_addr),
         .d1(m2_addr),
@@ -72,7 +72,7 @@ module bus #(
     );
 
     // Write data mux
-    mux2 wdata_mux #(.DATA_WIDTH(DATA_WIDTH)) (
+    mux2  #(.DATA_WIDTH(DATA_WIDTH)) wdata_mux (
         .dsel(m_select),
         .d0(m1_wdata),
         .d1(m2_wdata),
@@ -80,7 +80,7 @@ module bus #(
     );
 
     // Control muxes
-    mux2 ctrl_mux #(.DATA_WIDTH(2)) (
+    mux2  #(.DATA_WIDTH(2)) ctrl_mux (
         .dsel(m_select),
         .d0({m1_wen, m1_ren}),
         .d1({m2_wen, m2_ren}),
@@ -105,7 +105,7 @@ module bus #(
     );
 
     // Read mux
-    mux3 read_mux #(.DATA_WIDTH(DATA_WIDTH)) (
+    mux3  #(.DATA_WIDTH(DATA_WIDTH)) read_mux (
         .dsel(s_select),
         .d0(s1_rdata),
         .d1(s2_rdata),
