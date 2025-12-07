@@ -1,0 +1,675 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do run_combined.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is pasir@MAVISHAN.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# =========================================
+# Compiling all design files...
+# =========================================
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:13 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/altsyncram.v 
+# -- Compiling module altsyncram
+# 
+# Top level modules:
+# 	altsyncram
+# End time: 19:38:13 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:13 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/bus_bridge_pkg.sv 
+# -- Compiling package bus_bridge_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 19:38:13 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:13 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/addr_decoder.sv 
+# -- Compiling module addr_decoder
+# 
+# Top level modules:
+# 	addr_decoder
+# End time: 19:38:13 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:13 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/arbiter.sv 
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+# End time: 19:38:14 on Dec 03,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:14 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/init_port.sv 
+# -- Compiling module init_port
+# 
+# Top level modules:
+# 	init_port
+# End time: 19:38:14 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:14 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/target_port.sv 
+# -- Compiling module target_port
+# 
+# Top level modules:
+# 	target_port
+# End time: 19:38:14 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:14 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/split_target_port.sv 
+# -- Compiling module split_target_port
+# 
+# Top level modules:
+# 	split_target_port
+# End time: 19:38:14 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:14 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Linuka/uart/buadrate.v 
+# -- Compiling module baudrate
+# 
+# Top level modules:
+# 	baudrate
+# End time: 19:38:14 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:14 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Linuka/uart/receiver.v 
+# -- Compiling module receiver
+# 
+# Top level modules:
+# 	receiver
+# End time: 19:38:14 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:14 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Linuka/uart/transmitter.v 
+# -- Compiling module transmitter
+# 
+# Top level modules:
+# 	transmitter
+# End time: 19:38:14 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:14 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Linuka/uart/uart.v 
+# -- Compiling module uart
+# 
+# Top level modules:
+# 	uart
+# End time: 19:38:15 on Dec 03,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:15 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/bus_bridge_initiator_if.sv 
+# ** Warning: RTL_Linuka/bus_bridge_initiator_if.sv(8): (vlog-13314) Defaulting port 'req_payload' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# -- Compiling package bus_bridge_initiator_if_sv_unit
+# -- Importing package bus_bridge_pkg
+# -- Compiling module bus_bridge_initiator_if
+# ** Warning: RTL_Linuka/bus_bridge_initiator_if.sv(8): (vlog-13314) Defaulting port 'req_payload' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	bus_bridge_initiator_if
+# End time: 19:38:15 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:15 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/bus_bridge_target_if.sv 
+# ** Warning: RTL_Linuka/bus_bridge_target_if.sv(32): (vlog-13314) Defaulting port 'resp_payload' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# -- Compiling package bus_bridge_target_if_sv_unit
+# -- Importing package bus_bridge_pkg
+# -- Compiling module bus_bridge_target_if
+# ** Warning: RTL_Linuka/bus_bridge_target_if.sv(32): (vlog-13314) Defaulting port 'resp_payload' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	bus_bridge_target_if
+# End time: 19:38:15 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:15 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/bus_bridge.sv 
+# -- Compiling package bus_bridge_sv_unit
+# -- Importing package bus_bridge_pkg
+# -- Compiling module bus_bridge
+# 
+# Top level modules:
+# 	bus_bridge
+# End time: 19:38:15 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:15 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv 
+# -- Compiling package bus_bridge_initiator_uart_wrapper_sv_unit
+# -- Importing package bus_bridge_pkg
+# -- Compiling module bus_bridge_initiator_uart_wrapper
+# 
+# Top level modules:
+# 	bus_bridge_initiator_uart_wrapper
+# End time: 19:38:15 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:15 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/bus_bridge_target_uart_wrapper.sv 
+# -- Compiling package bus_bridge_target_uart_wrapper_sv_unit
+# -- Importing package bus_bridge_pkg
+# -- Compiling module bus_bridge_target_uart_wrapper
+# 
+# Top level modules:
+# 	bus_bridge_target_uart_wrapper
+# End time: 19:38:15 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:15 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/initiator.sv 
+# -- Compiling module initiator
+# 
+# Top level modules:
+# 	initiator
+# End time: 19:38:16 on Dec 03,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:16 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/target.sv 
+# -- Compiling module target
+# 
+# Top level modules:
+# 	target
+# End time: 19:38:16 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:16 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/split_target.sv 
+# -- Compiling module split_target
+# 
+# Top level modules:
+# 	split_target
+# End time: 19:38:16 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:16 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/bus.sv 
+# -- Compiling module bus
+# 
+# Top level modules:
+# 	bus
+# End time: 19:38:16 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:16 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Linuka/system_top_with_bus_bridge_a.sv 
+# -- Compiling module system_top_with_bus_bridge_a
+# 
+# Top level modules:
+# 	system_top_with_bus_bridge_a
+# End time: 19:38:16 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:16 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/addr_convert.v 
+# -- Compiling module addr_convert
+# 
+# Top level modules:
+# 	addr_convert
+# End time: 19:38:16 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:16 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/addr_decoder_mav.v 
+# -- Compiling module addr_decoder_mav
+# 
+# Top level modules:
+# 	addr_decoder_mav
+# End time: 19:38:16 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:16 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/arbiter_mav.v 
+# -- Compiling module arbiter_mav
+# 
+# Top level modules:
+# 	arbiter_mav
+# End time: 19:38:16 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:16 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/dec3.v 
+# -- Compiling module dec3
+# 
+# Top level modules:
+# 	dec3
+# End time: 19:38:17 on Dec 03,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:17 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/mux2.v 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 19:38:17 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:17 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/mux3.v 
+# -- Compiling module mux3
+# 
+# Top level modules:
+# 	mux3
+# End time: 19:38:17 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:17 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/master_port.v 
+# -- Compiling module master_port
+# 
+# Top level modules:
+# 	master_port
+# End time: 19:38:17 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:17 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/slave_port.v 
+# -- Compiling module slave_port
+# 
+# Top level modules:
+# 	slave_port
+# End time: 19:38:17 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:17 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/fifo.v 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 19:38:17 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:17 on Dec 03,2025
+# vlog -reportprogress 300 -sv RTL_Mavishan/baudrate.sv 
+# -- Compiling module baudrate
+# 
+# Top level modules:
+# 	baudrate
+# End time: 19:38:17 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:17 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 19:38:17 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:17 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 19:38:18 on Dec 03,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:18 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/uart_mav.v 
+# -- Compiling module uart_mav
+# 
+# Top level modules:
+# 	uart_mav
+# End time: 19:38:18 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:18 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/uart_rx_other.v 
+# -- Compiling module uart_rx_other
+# 
+# Top level modules:
+# 	uart_rx_other
+# End time: 19:38:18 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:18 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/uart_tx_other.v 
+# -- Compiling module uart_tx_other
+# 
+# Top level modules:
+# 	uart_tx_other
+# End time: 19:38:18 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:18 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/uart_other.v 
+# -- Compiling module uart_other
+# 
+# Top level modules:
+# 	uart_other
+# End time: 19:38:18 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:18 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/bus_bridge_master.v 
+# -- Compiling module bus_bridge_master
+# 
+# Top level modules:
+# 	bus_bridge_master
+# End time: 19:38:18 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:18 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/bus_bridge_slave.v 
+# -- Compiling module bus_bridge_slave
+# 
+# Top level modules:
+# 	bus_bridge_slave
+# End time: 19:38:18 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:18 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/slave_bram.v 
+# -- Compiling module slave_bram
+# 
+# Top level modules:
+# 	slave_bram
+# End time: 19:38:18 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:19 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/slave_bram_2k.v 
+# -- Compiling module slave_bram_2k
+# 
+# Top level modules:
+# 	slave_bram_2k
+# End time: 19:38:19 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:19 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/slave_memory_bram.v 
+# -- Compiling module slave_memory_bram
+# 
+# Top level modules:
+# 	slave_memory_bram
+# End time: 19:38:19 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:19 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/slave_with_bram.v 
+# -- Compiling module slave_with_bram
+# 
+# Top level modules:
+# 	slave_with_bram
+# End time: 19:38:19 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:19 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/master_bram.v 
+# -- Compiling module master_bram
+# 
+# Top level modules:
+# 	master_bram
+# End time: 19:38:19 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:19 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/bus_m2_s3.v 
+# -- Compiling module bus_m2_s3
+# 
+# Top level modules:
+# 	bus_m2_s3
+# End time: 19:38:19 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:19 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/top_with_bb_v1.v 
+# -- Compiling module top_with_bb_v1
+# 
+# Top level modules:
+# 	top_with_bb_v1
+# End time: 19:38:19 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:19 on Dec 03,2025
+# vlog -reportprogress 300 RTL_Mavishan/demo_top_bb.v 
+# -- Compiling module demo_top_bb
+# 
+# Top level modules:
+# 	demo_top_bb
+# End time: 19:38:19 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:19 on Dec 03,2025
+# vlog -reportprogress 300 -sv combined_top.sv 
+# -- Compiling module combined_top
+# 
+# Top level modules:
+# 	combined_top
+# End time: 19:38:19 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:38:19 on Dec 03,2025
+# vlog -reportprogress 300 -sv combined_top_tb.sv 
+# -- Compiling module combined_top_tb
+# 
+# Top level modules:
+# 	combined_top_tb
+# End time: 19:38:19 on Dec 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# =========================================
+# Compilation complete!
+# =========================================
+# vsim -voptargs="+acc" work.combined_top_tb 
+# Start time: 19:38:20 on Dec 03,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "addr_decoder_mav(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "bus_bridge_slave(fast)".
+# ** Warning: RTL_Mavishan/top_with_bb_v1.v(124): (vopt-2685) [TFMPC] - Too few port connections for 'slave1'.  Expected 9, found 8.
+# ** Warning: RTL_Mavishan/top_with_bb_v1.v(124): (vopt-2718) [TFMPC] - Missing connection for port 'demo_data'.
+# ** Warning: RTL_Mavishan/top_with_bb_v1.v(139): (vopt-2685) [TFMPC] - Too few port connections for 'slave2'.  Expected 9, found 8.
+# ** Warning: RTL_Mavishan/top_with_bb_v1.v(139): (vopt-2718) [TFMPC] - Missing connection for port 'demo_data'.
+# ** Warning: RTL_Mavishan/uart_rx_other.v(69): (vopt-2697) MSB 15 of part-select into 'data_out' is out of bounds.
+# ** Warning: RTL_Mavishan/uart_rx_other.v(69): (vopt-2697) LSB 8 of part-select into 'data_out' is out of bounds.
+# ** Warning: RTL_Mavishan/uart_rx_other.v(71): (vopt-2697) MSB 23 of part-select into 'data_out' is out of bounds.
+# ** Warning: RTL_Mavishan/uart_rx_other.v(71): (vopt-2697) LSB 16 of part-select into 'data_out' is out of bounds.
+# ** Warning: RTL_Mavishan/uart_rx_other.v(73): (vopt-2697) MSB 31 of part-select into 'data_out' is out of bounds.
+# ** Warning: RTL_Mavishan/uart_rx_other.v(73): (vopt-2697) LSB 24 of part-select into 'data_out' is out of bounds.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx_other(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "receiver(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_tx(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "transmitter(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_tx_other(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "arbiter(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "bus(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "initiator(fast__1)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "initiator(fast)".
+# ** Warning: RTL_Linuka/bus_bridge_target_if.sv(32): (vopt-13314) Defaulting port 'resp_payload' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 1 FSM in module "bus_bridge_target_if(fast)".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "bus_bridge_target_uart_wrapper(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "slave_port(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "slave_port(fast__1)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "master_port(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "demo_top_bb(fast)".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "arbiter_mav(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=12.
+# Loading sv_std.std
+# Loading work.combined_top_tb(fast)
+# Loading work.combined_top(fast)
+# Loading work.system_top_with_bus_bridge_a(fast)
+# Loading work.initiator(fast)
+# Loading work.initiator(fast__1)
+# Loading work.target(fast)
+# Loading work.bus_bridge_pkg(fast)
+# Loading work.bus_bridge_target_uart_wrapper_sv_unit(fast)
+# Loading work.bus_bridge_target_uart_wrapper(fast)
+# Loading work.bus_bridge_target_if_sv_unit(fast)
+# Loading work.bus_bridge_target_if(fast)
+# Loading work.uart(fast)
+# Loading work.baudrate(fast)
+# Loading work.transmitter(fast)
+# Loading work.receiver(fast)
+# Loading work.bus(fast)
+# Loading work.init_port(fast)
+# Loading work.target_port(fast)
+# Loading work.split_target_port(fast)
+# Loading work.arbiter(fast)
+# Loading work.addr_decoder(fast)
+# Loading work.demo_top_bb(fast)
+# Loading work.top_with_bb_v1(fast)
+# Loading work.master_port(fast)
+# Loading work.bus_bridge_master(fast)
+# Loading work.fifo(fast)
+# Loading work.uart_mav(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.slave_with_bram(fast)
+# Loading work.slave_port(fast)
+# Loading work.slave_memory_bram(fast)
+# Loading work.slave_bram_2k(fast)
+# Loading work.altsyncram(fast)
+# Loading work.slave_with_bram(fast__1)
+# Loading work.slave_memory_bram(fast__1)
+# Loading work.slave_bram(fast)
+# Loading work.altsyncram(fast__1)
+# Loading work.bus_bridge_slave(fast)
+# Loading work.slave_port(fast__1)
+# Loading work.uart_other(fast)
+# Loading work.uart_tx_other(fast)
+# Loading work.uart_rx_other(fast)
+# Loading work.bus_m2_s3(fast)
+# Loading work.arbiter_mav(fast)
+# Loading work.addr_decoder_mav(fast)
+# Loading work.dec3(fast)
+# Loading work.mux2(fast)
+# Loading work.mux2(fast__1)
+# Loading work.mux3(fast)
+# Loading work.master_bram(fast)
+# Loading work.altsyncram(fast__2)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'split_grant'. The port definition is at: RTL_Mavishan/slave_port.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /combined_top_tb/u_dut/u_demo_bb/bus/slave1/sp File: RTL_Mavishan/slave_with_bram.v Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'split_grant'. The port definition is at: RTL_Mavishan/slave_port.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /combined_top_tb/u_dut/u_demo_bb/bus/slave2/sp File: RTL_Mavishan/slave_with_bram.v Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'split_grant'. The port definition is at: RTL_Mavishan/bus_bridge_slave.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /combined_top_tb/u_dut/u_demo_bb/bus/bb_slave File: RTL_Mavishan/top_with_bb_v1.v Line: 154
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 's3_split'. The port definition is at: RTL_Mavishan/bus_m2_s3.v(54).
+#    Time: 0 ps  Iteration: 0  Instance: /combined_top_tb/u_dut/u_demo_bb/bus/bus File: RTL_Mavishan/top_with_bb_v1.v Line: 174
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: pasir  Hostname: MAVISHAN  ProcessID: 24672
+#           Attempting to use alternate WLF file "./wlft6fagf5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft6fagf5
+# =========================================
+# Starting simulation...
+# Use 'run -all' to run complete test
+# or 'run 100us' to run for specific time
+# =========================================
+run
+# ** Warning: (vsim-7) Failed to open readmem file "../meminit/master_init.mif" in read mode.
+# No such file or directory. (errno = ENOENT)    : RTL_Mavishan/altsyncram.v(106)
+#    Time: 0 ps  Iteration: 0  Instance: /combined_top_tb/u_dut/u_demo_bb/memory/altsyncram_component
+# Time		Reset	Trigger	Start	Mode	Ready
+# 0	1	0	1	0	x
+# 5000	1	0	1	0	1
+# 100000	0	0	1	0	1
+# [800000] Test 1: Triggering write from Bus A
+# 800000	0	1	1	0	1
+# 820000	0	0	1	0	1
+# Causality operation skipped due to absence of debug database file
+run
+# [50820000] Test 2: Triggering read from Bus B (mode=0)
+# 50820000	0	0	0	0	1
+# 50825000	0	0	0	0	0
+# 50840000	0	0	1	0	0
+run
+run
+run
+run
+run
+run
+run
+run
+# [500000000] ERROR: Simulation timeout
+# ** Note: $finish    : combined_top_tb.sv(94)
+#    Time: 500 us  Iteration: 0  Instance: /combined_top_tb
+# 1
+# Break in Module combined_top_tb at combined_top_tb.sv line 94
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 22:43:47 on Dec 03,2025, Elapsed time: 3:05:27
+# Errors: 0, Warnings: 19

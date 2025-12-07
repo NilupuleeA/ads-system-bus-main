@@ -1,0 +1,653 @@
+m255
+K4
+z2
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together
+vaddr_decoder
+2RTL_Linuka/addr_decoder.sv
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1764652750
+!i10b 1
+!s100 0]KVJA45KXHW?B3mbj0YT1
+IF:VP2dod`I9Oh7zCT50NP3
+S1
+R0
+Z3 w1764161303
+8RTL_Linuka/addr_decoder.sv
+FRTL_Linuka/addr_decoder.sv
+!i122 1
+L0 1 124
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z6 !s108 1764652750.000000
+!s107 RTL_Linuka/addr_decoder.sv|
+!s90 -work|work_linuka|-sv|RTL_Linuka/addr_decoder.sv|
+!i113 0
+Z7 o-work work_linuka -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+varbiter
+2RTL_Linuka/arbiter.sv
+R1
+R2
+!i10b 1
+!s100 7lDOIFcK[bY6B_OBJ7Khi0
+IMLS=f8EZ`l?0J>:BC@l[L3
+S1
+R0
+R3
+8RTL_Linuka/arbiter.sv
+FRTL_Linuka/arbiter.sv
+!i122 2
+L0 1 77
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 RTL_Linuka/arbiter.sv|
+!s90 -work|work_linuka|-sv|RTL_Linuka/arbiter.sv|
+!i113 0
+R7
+R8
+vbaudrate
+2RTL_Linuka/uart/buadrate.v
+R2
+!i10b 1
+!s100 k@@5P5Xke>PjLR>8P_FN80
+IfafAKWJkNO_MNjI@=DJlV0
+R0
+R3
+8RTL_Linuka/uart/buadrate.v
+FRTL_Linuka/uart/buadrate.v
+!i122 6
+L0 4 56
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 RTL_Linuka/uart/buadrate.v|
+!s90 -work|work_linuka|RTL_Linuka/uart/buadrate.v|
+!i113 0
+Z9 o-work work_linuka -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vbus
+2RTL_Linuka/bus.sv
+R1
+Z10 !s110 1764652751
+!i10b 1
+!s100 1ZLTU;@4`gkIi1mO``6lA0
+IzFUK[>0T=o1kD>C2Ne6Bf0
+S1
+R0
+R3
+8RTL_Linuka/bus.sv
+FRTL_Linuka/bus.sv
+!i122 18
+L0 1 670
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1764652751.000000
+!s107 RTL_Linuka/bus.sv|
+!s90 -work|work_linuka|-sv|RTL_Linuka/bus.sv|
+!i113 0
+R7
+R8
+vbus_bridge
+Z12 2RTL_Linuka/bus_bridge.sv
+R1
+Z13 DXx4 work 14 bus_bridge_pkg 0 22 L4ZC_?eaM><lbQ2_m]<W<3
+DXx4 work 18 bus_bridge_sv_unit 0 22 El]Qmek^?TlONVWHZXDGJ0
+R10
+R4
+r1
+!s85 0
+!i10b 1
+!s100 M?X_5fF2=zznGH0H2:FAf2
+IeXJ9P8Km1cFA[GNZQiH1<3
+!s105 bus_bridge_sv_unit
+S1
+R0
+R3
+Z14 8RTL_Linuka/bus_bridge.sv
+Z15 FRTL_Linuka/bus_bridge.sv
+!i122 12
+L0 3 89
+R5
+31
+R11
+Z16 !s107 RTL_Linuka/bus_bridge.sv|
+Z17 !s90 -work|work_linuka|-sv|RTL_Linuka/bus_bridge.sv|
+!i113 0
+R7
+R8
+vbus_bridge_initiator_if
+Z18 2RTL_Linuka/bus_bridge_initiator_if.sv
+R1
+R13
+DXx4 work 31 bus_bridge_initiator_if_sv_unit 0 22 7^B[a;nW:@6FOh9R<dCoi1
+R10
+R4
+r1
+!s85 0
+!i10b 1
+!s100 oC:O@JC^``VJD^QllF2Qe0
+Im2bJ0WPcCU`Cji=IYBmo;1
+!s105 bus_bridge_initiator_if_sv_unit
+S1
+R0
+R3
+Z19 8RTL_Linuka/bus_bridge_initiator_if.sv
+Z20 FRTL_Linuka/bus_bridge_initiator_if.sv
+!i122 10
+L0 3 155
+R5
+31
+R11
+Z21 !s107 RTL_Linuka/bus_bridge_initiator_if.sv|
+Z22 !s90 -work|work_linuka|-sv|RTL_Linuka/bus_bridge_initiator_if.sv|
+!i113 0
+R7
+R8
+Xbus_bridge_initiator_if_sv_unit
+R18
+R1
+R13
+R10
+V7^B[a;nW:@6FOh9R<dCoi1
+r1
+!s85 0
+!i10b 1
+!s100 h<^L7z:DB:XX9JFnY;3@T2
+I7^B[a;nW:@6FOh9R<dCoi1
+!i103 1
+S1
+R0
+R3
+R19
+R20
+!i122 10
+Z23 L0 1 0
+R5
+31
+R11
+R21
+R22
+!i113 0
+R7
+R8
+vbus_bridge_initiator_uart_wrapper
+Z24 2RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv
+R1
+R13
+DXx4 work 41 bus_bridge_initiator_uart_wrapper_sv_unit 0 22 boN<YN^8kF96Oln:lNOo?0
+R10
+R4
+r1
+!s85 0
+!i10b 1
+!s100 gT;O55Fnd3@T7doJQJeW;1
+I6<@5P<:09JO96E5ToOPCU2
+!s105 bus_bridge_initiator_uart_wrapper_sv_unit
+S1
+R0
+R3
+Z25 8RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv
+Z26 FRTL_Linuka/bus_bridge_initiator_uart_wrapper.sv
+!i122 13
+L0 3 224
+R5
+31
+R11
+Z27 !s107 RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv|
+Z28 !s90 -work|work_linuka|-sv|RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv|
+!i113 0
+R7
+R8
+Xbus_bridge_initiator_uart_wrapper_sv_unit
+R24
+R1
+R13
+R10
+VboN<YN^8kF96Oln:lNOo?0
+r1
+!s85 0
+!i10b 1
+!s100 cILDVzgaz5NcTEoG?>1h22
+IboN<YN^8kF96Oln:lNOo?0
+!i103 1
+S1
+R0
+R3
+R25
+R26
+!i122 13
+R23
+R5
+31
+R11
+R27
+R28
+!i113 0
+R7
+R8
+Xbus_bridge_pkg
+2RTL_Linuka/bus_bridge_pkg.sv
+R1
+R2
+!i10b 1
+!s100 =hldg;2_o<;R>gD9Ph^Od2
+IL4ZC_?eaM><lbQ2_m]<W<3
+S1
+R0
+R3
+8RTL_Linuka/bus_bridge_pkg.sv
+FRTL_Linuka/bus_bridge_pkg.sv
+!i122 0
+R23
+VL4ZC_?eaM><lbQ2_m]<W<3
+R5
+r1
+!s85 0
+31
+R6
+!s107 RTL_Linuka/bus_bridge_pkg.sv|
+!s90 -work|work_linuka|-sv|RTL_Linuka/bus_bridge_pkg.sv|
+!i113 0
+R7
+R8
+Xbus_bridge_sv_unit
+R12
+R1
+R13
+R10
+VEl]Qmek^?TlONVWHZXDGJ0
+r1
+!s85 0
+!i10b 1
+!s100 ]JA>P^m<a]1VQZeB_D9Pg0
+IEl]Qmek^?TlONVWHZXDGJ0
+!i103 1
+S1
+R0
+R3
+R14
+R15
+!i122 12
+R23
+R5
+31
+R11
+R16
+R17
+!i113 0
+R7
+R8
+vbus_bridge_target_if
+Z29 2RTL_Linuka/bus_bridge_target_if.sv
+R1
+R13
+DXx4 work 28 bus_bridge_target_if_sv_unit 0 22 FH[gRE7[`AVV477DnfU]R2
+R10
+R4
+r1
+!s85 0
+!i10b 1
+!s100 nz89>BICYeA<O?VENSGKB1
+IC=Rz2ie9:h^1F>ZGeHgcI0
+!s105 bus_bridge_target_if_sv_unit
+S1
+R0
+R3
+Z30 8RTL_Linuka/bus_bridge_target_if.sv
+Z31 FRTL_Linuka/bus_bridge_target_if.sv
+!i122 11
+L0 3 199
+R5
+31
+R11
+Z32 !s107 RTL_Linuka/bus_bridge_target_if.sv|
+Z33 !s90 -work|work_linuka|-sv|RTL_Linuka/bus_bridge_target_if.sv|
+!i113 0
+R7
+R8
+Xbus_bridge_target_if_sv_unit
+R29
+R1
+R13
+R10
+VFH[gRE7[`AVV477DnfU]R2
+r1
+!s85 0
+!i10b 1
+!s100 DW@5504_XYd^mFDI9E^9Y0
+IFH[gRE7[`AVV477DnfU]R2
+!i103 1
+S1
+R0
+R3
+R30
+R31
+!i122 11
+R23
+R5
+31
+R11
+R32
+R33
+!i113 0
+R7
+R8
+vbus_bridge_target_uart_wrapper
+Z34 2RTL_Linuka/bus_bridge_target_uart_wrapper.sv
+R1
+R13
+DXx4 work 38 bus_bridge_target_uart_wrapper_sv_unit 0 22 f;`_H[?e:WHmgkI`WcLX:1
+R10
+R4
+r1
+!s85 0
+!i10b 1
+!s100 abKV_ITH0XP>l7AG@Ie4m3
+IZ]9GYJ`aAIM3Ub4>K6gCe1
+!s105 bus_bridge_target_uart_wrapper_sv_unit
+S1
+R0
+R3
+Z35 8RTL_Linuka/bus_bridge_target_uart_wrapper.sv
+Z36 FRTL_Linuka/bus_bridge_target_uart_wrapper.sv
+!i122 14
+L0 3 252
+R5
+31
+R11
+Z37 !s107 RTL_Linuka/bus_bridge_target_uart_wrapper.sv|
+Z38 !s90 -work|work_linuka|-sv|RTL_Linuka/bus_bridge_target_uart_wrapper.sv|
+!i113 0
+R7
+R8
+Xbus_bridge_target_uart_wrapper_sv_unit
+R34
+R1
+R13
+R10
+Vf;`_H[?e:WHmgkI`WcLX:1
+r1
+!s85 0
+!i10b 1
+!s100 <0j1RF:k7WhgXSj;gHdUE1
+If;`_H[?e:WHmgkI`WcLX:1
+!i103 1
+S1
+R0
+R3
+R35
+R36
+!i122 14
+R23
+R5
+31
+R11
+R37
+R38
+!i113 0
+R7
+R8
+vinit_port
+2RTL_Linuka/init_port.sv
+R1
+R2
+!i10b 1
+!s100 F8W<Lf0h@oJTW@JnlScfD1
+IfeQ;WmT@Nlh1f2I>RW5?42
+S1
+R0
+R3
+8RTL_Linuka/init_port.sv
+FRTL_Linuka/init_port.sv
+!i122 3
+L0 1 211
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 RTL_Linuka/init_port.sv|
+!s90 -work|work_linuka|-sv|RTL_Linuka/init_port.sv|
+!i113 0
+R7
+R8
+vinitiator
+2RTL_Linuka/initiator.sv
+R1
+R10
+!i10b 1
+!s100 e?Tn9QQa0dU4?RN6XQj`_1
+IW:jA4LSfPdldXnaEc]@1z2
+S1
+R0
+R3
+8RTL_Linuka/initiator.sv
+FRTL_Linuka/initiator.sv
+!i122 15
+L0 1 230
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 RTL_Linuka/initiator.sv|
+!s90 -work|work_linuka|-sv|RTL_Linuka/initiator.sv|
+!i113 0
+R7
+R8
+vreceiver
+2RTL_Linuka/uart/receiver.v
+R2
+!i10b 1
+!s100 8MaQHP;HD7alb2fj9V86n3
+IGTgG[oB1D]E8AiI^cCN`o0
+R0
+R3
+8RTL_Linuka/uart/receiver.v
+FRTL_Linuka/uart/receiver.v
+!i122 7
+L0 1 104
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 RTL_Linuka/uart/receiver.v|
+!s90 -work|work_linuka|RTL_Linuka/uart/receiver.v|
+!i113 0
+R9
+R8
+vsplit_target
+2RTL_Linuka/split_target.sv
+R1
+R10
+!i10b 1
+!s100 URljWZ<c^bz5ZXi]Qb=Om2
+I>Zaa6@A@?a^8FAcm;f3Ne3
+S1
+R0
+R3
+8RTL_Linuka/split_target.sv
+FRTL_Linuka/split_target.sv
+!i122 17
+L0 1 130
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 RTL_Linuka/split_target.sv|
+!s90 -work|work_linuka|-sv|RTL_Linuka/split_target.sv|
+!i113 0
+R7
+R8
+vsplit_target_port
+2RTL_Linuka/split_target_port.sv
+R1
+R2
+!i10b 1
+!s100 cci2iFMRN]l=Qm9]Ro3aR3
+I9k`hVz7IoO4fm3]7Y=Nch0
+S1
+R0
+R3
+8RTL_Linuka/split_target_port.sv
+FRTL_Linuka/split_target_port.sv
+!i122 5
+L0 1 161
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 RTL_Linuka/split_target_port.sv|
+!s90 -work|work_linuka|-sv|RTL_Linuka/split_target_port.sv|
+!i113 0
+R7
+R8
+vsystem_top_with_bus_bridge_a
+2RTL_Linuka/system_top_with_bus_bridge_a.sv
+R1
+R10
+!i10b 1
+!s100 REiScYd5mf@QGAElFD0kN2
+I>Cb9lo^RM<eW2O1kUmTci2
+S1
+R0
+R3
+8RTL_Linuka/system_top_with_bus_bridge_a.sv
+FRTL_Linuka/system_top_with_bus_bridge_a.sv
+!i122 19
+L0 3 287
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 RTL_Linuka/system_top_with_bus_bridge_a.sv|
+!s90 -work|work_linuka|-sv|RTL_Linuka/system_top_with_bus_bridge_a.sv|
+!i113 0
+R7
+R8
+vtarget
+2RTL_Linuka/target.sv
+R1
+R10
+!i10b 1
+!s100 mlWXjPd]6<zJ;Gb95lO6h3
+IUQ4DfWb9<V^1:4XNC?lih2
+S1
+R0
+R3
+8RTL_Linuka/target.sv
+FRTL_Linuka/target.sv
+!i122 16
+L0 1 76
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 RTL_Linuka/target.sv|
+!s90 -work|work_linuka|-sv|RTL_Linuka/target.sv|
+!i113 0
+R7
+R8
+vtarget_port
+2RTL_Linuka/target_port.sv
+R1
+R2
+!i10b 1
+!s100 <<93iSmJfh1<LJXEN4S@93
+I:>74c26R80GoKXOR[C4B02
+S1
+R0
+R3
+8RTL_Linuka/target_port.sv
+FRTL_Linuka/target_port.sv
+!i122 4
+L0 1 149
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 RTL_Linuka/target_port.sv|
+!s90 -work|work_linuka|-sv|RTL_Linuka/target_port.sv|
+!i113 0
+R7
+R8
+vtransmitter
+2RTL_Linuka/uart/transmitter.v
+R2
+!i10b 1
+!s100 >:H1H9H4iV63Fj=FZ7n@j2
+IJT][EdK7eN_a[i0OF3M_L2
+R0
+R3
+8RTL_Linuka/uart/transmitter.v
+FRTL_Linuka/uart/transmitter.v
+!i122 8
+L0 1 91
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 RTL_Linuka/uart/transmitter.v|
+!s90 -work|work_linuka|RTL_Linuka/uart/transmitter.v|
+!i113 0
+R9
+R8
+vuart
+2RTL_Linuka/uart/uart.v
+R2
+!i10b 1
+!s100 EDHf<iOQ5noELIXY?F@l60
+Ie<MDJIaDb06Vd2;IiE?Tj0
+R0
+R3
+8RTL_Linuka/uart/uart.v
+FRTL_Linuka/uart/uart.v
+!i122 9
+L0 1 46
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 RTL_Linuka/uart/uart.v|
+!s90 -work|work_linuka|RTL_Linuka/uart/uart.v|
+!i113 0
+R9
+R8

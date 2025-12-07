@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ADS_busSystem
-Fri Nov 28 21:34:37 2025
+Tue Dec  2 10:16:19 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -108,7 +108,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 28 21:34:37 2025          ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec  2 10:16:19 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; ADS_busSystem                                  ;
 ; Top-level Entity Name              ; demo_top_bb                                    ;
@@ -219,18 +219,17 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 20          ;
 ; Maximum allowed            ; 14          ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
-;     Processor 7            ;   0.0%      ;
-;     Processors 8-14        ;   0.0%      ;
+;     Processors 7-14        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -239,6 +238,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+-------------+
 ; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                       ; Library     ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; ../ADS_bus_simulation/RTL/master_bram.v                            ; yes             ; User Wizard-Generated File                   ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/master_bram.v                                             ;             ;
 ; ../ADS_bus_simulation/RTL/top_with_bb_v1.v                         ; yes             ; User Verilog HDL File                        ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/top_with_bb_v1.v                                          ;             ;
 ; ../ADS_bus_simulation/RTL/demo_top_bb.v                            ; yes             ; User Verilog HDL File                        ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/demo_top_bb.v                                             ;             ;
 ; ../ADS_bus_simulation/RTL/uart_tx_other.v                          ; yes             ; User Verilog HDL File                        ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/uart_tx_other.v                                           ;             ;
@@ -255,7 +255,6 @@ https://fpgasoftware.intel.com/eula.
 ; ../ADS_bus_simulation/RTL/mux3.v                                   ; yes             ; User Verilog HDL File                        ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/mux3.v                                                    ;             ;
 ; ../ADS_bus_simulation/RTL/mux2.v                                   ; yes             ; User Verilog HDL File                        ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/mux2.v                                                    ;             ;
 ; ../ADS_bus_simulation/RTL/master_port.v                            ; yes             ; User Verilog HDL File                        ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/master_port.v                                             ;             ;
-; ../ADS_bus_simulation/RTL/master_bram.v                            ; yes             ; User Wizard-Generated File                   ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/master_bram.v                                             ;             ;
 ; ../ADS_bus_simulation/RTL/fifo.v                                   ; yes             ; User Verilog HDL File                        ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/fifo.v                                                    ;             ;
 ; ../ADS_bus_simulation/RTL/dec3.v                                   ; yes             ; User Verilog HDL File                        ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/dec3.v                                                    ;             ;
 ; ../ADS_bus_simulation/RTL/bus_m2_s3.v                              ; yes             ; User Verilog HDL File                        ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/bus_m2_s3.v                                               ;             ;
@@ -1541,10 +1540,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Nov 28 21:34:05 2025
+    Info: Processing started: Tue Dec  2 10:15:49 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ADS_busSystem -c ADS_busSystem
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/ads_bus_simulation/rtl/master_bram.v
+    Info (12023): Found entity 1: master_bram File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/master_bram.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/ads_bus_simulation/rtl/top_with_bb_v1.v
     Info (12023): Found entity 1: top_with_bb_v1 File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/top_with_bb_v1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/ads_bus_simulation/rtl/demo_top_bb.v
@@ -1577,14 +1578,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
     Info (12023): Found entity 1: mux2 File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/mux2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/ads_bus_simulation/rtl/master_port.v
     Info (12023): Found entity 1: master_port File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/master_port.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/ads_bus_simulation/rtl/master_bram.v
-    Info (12023): Found entity 1: master_bram File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/master_bram.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/ads_bus_simulation/rtl/fifo.v
     Info (12023): Found entity 1: fifo File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/fifo.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/ads_bus_simulation/rtl/demo_top.v
-    Info (12023): Found entity 1: demo_top File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/demo_top.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/ads_bus_simulation/rtl/demo_master.v
-    Info (12023): Found entity 1: demo_master File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/demo_master.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/ads_bus_simulation/rtl/dec3.v
     Info (12023): Found entity 1: dec3 File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_bus_simulation/RTL/dec3.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/ads_bus_simulation/rtl/bus_m2_s3.v
@@ -1767,7 +1762,7 @@ Info (12133): Instantiated megafunction "master_bram:memory|altsyncram:altsyncra
     Info (12134): Parameter "WIDTH_WORD" = "8"
     Info (12134): Parameter "WIDTHAD" = "5"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2025.11.28.21:34:19 Progress: Loading sld0a6ed9bf/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2025.12.02.10:16:02 Progress: Loading sld0a6ed9bf/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1807,8 +1802,8 @@ Info (21057): Implemented 1722 device resources after synthesis - the final reso
     Info (21064): Implemented 24 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 32 warnings
     Info: Peak virtual memory: 4968 megabytes
-    Info: Processing ended: Fri Nov 28 21:34:37 2025
-    Info: Elapsed time: 00:00:32
+    Info: Processing ended: Tue Dec  2 10:16:19 2025
+    Info: Elapsed time: 00:00:30
     Info: Total CPU time (on all processors): 00:00:56
 
 

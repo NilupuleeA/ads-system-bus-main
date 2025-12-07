@@ -1,5 +1,5 @@
 Fitter report for ADS_busSystem
-Fri Nov 28 21:34:48 2025
+Tue Dec  2 10:16:29 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                      ;
 +------------------------------------+------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Nov 28 21:34:48 2025          ;
+; Fitter Status                      ; Successful - Tue Dec  2 10:16:29 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; ADS_busSystem                                  ;
 ; Top-level Entity Name              ; demo_top_bb                                    ;
@@ -157,18 +157,18 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 20          ;
 ; Maximum allowed            ; 14          ;
 ;                            ;             ;
-; Average used               ; 1.19        ;
+; Average used               ; 1.21        ;
 ; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.6%      ;
-;     Processor 3            ;   1.5%      ;
-;     Processor 4            ;   1.5%      ;
-;     Processor 5            ;   1.5%      ;
-;     Processor 6            ;   1.5%      ;
-;     Processor 7            ;   1.5%      ;
-;     Processors 8-14        ;   1.5%      ;
+;     Processor 2            ;   1.8%      ;
+;     Processor 3            ;   1.7%      ;
+;     Processor 4            ;   1.6%      ;
+;     Processor 5            ;   1.6%      ;
+;     Processor 6            ;   1.6%      ;
+;     Processor 7            ;   1.6%      ;
+;     Processors 8-14        ;   1.6%      ;
 +----------------------------+-------------+
 
 
@@ -1814,7 +1814,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.40 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.42 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1823,8 +1823,8 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/pasir/Desktop/Github/ads-system-bus-main/ADS_busSystem/output_files/ADS_busSystem.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 6348 megabytes
-    Info: Processing ended: Fri Nov 28 21:34:48 2025
+    Info: Peak virtual memory: 6387 megabytes
+    Info: Processing ended: Tue Dec  2 10:16:30 2025
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:09
 

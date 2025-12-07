@@ -76,6 +76,7 @@ set_location_assignment PIN_A8 -to debug
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/master_bram.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/top_with_bb_v1.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/demo_top_bb.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/uart_tx_other.v
@@ -92,10 +93,7 @@ set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/slave_bram.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/mux3.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/mux2.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/master_port.v
-set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/master_bram.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/fifo.v
-set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/demo_top.v
-set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/demo_master.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/dec3.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/bus_m2_s3.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/bus_bridge_slave.v

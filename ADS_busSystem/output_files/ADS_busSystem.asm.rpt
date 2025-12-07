@@ -1,5 +1,5 @@
 Assembler report for ADS_busSystem
-Fri Nov 28 21:34:51 2025
+Tue Dec  2 10:16:33 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Nov 28 21:34:51 2025 ;
+; Assembler Status      ; Successful - Tue Dec  2 10:16:33 2025 ;
 ; Revision Name         ; ADS_busSystem                         ;
 ; Top-level Entity Name ; demo_top_bb                           ;
 ; Family                ; Cyclone IV E                          ;
@@ -89,14 +89,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Nov 28 21:34:49 2025
+    Info: Processing started: Tue Dec  2 10:16:31 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ADS_busSystem -c ADS_busSystem
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4759 megabytes
-    Info: Processing ended: Fri Nov 28 21:34:51 2025
+    Info: Processing ended: Tue Dec  2 10:16:33 2025
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
