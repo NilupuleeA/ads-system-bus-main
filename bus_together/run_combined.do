@@ -126,6 +126,28 @@ add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/bb_master/daddr
 add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/bb_master/dwdata
 add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/bb_master/dvalid
 
+# Slave 1 interface and internals
+add wave -divider "==== Slave1 (slave_with_bram) ===="
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/swdata
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/srdata
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/smode
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/mvalid
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/svalid
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/sready
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/demo_data
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/LED
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/sp/state
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/sp/smemwen
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/sp/smemren
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/sp/smemaddr
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/sp/smemwdata
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/sp/smemrdata
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/sp/demo_data
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/sp/addr
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/sp/wdata
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/sp/mode
+add wave -hex /combined_top_tb/u_dut/u_demo_bb/bus/slave1/sp/counter
+
 echo "========================================="
 echo "Starting simulation..."
 echo "Use 'run -all' to run complete test"

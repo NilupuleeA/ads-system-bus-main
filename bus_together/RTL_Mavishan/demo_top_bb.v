@@ -5,26 +5,28 @@ module demo_top_bb #(
     parameter BB_ADDR_WIDTH = 13,
     parameter UART_CLOCKS_PER_PULSE = 5208
 )(
-	input clk, rstn,
+	 input clk, rstn,
 
     input start,
-	output ready,
-	input mode,					// 0 - read, 1 - write
+	 output ready,
+	 input mode,					// 0 - read, 1 - write
 
     input m_u_rx,
     input s_u_rx,
     output m_u_tx,
-    output s_u_tx
+    output s_u_tx,
+    output [DATA_WIDTH-1:0] LED
 );
 
 
-	wire [DATA_WIDTH-1:0] d1_wdata;   // write data
-	wire [DATA_WIDTH-1:0] d1_rdata; 	// read data
-	wire [ADDR_WIDTH-1:0] d1_addr; 
-	wire d1_start, m1_ready;
+    wire [DATA_WIDTH-1:0] d1_wdata, LED_wire;   // write data
+	 wire [DATA_WIDTH-1:0] d1_rdata; 	// read data
+	 wire [ADDR_WIDTH-1:0] d1_addr; 
+	 wire d1_start, m1_ready;
     reg d1_valid;
     reg m1_rw_mode;
     wire s_ready;     // slaves are ready
+    wire [DATA_WIDTH-1:0] demo_data;
 
 
     // Signals connecting to master device
@@ -51,7 +53,9 @@ module demo_top_bb #(
         .m_u_rx(m_u_rx),
         .s_u_rx(s_u_rx),
         .m_u_tx(m_u_tx), 
-        .s_u_tx(s_u_tx)
+        .s_u_tx(s_u_tx),
+        .LED(LED_wire),
+        .demo_data(demo_data)
     );
 
     master_bram memory (
@@ -67,7 +71,7 @@ module demo_top_bb #(
 
     assign d1_start = edge_start;
     assign edge_start = (start_prev) & (!start);
-
+    assign LED = demo_data;
     // Buffer the start signal
     always @(posedge clk) begin
         if (!rstn) start_prev <= 1'b1;
@@ -91,6 +95,7 @@ module demo_top_bb #(
 	always @(*) begin
 		case (state)
 			IDLE    : next_state = (d1_start) ? ((!mode) ? SEND : READ) : IDLE;
+			// IDLE    : next_state = (d1_start) ? ((!1) ? SEND : READ) : IDLE;
 			READ    : next_state = (counter == 1) ? SEND : READ;
 			SEND    : next_state = (counter == 1) ? DONE : SEND; 
             DONE    : next_state = (m1_ready) ? IDLE : DONE;

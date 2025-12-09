@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.491
+TNS   : -565.425
+
+Type  : Slow 1200mV 85C Model Setup 'bus_bridge_target_uart_wrapper:u_bridge_target|uart_wr_en'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'bus_bridge_target_uart_wrapper:u_bridge_target|uart_wr_en'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : -1.649
+TNS   : -527.868
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : 1.762
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -412.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'bus_bridge_target_uart_wrapper:u_bridge_target|uart_wr_en'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.113
+TNS   : -468.832
+
+Type  : Slow 1200mV 0C Model Setup 'bus_bridge_target_uart_wrapper:u_bridge_target|uart_wr_en'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'bus_bridge_target_uart_wrapper:u_bridge_target|uart_wr_en'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : -1.351
+TNS   : -427.211
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : 1.556
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -412.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'bus_bridge_target_uart_wrapper:u_bridge_target|uart_wr_en'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.011
+TNS   : -158.150
+
+Type  : Fast 1200mV 0C Model Setup 'bus_bridge_target_uart_wrapper:u_bridge_target|uart_wr_en'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'bus_bridge_target_uart_wrapper:u_bridge_target|uart_wr_en'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : -0.563
+TNS   : -167.256
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : 1.052
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -438.194
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'bus_bridge_target_uart_wrapper:u_bridge_target|uart_wr_en'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

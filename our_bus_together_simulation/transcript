@@ -1,0 +1,107 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do demo_top_bb_dual_tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 11:34:52 on Dec 09,2025
+# vlog -reportprogress 300 "+define+QUESTA_SIM" -sv RTL_Mavishan/uart_tx_32.v RTL_Mavishan/uart_rx_other_16.v RTL_Mavishan/uart_other_32_16.v RTL_Mavishan/addr_convert.v RTL_Mavishan/addr_decoder_mav.v RTL_Mavishan/arbiter_mav.v RTL_Mavishan/bus_bridge_master.v RTL_Mavishan/bus_bridge_slave.v RTL_Mavishan/bus_m2_s3.v RTL_Mavishan/dec3.v RTL_Mavishan/demo_top_bb.v RTL_Mavishan/fifo.v RTL_Mavishan/master_bram.v RTL_Mavishan/master_port.v RTL_Mavishan/mux2.v RTL_Mavishan/mux3.v RTL_Mavishan/slave_bram.v RTL_Mavishan/slave_bram_2k.v RTL_Mavishan/slave_memory_bram.v RTL_Mavishan/slave_port.v RTL_Mavishan/slave_with_bram.v RTL_Mavishan/top_with_bb_v1.v RTL_Mavishan/uart_other.v RTL_Mavishan/uart_other_32_16.v RTL_Mavishan/uart_rx_other.v RTL_Mavishan/uart_rx_other_16.v RTL_Mavishan/uart_tx_32.v RTL_Mavishan/uart_tx_other.v RTL_Mavishan/baudrate.sv demo_top_bb_dual.v demo_top_bb_dual_tb.sv 
+# -- Compiling module uart_tx_32
+# -- Compiling module uart_rx_other_16
+# -- Compiling module uart_other_32_16
+# -- Compiling module addr_convert
+# -- Compiling module addr_decoder_mav
+# -- Compiling module arbiter_mav
+# -- Compiling module bus_bridge_master
+# -- Compiling module bus_bridge_slave
+# -- Compiling module bus_m2_s3
+# -- Compiling module dec3
+# -- Compiling module demo_top_bb
+# -- Compiling module fifo
+# -- Compiling module master_bram
+# -- Compiling module master_port
+# -- Compiling module mux2
+# -- Compiling module mux3
+# -- Compiling module slave_bram
+# -- Compiling module slave_bram_2k
+# -- Compiling module slave_memory_bram
+# -- Compiling module slave_port
+# -- Compiling module slave_with_bram
+# -- Compiling module top_with_bb_v1
+# -- Compiling module uart_other
+# -- Compiling module uart_other_32_16
+# ** Warning: RTL_Mavishan/uart_other_32_16.v(3): (vlog-2275) Existing module 'uart_other_32_16' at line 3 will be overwritten.
+# -- Compiling module uart_rx_other
+# -- Compiling module uart_rx_other_16
+# ** Warning: RTL_Mavishan/uart_rx_other_16.v(1): (vlog-2275) Existing module 'uart_rx_other_16' at line 1 will be overwritten.
+# -- Compiling module uart_tx_32
+# ** Warning: RTL_Mavishan/uart_tx_32.v(2): (vlog-2275) Existing module 'uart_tx_32' at line 2 will be overwritten.
+# -- Compiling module uart_tx_other
+# -- Compiling module baudrate
+# -- Compiling module demo_top_bb_dual
+# -- Compiling module demo_top_bb_dual_tb
+# 
+# Top level modules:
+# 	addr_convert
+# 	demo_top_bb_dual_tb
+# End time: 11:34:52 on Dec 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" demo_top_bb_dual_tb 
+# Start time: 11:34:52 on Dec 09,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.demo_top_bb_dual_tb(fast)
+# Loading work.demo_top_bb_dual(fast)
+# Loading work.demo_top_bb(fast)
+# Loading work.top_with_bb_v1(fast)
+# Loading work.master_port(fast)
+# Loading work.bus_bridge_master(fast)
+# Loading work.fifo(fast)
+# Loading work.uart_other(fast)
+# Loading work.uart_tx_other(fast)
+# Loading work.uart_rx_other(fast)
+# Loading work.baudrate(fast)
+# Loading work.slave_with_bram(fast)
+# Loading work.slave_port(fast)
+# Loading work.slave_memory_bram(fast)
+# Loading work.slave_bram_2k(fast)
+# Loading work.altsyncram(fast)
+# Loading work.slave_with_bram(fast__1)
+# Loading work.slave_memory_bram(fast__1)
+# Loading work.slave_bram(fast)
+# Loading work.altsyncram(fast__1)
+# Loading work.bus_bridge_slave(fast)
+# Loading work.slave_port(fast__1)
+# Loading work.uart_other_32_16(fast)
+# Loading work.uart_tx_32(fast)
+# Loading work.uart_rx_other_16(fast)
+# Loading work.bus_m2_s3(fast)
+# Loading work.arbiter_mav(fast)
+# Loading work.addr_decoder_mav(fast)
+# Loading work.dec3(fast)
+# Loading work.mux2(fast)
+# Loading work.mux2(fast__1)
+# Loading work.mux3(fast)
+# Loading work.master_bram(fast)
+# Loading work.altsyncram(fast__2)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: pasir  Hostname: MAVISHAN  ProcessID: 32740
+#           Attempting to use alternate WLF file "./wlft47gy88".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft47gy88
+# Causality operation skipped due to absence of debug database file

@@ -1,0 +1,216 @@
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|state
+Name state.DONE state.SEND state.READ state.IDLE 
+state.IDLE 0 0 0 0 
+state.READ 0 0 1 1 
+state.SEND 0 1 0 1 
+state.DONE 1 0 0 1 
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|top_with_bb_v1:bus|bus_m2_s3:bus|addr_decoder_mav:decoder|state
+Name state.WAIT state.CONNECT state.ADDR state.IDLE 
+state.IDLE 0 0 0 0 
+state.ADDR 0 0 1 1 
+state.CONNECT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|top_with_bb_v1:bus|bus_m2_s3:bus|arbiter_mav:bus_arbiter|split_owner
+Name split_owner.NONE split_owner.SM2 split_owner.SM1 
+split_owner.NONE 0 0 0 
+split_owner.SM1 1 0 1 
+split_owner.SM2 1 1 0 
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|top_with_bb_v1:bus|bus_m2_s3:bus|arbiter_mav:bus_arbiter|state
+Name state.IDLE state.M2 state.M1 
+state.IDLE 0 0 0 
+state.M1 1 0 1 
+state.M2 1 1 0 
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|top_with_bb_v1:bus|bus_bridge_slave:bb_slave|state
+Name state.RDATA state.RSEND state.WSEND state.IDLE 
+state.IDLE 0 0 0 0 
+state.WSEND 0 0 1 1 
+state.RSEND 0 1 0 1 
+state.RDATA 1 0 0 1 
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|top_with_bb_v1:bus|bus_bridge_slave:bb_slave|uart_other:uart_module|uart_rx_other:receiver|state
+Name state.READY_CLEARING state.RX_STATE_STOP state.RX_STATE_DATA state.RX_STATE_START 
+state.RX_STATE_START 0 0 0 0 
+state.RX_STATE_DATA 0 0 1 1 
+state.RX_STATE_STOP 0 1 0 1 
+state.READY_CLEARING 1 0 0 1 
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|top_with_bb_v1:bus|bus_bridge_slave:bb_slave|uart_other:uart_module|uart_tx_other:transmitter|state
+Name state.TX_STATE_STOP state.TX_STATE_DATA state.TX_STATE_START state.TX_STATE_IDLE 
+state.TX_STATE_IDLE 0 0 0 0 
+state.TX_STATE_START 0 0 1 1 
+state.TX_STATE_DATA 0 1 0 1 
+state.TX_STATE_STOP 1 0 0 1 
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|top_with_bb_v1:bus|bus_bridge_slave:bb_slave|slave_port:slave|state
+Name state.RVALID state.WAIT state.SREADY state.SPLIT state.WDATA state.RDATA state.ADDR state.IDLE state.DEBUG 
+state.IDLE 0 0 0 0 0 0 0 0 0 
+state.ADDR 0 0 0 0 0 0 1 1 0 
+state.RDATA 0 0 0 0 0 1 0 1 0 
+state.WDATA 0 0 0 0 1 0 0 1 0 
+state.SPLIT 0 0 0 1 0 0 0 1 0 
+state.SREADY 0 0 1 0 0 0 0 1 0 
+state.WAIT 0 1 0 0 0 0 0 1 0 
+state.RVALID 1 0 0 0 0 0 0 1 0 
+state.DEBUG 0 0 0 0 0 0 0 1 1 
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|top_with_bb_v1:bus|slave_with_bram:slave2|slave_port:sp|state
+Name state.RVALID state.WAIT state.SREADY state.SPLIT state.WDATA state.RDATA state.ADDR state.IDLE state.DEBUG 
+state.IDLE 0 0 0 0 0 0 0 0 0 
+state.ADDR 0 0 0 0 0 0 1 1 0 
+state.RDATA 0 0 0 0 0 1 0 1 0 
+state.WDATA 0 0 0 0 1 0 0 1 0 
+state.SPLIT 0 0 0 1 0 0 0 1 0 
+state.SREADY 0 0 1 0 0 0 0 1 0 
+state.WAIT 0 1 0 0 0 0 0 1 0 
+state.RVALID 1 0 0 0 0 0 0 1 0 
+state.DEBUG 0 0 0 0 0 0 0 1 1 
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|top_with_bb_v1:bus|slave_with_bram:slave1|slave_port:sp|state
+Name state.RVALID state.WAIT state.SREADY state.SPLIT state.WDATA state.RDATA state.ADDR state.IDLE state.DEBUG 
+state.IDLE 0 0 0 0 0 0 0 0 0 
+state.ADDR 0 0 0 0 0 0 1 1 0 
+state.RDATA 0 0 0 0 0 1 0 1 0 
+state.WDATA 0 0 0 0 1 0 0 1 0 
+state.SPLIT 0 0 0 1 0 0 0 1 0 
+state.SREADY 0 0 1 0 0 0 0 1 0 
+state.WAIT 0 1 0 0 0 0 0 1 0 
+state.RVALID 1 0 0 0 0 0 0 1 0 
+state.DEBUG 0 0 0 0 0 0 0 1 1 
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|top_with_bb_v1:bus|bus_bridge_master:bb_master|uart_other:uart_module|uart_rx_other:receiver|state
+Name state.READY_CLEARING state.RX_STATE_STOP state.RX_STATE_DATA state.RX_STATE_START 
+state.RX_STATE_START 0 0 0 0 
+state.RX_STATE_DATA 0 0 1 1 
+state.RX_STATE_STOP 0 1 0 1 
+state.READY_CLEARING 1 0 0 1 
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|top_with_bb_v1:bus|bus_bridge_master:bb_master|uart_other:uart_module|uart_tx_other:transmitter|state
+Name state.TX_STATE_STOP state.TX_STATE_DATA state.TX_STATE_START state.TX_STATE_IDLE 
+state.TX_STATE_IDLE 0 0 0 0 
+state.TX_STATE_START 0 0 1 1 
+state.TX_STATE_DATA 0 1 0 1 
+state.TX_STATE_STOP 1 0 0 1 
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|top_with_bb_v1:bus|bus_bridge_master:bb_master|master_port:master|state
+Name state.SPLIT state.WAIT state.SADDR state.REQ state.WDATA state.RDATA state.ADDR state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.ADDR 0 0 0 0 0 0 1 1 
+state.RDATA 0 0 0 0 0 1 0 1 
+state.WDATA 0 0 0 0 1 0 0 1 
+state.REQ 0 0 0 1 0 0 0 1 
+state.SADDR 0 0 1 0 0 0 0 1 
+state.WAIT 0 1 0 0 0 0 0 1 
+state.SPLIT 1 0 0 0 0 0 0 1 
+
+State Machine - |combined_top|demo_top_bb:u_demo_bb|top_with_bb_v1:bus|master_port:master1|state
+Name state.SPLIT state.WAIT state.SADDR state.REQ state.WDATA state.RDATA state.ADDR state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.ADDR 0 0 0 0 0 0 1 1 
+state.RDATA 0 0 0 0 0 1 0 1 
+state.WDATA 0 0 0 0 1 0 0 1 
+state.REQ 0 0 0 1 0 0 0 1 
+state.SADDR 0 0 1 0 0 0 0 1 
+state.WAIT 0 1 0 0 0 0 0 1 
+state.SPLIT 1 0 0 0 0 0 0 1 
+
+State Machine - |combined_top|system_top_with_bus_bridge_a:u_system_a|bus:bus_a|split_owner
+Name split_owner.INIT_NONE split_owner.INIT_2 split_owner.INIT_1 
+split_owner.INIT_NONE 0 0 0 
+split_owner.INIT_1 1 0 1 
+split_owner.INIT_2 1 1 0 
+
+State Machine - |combined_top|system_top_with_bus_bridge_a:u_system_a|bus:bus_a|active_init
+Name active_init.INIT_NONE active_init.INIT_2 active_init.INIT_1 
+active_init.INIT_NONE 0 0 0 
+active_init.INIT_1 1 0 1 
+active_init.INIT_2 1 1 0 
+
+State Machine - |combined_top|system_top_with_bus_bridge_a:u_system_a|bus:bus_a|target3_owner
+Name target3_owner.INIT_NONE target3_owner.INIT_2 target3_owner.INIT_1 
+target3_owner.INIT_NONE 0 0 0 
+target3_owner.INIT_1 1 0 1 
+target3_owner.INIT_2 1 1 0 
+
+State Machine - |combined_top|system_top_with_bus_bridge_a:u_system_a|bus:bus_a|target2_owner
+Name target2_owner.INIT_NONE target2_owner.INIT_2 target2_owner.INIT_1 
+target2_owner.INIT_NONE 0 0 0 
+target2_owner.INIT_1 1 0 1 
+target2_owner.INIT_2 1 1 0 
+
+State Machine - |combined_top|system_top_with_bus_bridge_a:u_system_a|bus:bus_a|target1_owner
+Name target1_owner.INIT_NONE target1_owner.INIT_2 target1_owner.INIT_1 
+target1_owner.INIT_NONE 0 0 0 
+target1_owner.INIT_1 1 0 1 
+target1_owner.INIT_2 1 1 0 
+
+State Machine - |combined_top|system_top_with_bus_bridge_a:u_system_a|bus:bus_a|arbiter:u_arbiter|current_state
+Name current_state.GRANT_SPLIT current_state.GRANT_2 current_state.GRANT_1 current_state.IDLE 
+current_state.IDLE 0 0 0 0 
+current_state.GRANT_1 0 0 1 1 
+current_state.GRANT_2 0 1 0 1 
+current_state.GRANT_SPLIT 1 0 0 1 
+
+State Machine - |combined_top|system_top_with_bus_bridge_a:u_system_a|bus_bridge_target_uart_wrapper:u_bridge_target|resp_rx_state
+Name resp_rx_state.RESP_RX_IDLE resp_rx_state.RESP_RX_HOLD resp_rx_state.RESP_RX_WAIT_FLAGS 
+resp_rx_state.RESP_RX_IDLE 0 0 0 
+resp_rx_state.RESP_RX_WAIT_FLAGS 1 0 1 
+resp_rx_state.RESP_RX_HOLD 1 1 0 
+
+State Machine - |combined_top|system_top_with_bus_bridge_a:u_system_a|bus_bridge_target_uart_wrapper:u_bridge_target|req_tx_state
+Name req_tx_state.REQ_TX_SEND_FLAGS req_tx_state.REQ_TX_WAIT_DATA req_tx_state.REQ_TX_SEND_DATA req_tx_state.REQ_TX_WAIT_ADDR_H req_tx_state.REQ_TX_SEND_ADDR_H req_tx_state.REQ_TX_WAIT_ADDR_L req_tx_state.REQ_TX_SEND_ADDR_L req_tx_state.REQ_TX_IDLE req_tx_state.REQ_TX_WAIT_FLAGS 
+req_tx_state.REQ_TX_IDLE 0 0 0 0 0 0 0 0 0 
+req_tx_state.REQ_TX_SEND_ADDR_L 0 0 0 0 0 0 1 1 0 
+req_tx_state.REQ_TX_WAIT_ADDR_L 0 0 0 0 0 1 0 1 0 
+req_tx_state.REQ_TX_SEND_ADDR_H 0 0 0 0 1 0 0 1 0 
+req_tx_state.REQ_TX_WAIT_ADDR_H 0 0 0 1 0 0 0 1 0 
+req_tx_state.REQ_TX_SEND_DATA 0 0 1 0 0 0 0 1 0 
+req_tx_state.REQ_TX_WAIT_DATA 0 1 0 0 0 0 0 1 0 
+req_tx_state.REQ_TX_SEND_FLAGS 1 0 0 0 0 0 0 1 0 
+req_tx_state.REQ_TX_WAIT_FLAGS 0 0 0 0 0 0 0 1 1 
+
+State Machine - |combined_top|system_top_with_bus_bridge_a:u_system_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|receiver:uart_Rx|state
+Name state.RX_STATE_READY_CLEAR state.RX_STATE_STOP state.RX_STATE_DATA state.RX_STATE_START 
+state.RX_STATE_START 0 0 0 0 
+state.RX_STATE_DATA 0 0 1 1 
+state.RX_STATE_STOP 0 1 0 1 
+state.RX_STATE_READY_CLEAR 1 0 0 1 
+
+State Machine - |combined_top|system_top_with_bus_bridge_a:u_system_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx|state
+Name state.TX_STATE_STOP state.TX_STATE_DATA state.TX_STATE_START state.TX_STATE_IDLE 
+state.TX_STATE_IDLE 0 0 0 0 
+state.TX_STATE_START 0 0 1 1 
+state.TX_STATE_DATA 0 1 0 1 
+state.TX_STATE_STOP 1 0 0 1 
+
+State Machine - |combined_top|system_top_with_bus_bridge_a:u_system_a|bus_bridge_target_uart_wrapper:u_bridge_target|bus_bridge_target_if:u_target_if|state
+Name state.TGT_WAIT_RESPONSE state.TGT_SEND_REQ state.TGT_WAIT_WRITE_DATA state.TGT_IDLE state.TGT_WAIT_READ_GRANT 
+state.TGT_IDLE 0 0 0 0 0 
+state.TGT_WAIT_WRITE_DATA 0 0 1 1 0 
+state.TGT_SEND_REQ 0 1 0 1 0 
+state.TGT_WAIT_RESPONSE 1 0 0 1 0 
+state.TGT_WAIT_READ_GRANT 0 0 0 1 1 
+
+State Machine - |combined_top|system_top_with_bus_bridge_a:u_system_a|initiator:u_initiator_2|state
+Name state.S_DONE state.S_READ_WAIT state.S_READ_REQ state.S_WRITE_WAIT_ACK state.S_WRITE_HOLD state.S_WRITE_REQ state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 0 0 
+state.S_WRITE_REQ 0 0 0 0 0 1 1 
+state.S_WRITE_HOLD 0 0 0 0 1 0 1 
+state.S_WRITE_WAIT_ACK 0 0 0 1 0 0 1 
+state.S_READ_REQ 0 0 1 0 0 0 1 
+state.S_READ_WAIT 0 1 0 0 0 0 1 
+state.S_DONE 1 0 0 0 0 0 1 
+
+State Machine - |combined_top|system_top_with_bus_bridge_a:u_system_a|initiator:u_initiator_1|state
+Name state.S_DONE state.S_READ_WAIT state.S_READ_REQ state.S_WRITE_WAIT_ACK state.S_WRITE_HOLD state.S_WRITE_REQ state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 0 0 
+state.S_WRITE_REQ 0 0 0 0 0 1 1 
+state.S_WRITE_HOLD 0 0 0 0 1 0 1 
+state.S_WRITE_WAIT_ACK 0 0 0 1 0 0 1 
+state.S_READ_REQ 0 0 1 0 0 0 1 
+state.S_READ_WAIT 0 1 0 0 0 0 1 
+state.S_DONE 1 0 0 0 0 0 1 

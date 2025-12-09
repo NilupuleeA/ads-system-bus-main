@@ -19,7 +19,9 @@ module top_with_bb_v1 #(
 
     // UART signals
     input m_u_rx, s_u_rx,
-    output m_u_tx, s_u_tx
+    output m_u_tx, s_u_tx,
+    output [DATA_WIDTH-1:0] LED,
+    output [DATA_WIDTH-1:0] demo_data
 );
 
     // Bus signals
@@ -69,6 +71,17 @@ module top_with_bb_v1 #(
 	wire        s3_svalid;	// rdata valid
     wire        s3_ready;
 
+    wire [DATA_WIDTH-1:0] LED_wire_1, LED_wire_2;
+    wire [DATA_WIDTH-1:0] demo_data_s1;
+
+	 
+	 
+	 
+    assign LED = LED_wire_1;
+	 
+	 
+	 
+    assign demo_data = demo_data_s1;
     // Instantiate masters
     master_port #(
         .ADDR_WIDTH(ADDR_WIDTH),
@@ -113,7 +126,8 @@ module top_with_bb_v1 #(
         .ack(m2_ack),
         .msplit(m2_split),
         .u_tx(m_u_tx),
-        .u_rx(m_u_rx)
+        .u_rx(m_u_rx),
+		  .LEDs(LED_wire_1)
     );
 
     // Initialize slave
@@ -129,7 +143,9 @@ module top_with_bb_v1 #(
         .smode(s1_mode),
         .mvalid(s1_mvalid),
         .svalid(s1_svalid),
-        .sready(s1_ready)
+        .sready(s1_ready),
+        .demo_data(demo_data_s1),
+        .LED()
     );
 
     slave_with_bram #(
@@ -144,7 +160,8 @@ module top_with_bb_v1 #(
         .smode(s2_mode),
         .mvalid(s2_mvalid),
         .svalid(s2_svalid),
-        .sready(s2_ready)
+        .sready(s2_ready),
+        .LED(LED_wire_2)
     );
 
     bus_bridge_slave #(

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Dec  7 16:41:45 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : Linuk_bus
+Top-level Entity Name : system_top_with_bus_bridge_a
+Family : Cyclone IV E
+Total logic elements : 639
+    Total combinational functions : 533
+    Dedicated logic registers : 410
+Total registers : 410
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

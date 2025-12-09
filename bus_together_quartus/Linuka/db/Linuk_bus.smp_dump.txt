@@ -1,0 +1,97 @@
+
+State Machine - |system_top_with_bus_bridge_a|bus:bus_a|split_owner
+Name split_owner.INIT_NONE split_owner.INIT_2 split_owner.INIT_1 
+split_owner.INIT_NONE 0 0 0 
+split_owner.INIT_1 1 0 1 
+split_owner.INIT_2 1 1 0 
+
+State Machine - |system_top_with_bus_bridge_a|bus:bus_a|active_init
+Name active_init.INIT_NONE active_init.INIT_2 active_init.INIT_1 
+active_init.INIT_NONE 0 0 0 
+active_init.INIT_1 1 0 1 
+active_init.INIT_2 1 1 0 
+
+State Machine - |system_top_with_bus_bridge_a|bus:bus_a|target3_owner
+Name target3_owner.INIT_NONE target3_owner.INIT_2 target3_owner.INIT_1 
+target3_owner.INIT_NONE 0 0 0 
+target3_owner.INIT_1 1 0 1 
+target3_owner.INIT_2 1 1 0 
+
+State Machine - |system_top_with_bus_bridge_a|bus:bus_a|target2_owner
+Name target2_owner.INIT_NONE target2_owner.INIT_2 target2_owner.INIT_1 
+target2_owner.INIT_NONE 0 0 0 
+target2_owner.INIT_1 1 0 1 
+target2_owner.INIT_2 1 1 0 
+
+State Machine - |system_top_with_bus_bridge_a|bus:bus_a|target1_owner
+Name target1_owner.INIT_NONE target1_owner.INIT_2 target1_owner.INIT_1 
+target1_owner.INIT_NONE 0 0 0 
+target1_owner.INIT_1 1 0 1 
+target1_owner.INIT_2 1 1 0 
+
+State Machine - |system_top_with_bus_bridge_a|bus:bus_a|arbiter:u_arbiter|current_state
+Name current_state.GRANT_SPLIT current_state.GRANT_2 current_state.GRANT_1 current_state.IDLE 
+current_state.IDLE 0 0 0 0 
+current_state.GRANT_1 0 0 1 1 
+current_state.GRANT_2 0 1 0 1 
+current_state.GRANT_SPLIT 1 0 0 1 
+
+State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|resp_rx_state
+Name resp_rx_state.RESP_RX_IDLE resp_rx_state.RESP_RX_HOLD resp_rx_state.RESP_RX_WAIT_FLAGS 
+resp_rx_state.RESP_RX_IDLE 0 0 0 
+resp_rx_state.RESP_RX_WAIT_FLAGS 1 0 1 
+resp_rx_state.RESP_RX_HOLD 1 1 0 
+
+State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|req_tx_state
+Name req_tx_state.REQ_TX_SEND_FLAGS req_tx_state.REQ_TX_WAIT_DATA req_tx_state.REQ_TX_SEND_DATA req_tx_state.REQ_TX_WAIT_ADDR_H req_tx_state.REQ_TX_SEND_ADDR_H req_tx_state.REQ_TX_WAIT_ADDR_L req_tx_state.REQ_TX_SEND_ADDR_L req_tx_state.REQ_TX_IDLE req_tx_state.REQ_TX_WAIT_FLAGS 
+req_tx_state.REQ_TX_IDLE 0 0 0 0 0 0 0 0 0 
+req_tx_state.REQ_TX_SEND_ADDR_L 0 0 0 0 0 0 1 1 0 
+req_tx_state.REQ_TX_WAIT_ADDR_L 0 0 0 0 0 1 0 1 0 
+req_tx_state.REQ_TX_SEND_ADDR_H 0 0 0 0 1 0 0 1 0 
+req_tx_state.REQ_TX_WAIT_ADDR_H 0 0 0 1 0 0 0 1 0 
+req_tx_state.REQ_TX_SEND_DATA 0 0 1 0 0 0 0 1 0 
+req_tx_state.REQ_TX_WAIT_DATA 0 1 0 0 0 0 0 1 0 
+req_tx_state.REQ_TX_SEND_FLAGS 1 0 0 0 0 0 0 1 0 
+req_tx_state.REQ_TX_WAIT_FLAGS 0 0 0 0 0 0 0 1 1 
+
+State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|receiver:uart_Rx|state
+Name state.RX_STATE_READY_CLEAR state.RX_STATE_STOP state.RX_STATE_DATA state.RX_STATE_START 
+state.RX_STATE_START 0 0 0 0 
+state.RX_STATE_DATA 0 0 1 1 
+state.RX_STATE_STOP 0 1 0 1 
+state.RX_STATE_READY_CLEAR 1 0 0 1 
+
+State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx|state
+Name state.TX_STATE_STOP state.TX_STATE_DATA state.TX_STATE_START state.TX_STATE_IDLE 
+state.TX_STATE_IDLE 0 0 0 0 
+state.TX_STATE_START 0 0 1 1 
+state.TX_STATE_DATA 0 1 0 1 
+state.TX_STATE_STOP 1 0 0 1 
+
+State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|bus_bridge_target_if:u_target_if|state
+Name state.TGT_WAIT_RESPONSE state.TGT_SEND_REQ state.TGT_WAIT_WRITE_DATA state.TGT_IDLE state.TGT_WAIT_READ_GRANT 
+state.TGT_IDLE 0 0 0 0 0 
+state.TGT_WAIT_WRITE_DATA 0 0 1 1 0 
+state.TGT_SEND_REQ 0 1 0 1 0 
+state.TGT_WAIT_RESPONSE 1 0 0 1 0 
+state.TGT_WAIT_READ_GRANT 0 0 0 1 1 
+
+State Machine - |system_top_with_bus_bridge_a|initiator:u_initiator_2|state
+Name state.S_DONE state.S_READ_WAIT state.S_READ_REQ state.S_WRITE_WAIT_ACK state.S_WRITE_HOLD state.S_WRITE_REQ state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 0 0 
+state.S_WRITE_REQ 0 0 0 0 0 1 1 
+state.S_WRITE_HOLD 0 0 0 0 1 0 1 
+state.S_WRITE_WAIT_ACK 0 0 0 1 0 0 1 
+state.S_READ_REQ 0 0 1 0 0 0 1 
+state.S_READ_WAIT 0 1 0 0 0 0 1 
+state.S_DONE 1 0 0 0 0 0 1 
+
+State Machine - |system_top_with_bus_bridge_a|initiator:u_initiator_1|state
+Name state.S_DONE state.S_READ_WAIT state.S_READ_REQ state.S_WRITE_WAIT_ACK state.S_WRITE_HOLD state.S_WRITE_REQ state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 0 0 
+state.S_WRITE_REQ 0 0 0 0 0 1 1 
+state.S_WRITE_HOLD 0 0 0 0 1 0 1 
+state.S_WRITE_WAIT_ACK 0 0 0 1 0 0 1 
+state.S_READ_REQ 0 0 1 0 0 0 1 
+state.S_READ_WAIT 0 1 0 0 0 0 1 
+state.S_DONE 1 0 0 0 0 0 1 

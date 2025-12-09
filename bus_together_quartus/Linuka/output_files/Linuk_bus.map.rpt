@@ -1,0 +1,1148 @@
+Analysis & Synthesis report for Linuk_bus
+Sun Dec  7 16:41:45 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |system_top_with_bus_bridge_a|bus:bus_a|split_owner
+  9. State Machine - |system_top_with_bus_bridge_a|bus:bus_a|active_init
+ 10. State Machine - |system_top_with_bus_bridge_a|bus:bus_a|target3_owner
+ 11. State Machine - |system_top_with_bus_bridge_a|bus:bus_a|target2_owner
+ 12. State Machine - |system_top_with_bus_bridge_a|bus:bus_a|target1_owner
+ 13. State Machine - |system_top_with_bus_bridge_a|bus:bus_a|arbiter:u_arbiter|current_state
+ 14. State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|resp_rx_state
+ 15. State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|req_tx_state
+ 16. State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|receiver:uart_Rx|state
+ 17. State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx|state
+ 18. State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|bus_bridge_target_if:u_target_if|state
+ 19. State Machine - |system_top_with_bus_bridge_a|initiator:u_initiator_2|state
+ 20. State Machine - |system_top_with_bus_bridge_a|initiator:u_initiator_1|state
+ 21. Registers Removed During Synthesis
+ 22. Removed Registers Triggering Further Register Optimizations
+ 23. General Register Statistics
+ 24. Inverted Register Statistics
+ 25. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 26. Parameter Settings for User Entity Instance: initiator:u_initiator_1
+ 27. Parameter Settings for User Entity Instance: initiator:u_initiator_2
+ 28. Parameter Settings for User Entity Instance: target:u_target_1
+ 29. Parameter Settings for User Entity Instance: target:u_target_2
+ 30. Parameter Settings for User Entity Instance: bus_bridge_target_uart_wrapper:u_bridge_target
+ 31. Parameter Settings for User Entity Instance: bus_bridge_target_uart_wrapper:u_bridge_target|bus_bridge_target_if:u_target_if
+ 32. Parameter Settings for User Entity Instance: bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart
+ 33. Parameter Settings for User Entity Instance: bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|baudrate:uart_baud
+ 34. Parameter Settings for User Entity Instance: bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx
+ 35. Parameter Settings for User Entity Instance: bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|receiver:uart_Rx
+ 36. Parameter Settings for User Entity Instance: bus:bus_a
+ 37. Parameter Settings for User Entity Instance: bus:bus_a|addr_decoder:u_addr_decoder
+ 38. Port Connectivity Checks: "bus:bus_a|addr_decoder:u_addr_decoder"
+ 39. Port Connectivity Checks: "bus:bus_a|arbiter:u_arbiter"
+ 40. Port Connectivity Checks: "bus:bus_a|split_target_port:u_split_target_port"
+ 41. Port Connectivity Checks: "bus:bus_a|target_port:u_target_port_2"
+ 42. Port Connectivity Checks: "bus:bus_a|target_port:u_target_port_1"
+ 43. Port Connectivity Checks: "bus:bus_a|init_port:u_init_port_2"
+ 44. Port Connectivity Checks: "bus:bus_a|init_port:u_init_port_1"
+ 45. Port Connectivity Checks: "bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart"
+ 46. Port Connectivity Checks: "bus_bridge_target_uart_wrapper:u_bridge_target"
+ 47. Port Connectivity Checks: "target:u_target_2"
+ 48. Port Connectivity Checks: "target:u_target_1"
+ 49. Port Connectivity Checks: "initiator:u_initiator_2"
+ 50. Port Connectivity Checks: "initiator:u_initiator_1"
+ 51. Post-Synthesis Netlist Statistics for Top Partition
+ 52. Elapsed Time Per Partition
+ 53. Analysis & Synthesis Messages
+ 54. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Dec  7 16:41:45 2025          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                      ; Linuk_bus                                      ;
+; Top-level Entity Name              ; system_top_with_bus_bridge_a                   ;
+; Family                             ; Cyclone IV E                                   ;
+; Total logic elements               ; 639                                            ;
+;     Total combinational functions  ; 533                                            ;
+;     Dedicated logic registers      ; 410                                            ;
+; Total registers                    ; 410                                            ;
+; Total pins                         ; 6                                              ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++------------------------------------------------------------------+------------------------------+--------------------+
+; Option                                                           ; Setting                      ; Default Value      ;
++------------------------------------------------------------------+------------------------------+--------------------+
+; Device                                                           ; EP4CE22F17C6                 ;                    ;
+; Top-level entity name                                            ; system_top_with_bus_bridge_a ; Linuk_bus          ;
+; Family name                                                      ; Cyclone IV E                 ; Cyclone V          ;
+; Use smart compilation                                            ; Off                          ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                           ; On                 ;
+; Enable compact report table                                      ; Off                          ; Off                ;
+; Restructure Multiplexers                                         ; Auto                         ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                          ; Off                ;
+; Preserve fewer node names                                        ; On                           ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable                       ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001                 ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993                    ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto                         ; Auto               ;
+; Safe State Machine                                               ; Off                          ; Off                ;
+; Extract Verilog State Machines                                   ; On                           ; On                 ;
+; Extract VHDL State Machines                                      ; On                           ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                          ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000                         ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                          ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                           ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                           ; On                 ;
+; Parallel Synthesis                                               ; On                           ; On                 ;
+; DSP Block Balancing                                              ; Auto                         ; Auto               ;
+; NOT Gate Push-Back                                               ; On                           ; On                 ;
+; Power-Up Don't Care                                              ; On                           ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                          ; Off                ;
+; Remove Duplicate Registers                                       ; On                           ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                          ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                          ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                          ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                          ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                          ; Off                ;
+; Ignore SOFT Buffers                                              ; On                           ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                          ; Off                ;
+; Optimization Technique                                           ; Balanced                     ; Balanced           ;
+; Carry Chain Length                                               ; 70                           ; 70                 ;
+; Auto Carry Chains                                                ; On                           ; On                 ;
+; Auto Open-Drain Pins                                             ; On                           ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                          ; Off                ;
+; Auto ROM Replacement                                             ; On                           ; On                 ;
+; Auto RAM Replacement                                             ; On                           ; On                 ;
+; Auto DSP Block Replacement                                       ; On                           ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto                         ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto                         ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                           ; On                 ;
+; Strict RAM Replacement                                           ; Off                          ; Off                ;
+; Allow Synchronous Control Signals                                ; On                           ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                          ; Off                ;
+; Auto RAM Block Balancing                                         ; On                           ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                          ; Off                ;
+; Auto Resource Sharing                                            ; Off                          ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                          ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                          ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                          ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                           ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                          ; Off                ;
+; Timing-Driven Synthesis                                          ; On                           ; On                 ;
+; Report Parameter Settings                                        ; On                           ; On                 ;
+; Report Source Assignments                                        ; On                           ; On                 ;
+; Report Connectivity Checks                                       ; On                           ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                          ; Off                ;
+; Synchronization Register Chain Length                            ; 2                            ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation           ; Normal compilation ;
+; HDL message level                                                ; Level2                       ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                          ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000                         ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000                         ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                          ; 100                ;
+; Clock MUX Protection                                             ; On                           ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                          ; Off                ;
+; Block Design Naming                                              ; Auto                         ; Auto               ;
+; SDC constraint protection                                        ; Off                          ; Off                ;
+; Synthesis Effort                                                 ; Auto                         ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                           ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                          ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium                       ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto                         ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                           ; On                 ;
++------------------------------------------------------------------+------------------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 14          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 14          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processors 7-14        ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                   ;
++-----------------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                ; Library ;
++-----------------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
+; ../../bus_together/RTL_Linuka/uart/uart.v                       ; yes             ; User Verilog HDL File        ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/uart.v                       ;         ;
+; ../../bus_together/RTL_Linuka/uart/transmitter.v                ; yes             ; User Verilog HDL File        ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/transmitter.v                ;         ;
+; ../../bus_together/RTL_Linuka/uart/receiver.v                   ; yes             ; User Verilog HDL File        ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/receiver.v                   ;         ;
+; ../../bus_together/RTL_Linuka/uart/buadrate.v                   ; yes             ; User Verilog HDL File        ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/buadrate.v                   ;         ;
+; ../../bus_together/RTL_Linuka/target_port.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/target_port.sv                    ;         ;
+; ../../bus_together/RTL_Linuka/target.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/target.sv                         ;         ;
+; ../../bus_together/RTL_Linuka/system_top_with_bus_bridge_a.sv   ; yes             ; User SystemVerilog HDL File  ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/system_top_with_bus_bridge_a.sv   ;         ;
+; ../../bus_together/RTL_Linuka/split_target_port.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/split_target_port.sv              ;         ;
+; ../../bus_together/RTL_Linuka/initiator.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/initiator.sv                      ;         ;
+; ../../bus_together/RTL_Linuka/init_port.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/init_port.sv                      ;         ;
+; ../../bus_together/RTL_Linuka/bus_bridge_target_uart_wrapper.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus_bridge_target_uart_wrapper.sv ;         ;
+; ../../bus_together/RTL_Linuka/bus_bridge_target_if.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus_bridge_target_if.sv           ;         ;
+; ../../bus_together/RTL_Linuka/bus_bridge_pkg.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus_bridge_pkg.sv                 ;         ;
+; ../../bus_together/RTL_Linuka/bus.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv                            ;         ;
+; ../../bus_together/RTL_Linuka/arbiter.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/arbiter.sv                        ;         ;
+; ../../bus_together/RTL_Linuka/addr_decoder.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/addr_decoder.sv                   ;         ;
++-----------------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 639       ;
+;                                             ;           ;
+; Total combinational functions               ; 533       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 275       ;
+;     -- 3 input functions                    ; 135       ;
+;     -- <=2 input functions                  ; 123       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 497       ;
+;     -- arithmetic mode                      ; 36        ;
+;                                             ;           ;
+; Total registers                             ; 410       ;
+;     -- Dedicated logic registers            ; 410       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 6         ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 409       ;
+; Total fan-out                               ; 3213      ;
+; Average fan-out                             ; 3.36      ;
++---------------------------------------------+-----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                  ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------------------------+--------------+
+; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Entity Name                    ; Library Name ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------------------------+--------------+
+; |system_top_with_bus_bridge_a                       ; 533 (1)             ; 410 (5)                   ; 0           ; 0            ; 0       ; 0         ; 6    ; 0            ; |system_top_with_bus_bridge_a                                                                                       ; system_top_with_bus_bridge_a   ; work         ;
+;    |bus:bus_a|                                      ; 315 (61)            ; 218 (27)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|bus:bus_a                                                                             ; bus                            ; work         ;
+;       |addr_decoder:u_addr_decoder|                 ; 27 (27)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|bus:bus_a|addr_decoder:u_addr_decoder                                                 ; addr_decoder                   ; work         ;
+;       |arbiter:u_arbiter|                           ; 5 (5)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|bus:bus_a|arbiter:u_arbiter                                                           ; arbiter                        ; work         ;
+;       |init_port:u_init_port_1|                     ; 53 (53)             ; 43 (43)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|bus:bus_a|init_port:u_init_port_1                                                     ; init_port                      ; work         ;
+;       |split_target_port:u_split_target_port|       ; 107 (107)           ; 90 (90)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|bus:bus_a|split_target_port:u_split_target_port                                       ; split_target_port              ; work         ;
+;       |target_port:u_target_port_1|                 ; 31 (31)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|bus:bus_a|target_port:u_target_port_1                                                 ; target_port                    ; work         ;
+;       |target_port:u_target_port_2|                 ; 31 (31)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|bus:bus_a|target_port:u_target_port_2                                                 ; target_port                    ; work         ;
+;    |bus_bridge_target_uart_wrapper:u_bridge_target| ; 169 (30)            ; 158 (50)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target                                        ; bus_bridge_target_uart_wrapper ; work         ;
+;       |bus_bridge_target_if:u_target_if|            ; 51 (51)             ; 61 (61)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|bus_bridge_target_if:u_target_if       ; bus_bridge_target_if           ; work         ;
+;       |uart:u_target_uart|                          ; 88 (0)              ; 47 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart                     ; uart                           ; work         ;
+;          |baudrate:uart_baud|                       ; 30 (30)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|baudrate:uart_baud  ; baudrate                       ; work         ;
+;          |receiver:uart_Rx|                         ; 33 (33)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|receiver:uart_Rx    ; receiver                       ; work         ;
+;          |transmitter:uart_Tx|                      ; 25 (25)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx ; transmitter                    ; work         ;
+;    |initiator:u_initiator_1|                        ; 42 (42)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|initiator:u_initiator_1                                                               ; initiator                      ; work         ;
+;    |target:u_target_1|                              ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|target:u_target_1                                                                     ; target                         ; work         ;
+;    |target:u_target_2|                              ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_top_with_bus_bridge_a|target:u_target_2                                                                     ; target                         ; work         ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------+
+; State Machine - |system_top_with_bus_bridge_a|bus:bus_a|split_owner                     ;
++-----------------------+-----------------------+--------------------+--------------------+
+; Name                  ; split_owner.INIT_NONE ; split_owner.INIT_2 ; split_owner.INIT_1 ;
++-----------------------+-----------------------+--------------------+--------------------+
+; split_owner.INIT_NONE ; 0                     ; 0                  ; 0                  ;
+; split_owner.INIT_1    ; 1                     ; 0                  ; 1                  ;
+; split_owner.INIT_2    ; 1                     ; 1                  ; 0                  ;
++-----------------------+-----------------------+--------------------+--------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------+
+; State Machine - |system_top_with_bus_bridge_a|bus:bus_a|active_init                     ;
++-----------------------+-----------------------+--------------------+--------------------+
+; Name                  ; active_init.INIT_NONE ; active_init.INIT_2 ; active_init.INIT_1 ;
++-----------------------+-----------------------+--------------------+--------------------+
+; active_init.INIT_NONE ; 0                     ; 0                  ; 0                  ;
+; active_init.INIT_1    ; 1                     ; 0                  ; 1                  ;
+; active_init.INIT_2    ; 1                     ; 1                  ; 0                  ;
++-----------------------+-----------------------+--------------------+--------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------+
+; State Machine - |system_top_with_bus_bridge_a|bus:bus_a|target3_owner                           ;
++-------------------------+-------------------------+----------------------+----------------------+
+; Name                    ; target3_owner.INIT_NONE ; target3_owner.INIT_2 ; target3_owner.INIT_1 ;
++-------------------------+-------------------------+----------------------+----------------------+
+; target3_owner.INIT_NONE ; 0                       ; 0                    ; 0                    ;
+; target3_owner.INIT_1    ; 1                       ; 0                    ; 1                    ;
+; target3_owner.INIT_2    ; 1                       ; 1                    ; 0                    ;
++-------------------------+-------------------------+----------------------+----------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------+
+; State Machine - |system_top_with_bus_bridge_a|bus:bus_a|target2_owner                           ;
++-------------------------+-------------------------+----------------------+----------------------+
+; Name                    ; target2_owner.INIT_NONE ; target2_owner.INIT_2 ; target2_owner.INIT_1 ;
++-------------------------+-------------------------+----------------------+----------------------+
+; target2_owner.INIT_NONE ; 0                       ; 0                    ; 0                    ;
+; target2_owner.INIT_1    ; 1                       ; 0                    ; 1                    ;
+; target2_owner.INIT_2    ; 1                       ; 1                    ; 0                    ;
++-------------------------+-------------------------+----------------------+----------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------+
+; State Machine - |system_top_with_bus_bridge_a|bus:bus_a|target1_owner                           ;
++-------------------------+-------------------------+----------------------+----------------------+
+; Name                    ; target1_owner.INIT_NONE ; target1_owner.INIT_2 ; target1_owner.INIT_1 ;
++-------------------------+-------------------------+----------------------+----------------------+
+; target1_owner.INIT_NONE ; 0                       ; 0                    ; 0                    ;
+; target1_owner.INIT_1    ; 1                       ; 0                    ; 1                    ;
+; target1_owner.INIT_2    ; 1                       ; 1                    ; 0                    ;
++-------------------------+-------------------------+----------------------+----------------------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |system_top_with_bus_bridge_a|bus:bus_a|arbiter:u_arbiter|current_state                                    ;
++---------------------------+---------------------------+-----------------------+-----------------------+--------------------+
+; Name                      ; current_state.GRANT_SPLIT ; current_state.GRANT_2 ; current_state.GRANT_1 ; current_state.IDLE ;
++---------------------------+---------------------------+-----------------------+-----------------------+--------------------+
+; current_state.IDLE        ; 0                         ; 0                     ; 0                     ; 0                  ;
+; current_state.GRANT_1     ; 0                         ; 0                     ; 1                     ; 1                  ;
+; current_state.GRANT_2     ; 0                         ; 1                     ; 0                     ; 1                  ;
+; current_state.GRANT_SPLIT ; 1                         ; 0                     ; 0                     ; 1                  ;
++---------------------------+---------------------------+-----------------------+-----------------------+--------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|resp_rx_state                    ;
++----------------------------------+----------------------------+----------------------------+----------------------------------+
+; Name                             ; resp_rx_state.RESP_RX_IDLE ; resp_rx_state.RESP_RX_HOLD ; resp_rx_state.RESP_RX_WAIT_FLAGS ;
++----------------------------------+----------------------------+----------------------------+----------------------------------+
+; resp_rx_state.RESP_RX_IDLE       ; 0                          ; 0                          ; 0                                ;
+; resp_rx_state.RESP_RX_WAIT_FLAGS ; 1                          ; 0                          ; 1                                ;
+; resp_rx_state.RESP_RX_HOLD       ; 1                          ; 1                          ; 0                                ;
++----------------------------------+----------------------------+----------------------------+----------------------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|req_tx_state                                                                                                                                                                                                                            ;
++---------------------------------+--------------------------------+-------------------------------+-------------------------------+---------------------------------+---------------------------------+---------------------------------+---------------------------------+--------------------------+--------------------------------+
+; Name                            ; req_tx_state.REQ_TX_SEND_FLAGS ; req_tx_state.REQ_TX_WAIT_DATA ; req_tx_state.REQ_TX_SEND_DATA ; req_tx_state.REQ_TX_WAIT_ADDR_H ; req_tx_state.REQ_TX_SEND_ADDR_H ; req_tx_state.REQ_TX_WAIT_ADDR_L ; req_tx_state.REQ_TX_SEND_ADDR_L ; req_tx_state.REQ_TX_IDLE ; req_tx_state.REQ_TX_WAIT_FLAGS ;
++---------------------------------+--------------------------------+-------------------------------+-------------------------------+---------------------------------+---------------------------------+---------------------------------+---------------------------------+--------------------------+--------------------------------+
+; req_tx_state.REQ_TX_IDLE        ; 0                              ; 0                             ; 0                             ; 0                               ; 0                               ; 0                               ; 0                               ; 0                        ; 0                              ;
+; req_tx_state.REQ_TX_SEND_ADDR_L ; 0                              ; 0                             ; 0                             ; 0                               ; 0                               ; 0                               ; 1                               ; 1                        ; 0                              ;
+; req_tx_state.REQ_TX_WAIT_ADDR_L ; 0                              ; 0                             ; 0                             ; 0                               ; 0                               ; 1                               ; 0                               ; 1                        ; 0                              ;
+; req_tx_state.REQ_TX_SEND_ADDR_H ; 0                              ; 0                             ; 0                             ; 0                               ; 1                               ; 0                               ; 0                               ; 1                        ; 0                              ;
+; req_tx_state.REQ_TX_WAIT_ADDR_H ; 0                              ; 0                             ; 0                             ; 1                               ; 0                               ; 0                               ; 0                               ; 1                        ; 0                              ;
+; req_tx_state.REQ_TX_SEND_DATA   ; 0                              ; 0                             ; 1                             ; 0                               ; 0                               ; 0                               ; 0                               ; 1                        ; 0                              ;
+; req_tx_state.REQ_TX_WAIT_DATA   ; 0                              ; 1                             ; 0                             ; 0                               ; 0                               ; 0                               ; 0                               ; 1                        ; 0                              ;
+; req_tx_state.REQ_TX_SEND_FLAGS  ; 1                              ; 0                             ; 0                             ; 0                               ; 0                               ; 0                               ; 0                               ; 1                        ; 0                              ;
+; req_tx_state.REQ_TX_WAIT_FLAGS  ; 0                              ; 0                             ; 0                             ; 0                               ; 0                               ; 0                               ; 0                               ; 1                        ; 1                              ;
++---------------------------------+--------------------------------+-------------------------------+-------------------------------+---------------------------------+---------------------------------+---------------------------------+---------------------------------+--------------------------+--------------------------------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|receiver:uart_Rx|state ;
++----------------------------+----------------------------+---------------------+---------------------+----------------------------------+
+; Name                       ; state.RX_STATE_READY_CLEAR ; state.RX_STATE_STOP ; state.RX_STATE_DATA ; state.RX_STATE_START             ;
++----------------------------+----------------------------+---------------------+---------------------+----------------------------------+
+; state.RX_STATE_START       ; 0                          ; 0                   ; 0                   ; 0                                ;
+; state.RX_STATE_DATA        ; 0                          ; 0                   ; 1                   ; 1                                ;
+; state.RX_STATE_STOP        ; 0                          ; 1                   ; 0                   ; 1                                ;
+; state.RX_STATE_READY_CLEAR ; 1                          ; 0                   ; 0                   ; 1                                ;
++----------------------------+----------------------------+---------------------+---------------------+----------------------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx|state ;
++----------------------+---------------------+---------------------+----------------------+-------------------------------------------------+
+; Name                 ; state.TX_STATE_STOP ; state.TX_STATE_DATA ; state.TX_STATE_START ; state.TX_STATE_IDLE                             ;
++----------------------+---------------------+---------------------+----------------------+-------------------------------------------------+
+; state.TX_STATE_IDLE  ; 0                   ; 0                   ; 0                    ; 0                                               ;
+; state.TX_STATE_START ; 0                   ; 0                   ; 1                    ; 1                                               ;
+; state.TX_STATE_DATA  ; 0                   ; 1                   ; 0                    ; 1                                               ;
+; state.TX_STATE_STOP  ; 1                   ; 0                   ; 0                    ; 1                                               ;
++----------------------+---------------------+---------------------+----------------------+-------------------------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|bus_bridge_target_if:u_target_if|state               ;
++---------------------------+-------------------------+--------------------+---------------------------+----------------+---------------------------+
+; Name                      ; state.TGT_WAIT_RESPONSE ; state.TGT_SEND_REQ ; state.TGT_WAIT_WRITE_DATA ; state.TGT_IDLE ; state.TGT_WAIT_READ_GRANT ;
++---------------------------+-------------------------+--------------------+---------------------------+----------------+---------------------------+
+; state.TGT_IDLE            ; 0                       ; 0                  ; 0                         ; 0              ; 0                         ;
+; state.TGT_WAIT_WRITE_DATA ; 0                       ; 0                  ; 1                         ; 1              ; 0                         ;
+; state.TGT_SEND_REQ        ; 0                       ; 1                  ; 0                         ; 1              ; 0                         ;
+; state.TGT_WAIT_RESPONSE   ; 1                       ; 0                  ; 0                         ; 1              ; 0                         ;
+; state.TGT_WAIT_READ_GRANT ; 0                       ; 0                  ; 0                         ; 1              ; 1                         ;
++---------------------------+-------------------------+--------------------+---------------------------+----------------+---------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |system_top_with_bus_bridge_a|initiator:u_initiator_2|state                                                                                   ;
++------------------------+--------------+-------------------+------------------+------------------------+--------------------+-------------------+--------------+
+; Name                   ; state.S_DONE ; state.S_READ_WAIT ; state.S_READ_REQ ; state.S_WRITE_WAIT_ACK ; state.S_WRITE_HOLD ; state.S_WRITE_REQ ; state.S_IDLE ;
++------------------------+--------------+-------------------+------------------+------------------------+--------------------+-------------------+--------------+
+; state.S_IDLE           ; 0            ; 0                 ; 0                ; 0                      ; 0                  ; 0                 ; 0            ;
+; state.S_WRITE_REQ      ; 0            ; 0                 ; 0                ; 0                      ; 0                  ; 1                 ; 1            ;
+; state.S_WRITE_HOLD     ; 0            ; 0                 ; 0                ; 0                      ; 1                  ; 0                 ; 1            ;
+; state.S_WRITE_WAIT_ACK ; 0            ; 0                 ; 0                ; 1                      ; 0                  ; 0                 ; 1            ;
+; state.S_READ_REQ       ; 0            ; 0                 ; 1                ; 0                      ; 0                  ; 0                 ; 1            ;
+; state.S_READ_WAIT      ; 0            ; 1                 ; 0                ; 0                      ; 0                  ; 0                 ; 1            ;
+; state.S_DONE           ; 1            ; 0                 ; 0                ; 0                      ; 0                  ; 0                 ; 1            ;
++------------------------+--------------+-------------------+------------------+------------------------+--------------------+-------------------+--------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |system_top_with_bus_bridge_a|initiator:u_initiator_1|state                                                                                   ;
++------------------------+--------------+-------------------+------------------+------------------------+--------------------+-------------------+--------------+
+; Name                   ; state.S_DONE ; state.S_READ_WAIT ; state.S_READ_REQ ; state.S_WRITE_WAIT_ACK ; state.S_WRITE_HOLD ; state.S_WRITE_REQ ; state.S_IDLE ;
++------------------------+--------------+-------------------+------------------+------------------------+--------------------+-------------------+--------------+
+; state.S_IDLE           ; 0            ; 0                 ; 0                ; 0                      ; 0                  ; 0                 ; 0            ;
+; state.S_WRITE_REQ      ; 0            ; 0                 ; 0                ; 0                      ; 0                  ; 1                 ; 1            ;
+; state.S_WRITE_HOLD     ; 0            ; 0                 ; 0                ; 0                      ; 1                  ; 0                 ; 1            ;
+; state.S_WRITE_WAIT_ACK ; 0            ; 0                 ; 0                ; 1                      ; 0                  ; 0                 ; 1            ;
+; state.S_READ_REQ       ; 0            ; 0                 ; 1                ; 0                      ; 0                  ; 0                 ; 1            ;
+; state.S_READ_WAIT      ; 0            ; 1                 ; 0                ; 0                      ; 0                  ; 0                 ; 1            ;
+; state.S_DONE           ; 1            ; 0                 ; 0                ; 0                      ; 0                  ; 0                 ; 1            ;
++------------------------+--------------+-------------------+------------------+------------------------+--------------------+-------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                             ;
++-----------------------------------------------------------------------------------------------+----------------------------------------------------------------+
+; Register name                                                                                 ; Reason for Removal                                             ;
++-----------------------------------------------------------------------------------------------+----------------------------------------------------------------+
+; bus:bus_a|init_port:u_init_port_1|pending_addr[1,3..14]                                       ; Merged with bus:bus_a|init_port:u_init_port_1|pending_addr[0]  ;
+; bus:bus_a|init_port:u_init_port_2|pending_addr[1..3,5..15]                                    ; Merged with bus:bus_a|init_port:u_init_port_2|pending_addr[0]  ;
+; initiator:u_initiator_1|init_addr_out_r[1,3..14]                                              ; Merged with initiator:u_initiator_1|init_addr_out_r[0]         ;
+; initiator:u_initiator_2|init_addr_out_r[1..3,5..15]                                           ; Merged with initiator:u_initiator_2|init_addr_out_r[0]         ;
+; bus:bus_a|init_port:u_init_port_1|pending_addr[2]                                             ; Merged with bus:bus_a|init_port:u_init_port_1|pending_addr[15] ;
+; initiator:u_initiator_1|init_addr_out_r[2]                                                    ; Merged with initiator:u_initiator_1|init_addr_out_r[15]        ;
+; initiator:u_initiator_2|init_addr_out_r[0]                                                    ; Stuck at GND due to stuck port data_in                         ;
+; initiator:u_initiator_1|init_addr_out_r[0]                                                    ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_2|pending_addr[0]                                             ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_1|pending_addr[0]                                             ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_2|tx_shift[8..15]                                             ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|addr_decoder:u_addr_decoder|addr_shift[1..11]                                       ; Lost fanout                                                    ;
+; initiator:u_initiator_1|init_data_out_r[4,6]                                                  ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_1|pending_data[4]                                             ; Stuck at GND due to stuck port data_in                         ;
+; initiator:u_initiator_2|init_data_out_r[5]                                                    ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_1|pending_data[6]                                             ; Stuck at GND due to stuck port data_in                         ;
+; initiator:u_initiator_2|init_data_out_r[7]                                                    ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_2|pending_data[5,7]                                           ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_2|tx_shift[7]                                                 ; Stuck at GND due to stuck port data_in                         ;
+; initiator:u_initiator_1|init_data_out_r[7]                                                    ; Merged with initiator:u_initiator_1|init_data_out_r[5]         ;
+; initiator:u_initiator_2|init_data_out_r[6]                                                    ; Merged with initiator:u_initiator_2|init_data_out_r[4]         ;
+; initiator:u_initiator_2|init_data_out_r[4]                                                    ; Merged with initiator:u_initiator_2|init_data_out_r[3]         ;
+; bus:bus_a|init_port:u_init_port_2|pending_data[4,6]                                           ; Merged with bus:bus_a|init_port:u_init_port_2|pending_data[3]  ;
+; bus:bus_a|init_port:u_init_port_1|pending_data[7]                                             ; Merged with bus:bus_a|init_port:u_init_port_1|pending_data[5]  ;
+; bus:bus_a|arbiter:u_arbiter|current_state~4                                                   ; Lost fanout                                                    ;
+; bus:bus_a|arbiter:u_arbiter|current_state~5                                                   ; Lost fanout                                                    ;
+; bus_bridge_target_uart_wrapper:u_bridge_target|req_tx_state~12                                ; Lost fanout                                                    ;
+; bus_bridge_target_uart_wrapper:u_bridge_target|req_tx_state~13                                ; Lost fanout                                                    ;
+; bus_bridge_target_uart_wrapper:u_bridge_target|req_tx_state~14                                ; Lost fanout                                                    ;
+; bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|receiver:uart_Rx|state~6    ; Lost fanout                                                    ;
+; bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|receiver:uart_Rx|state~7    ; Lost fanout                                                    ;
+; bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx|state~5 ; Lost fanout                                                    ;
+; bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx|state~6 ; Lost fanout                                                    ;
+; bus_bridge_target_uart_wrapper:u_bridge_target|bus_bridge_target_if:u_target_if|state~8       ; Lost fanout                                                    ;
+; bus_bridge_target_uart_wrapper:u_bridge_target|bus_bridge_target_if:u_target_if|state~9       ; Lost fanout                                                    ;
+; initiator:u_initiator_2|state~11                                                              ; Lost fanout                                                    ;
+; initiator:u_initiator_2|state~12                                                              ; Lost fanout                                                    ;
+; initiator:u_initiator_2|state~13                                                              ; Lost fanout                                                    ;
+; initiator:u_initiator_1|state~11                                                              ; Lost fanout                                                    ;
+; initiator:u_initiator_1|state~12                                                              ; Lost fanout                                                    ;
+; initiator:u_initiator_1|state~13                                                              ; Lost fanout                                                    ;
+; bus_bridge_target_uart_wrapper:u_bridge_target|resp_rx_state.RESP_RX_IDLE                     ; Lost fanout                                                    ;
+; initiator:u_initiator_2|state.S_WRITE_REQ                                                     ; Stuck at GND due to stuck port data_in                         ;
+; initiator:u_initiator_2|init_data_out_r[2,3]                                                  ; Stuck at GND due to stuck port clock_enable                    ;
+; initiator:u_initiator_2|init_data_out_valid_r                                                 ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_2|pending_data[1]                                             ; Stuck at GND due to stuck port clock_enable                    ;
+; initiator:u_initiator_2|init_data_out_r[0]                                                    ; Stuck at GND due to stuck port clock_enable                    ;
+; bus:bus_a|init_port:u_init_port_2|pending_data[2]                                             ; Stuck at GND due to stuck port clock_enable                    ;
+; initiator:u_initiator_2|init_data_out_r[1]                                                    ; Stuck at GND due to stuck port clock_enable                    ;
+; bus:bus_a|init_port:u_init_port_2|pending_data[0,3]                                           ; Stuck at GND due to stuck port clock_enable                    ;
+; bus:bus_a|init_port:u_init_port_2|data_pending                                                ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_2|tx_shift[5,6]                                               ; Stuck at GND due to stuck port data_in                         ;
+; initiator:u_initiator_2|data_sent                                                             ; Lost fanout                                                    ;
+; initiator:u_initiator_2|write_ptr[0,1]                                                        ; Lost fanout                                                    ;
+; initiator:u_initiator_2|state.S_WRITE_HOLD                                                    ; Stuck at GND due to stuck port data_in                         ;
+; initiator:u_initiator_2|state.S_WRITE_WAIT_ACK                                                ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|split_target_port:u_split_target_port|rx_data_shift[7]                              ; Stuck at GND due to stuck port data_in                         ;
+; initiator:u_initiator_2|state.S_READ_REQ                                                      ; Stuck at GND due to stuck port data_in                         ;
+; initiator:u_initiator_2|init_addr_out_valid_r                                                 ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_2|addr_is_read                                                ; Stuck at GND due to stuck port clock_enable                    ;
+; bus:bus_a|init_port:u_init_port_2|pending_addr[4]                                             ; Stuck at GND due to stuck port clock_enable                    ;
+; initiator:u_initiator_2|addr_sent                                                             ; Lost fanout                                                    ;
+; initiator:u_initiator_2|init_addr_out_r[4]                                                    ; Lost fanout                                                    ;
+; initiator:u_initiator_2|init_req_r                                                            ; Stuck at GND due to stuck port data_in                         ;
+; initiator:u_initiator_2|state.S_READ_WAIT                                                     ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_2|expect_read_data                                            ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_2|addr_pending                                                ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_2|rx_byte_ready                                               ; Lost fanout                                                    ;
+; bus:bus_a|init_port:u_init_port_2|init_data_in_valid                                          ; Lost fanout                                                    ;
+; bus:bus_a|init_port:u_init_port_2|init_ack_reg                                                ; Lost fanout                                                    ;
+; bus:bus_a|arbiter:u_arbiter|current_state.GRANT_2                                             ; Stuck at GND due to stuck port data_in                         ;
+; initiator:u_initiator_2|state.S_DONE                                                          ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|split_owner.INIT_2                                                                  ; Lost fanout                                                    ;
+; initiator:u_initiator_2|split_resume_ack                                                      ; Lost fanout                                                    ;
+; initiator:u_initiator_2|split_active                                                          ; Lost fanout                                                    ;
+; bus:bus_a|init_port:u_init_port_2|ack_pending_read                                            ; Lost fanout                                                    ;
+; bus:bus_a|target1_owner.INIT_2                                                                ; Lost fanout                                                    ;
+; bus:bus_a|target2_owner.INIT_2                                                                ; Lost fanout                                                    ;
+; bus:bus_a|target3_owner.INIT_2                                                                ; Lost fanout                                                    ;
+; bus:bus_a|init_port:u_init_port_2|rx_bit_count[0..2]                                          ; Lost fanout                                                    ;
+; bus:bus_a|init_port:u_init_port_2|read_data_pending                                           ; Lost fanout                                                    ;
+; initiator:u_initiator_2|state.S_IDLE                                                          ; Merged with initiator:u_initiator_2|init_rw_r                  ;
+; initiator:u_initiator_2|init_rw_r                                                             ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|active_init.INIT_2                                                                  ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_2|bus_mode                                                    ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_2|tx_active                                                   ; Stuck at GND due to stuck port data_in                         ;
+; bus:bus_a|init_port:u_init_port_2|tx_shift[0]                                                 ; Stuck at GND due to stuck port clock_enable                    ;
+; bus:bus_a|init_port:u_init_port_2|tx_shift[1..3]                                              ; Lost fanout                                                    ;
+; bus:bus_a|init_port:u_init_port_2|tx_bits_remaining[0..4]                                     ; Stuck at GND due to stuck port clock                           ;
+; bus:bus_a|init_port:u_init_port_2|bus_data_out_valid                                          ; Lost fanout                                                    ;
+; bus:bus_a|init_port:u_init_port_2|bus_data_out                                                ; Lost fanout                                                    ;
+; bus:bus_a|init_port:u_init_port_2|tx_shift[4]                                                 ; Lost fanout                                                    ;
+; Total Number of Removed Registers = 174                                                       ;                                                                ;
++-----------------------------------------------------------------------------------------------+----------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                        ;
++------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                                                    ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; initiator:u_initiator_2|state.S_WRITE_REQ                        ; Stuck at GND              ; initiator:u_initiator_2|init_data_out_r[2],                                         ;
+;                                                                  ; due to stuck port data_in ; initiator:u_initiator_2|init_data_out_r[3],                                         ;
+;                                                                  ;                           ; initiator:u_initiator_2|init_data_out_valid_r,                                      ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|pending_data[1],                                  ;
+;                                                                  ;                           ; initiator:u_initiator_2|init_data_out_r[0],                                         ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|pending_data[2],                                  ;
+;                                                                  ;                           ; initiator:u_initiator_2|init_data_out_r[1],                                         ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|pending_data[3],                                  ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|pending_data[0],                                  ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|data_pending,                                     ;
+;                                                                  ;                           ; initiator:u_initiator_2|write_ptr[0], initiator:u_initiator_2|write_ptr[1],         ;
+;                                                                  ;                           ; initiator:u_initiator_2|init_addr_out_valid_r,                                      ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|addr_is_read,                                     ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|pending_addr[4],                                  ;
+;                                                                  ;                           ; initiator:u_initiator_2|init_addr_out_r[4], initiator:u_initiator_2|init_req_r,     ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|expect_read_data,                                 ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|addr_pending,                                     ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|rx_byte_ready,                                    ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|init_data_in_valid,                               ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|init_ack_reg, bus:bus_a|split_owner.INIT_2,       ;
+;                                                                  ;                           ; initiator:u_initiator_2|split_resume_ack, initiator:u_initiator_2|split_active,     ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|ack_pending_read, bus:bus_a|target3_owner.INIT_2, ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|rx_bit_count[2],                                  ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|rx_bit_count[1],                                  ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|rx_bit_count[0],                                  ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|read_data_pending,                                ;
+;                                                                  ;                           ; initiator:u_initiator_2|init_rw_r, bus:bus_a|active_init.INIT_2,                    ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|bus_mode,                                         ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_active,                                        ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_bits_remaining[0],                             ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_bits_remaining[1],                             ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_bits_remaining[2],                             ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_bits_remaining[3],                             ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_bits_remaining[4]                              ;
+; initiator:u_initiator_2|init_addr_out_r[0]                       ; Stuck at GND              ; bus:bus_a|init_port:u_init_port_2|pending_addr[0],                                  ;
+;                                                                  ; due to stuck port data_in ; bus:bus_a|init_port:u_init_port_2|tx_shift[10],                                     ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_shift[9],                                      ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_shift[8],                                      ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_shift[7],                                      ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_shift[6],                                      ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_shift[5], initiator:u_initiator_2|addr_sent,   ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_shift[0],                                      ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_shift[1],                                      ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_shift[2],                                      ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_shift[3],                                      ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_shift[4]                                       ;
+; bus:bus_a|init_port:u_init_port_2|tx_shift[15]                   ; Stuck at GND              ; bus:bus_a|init_port:u_init_port_2|tx_shift[14],                                     ;
+;                                                                  ; due to stuck port data_in ; bus:bus_a|init_port:u_init_port_2|tx_shift[13],                                     ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_shift[12],                                     ;
+;                                                                  ;                           ; bus:bus_a|init_port:u_init_port_2|tx_shift[11]                                      ;
+; initiator:u_initiator_2|init_data_out_r[5]                       ; Stuck at GND              ; bus:bus_a|init_port:u_init_port_2|pending_data[5],                                  ;
+;                                                                  ; due to stuck port data_in ; initiator:u_initiator_2|data_sent                                                   ;
+; bus:bus_a|split_target_port:u_split_target_port|rx_data_shift[7] ; Stuck at GND              ; bus:bus_a|init_port:u_init_port_2|bus_data_out_valid,                               ;
+;                                                                  ; due to stuck port data_in ; bus:bus_a|init_port:u_init_port_2|bus_data_out                                      ;
+; initiator:u_initiator_1|init_addr_out_r[0]                       ; Stuck at GND              ; bus:bus_a|init_port:u_init_port_1|pending_addr[0]                                   ;
+;                                                                  ; due to stuck port data_in ;                                                                                     ;
+; initiator:u_initiator_1|init_data_out_r[4]                       ; Stuck at GND              ; bus:bus_a|init_port:u_init_port_1|pending_data[4]                                   ;
+;                                                                  ; due to stuck port data_in ;                                                                                     ;
+; initiator:u_initiator_1|init_data_out_r[6]                       ; Stuck at GND              ; bus:bus_a|init_port:u_init_port_1|pending_data[6]                                   ;
+;                                                                  ; due to stuck port data_in ;                                                                                     ;
+; initiator:u_initiator_2|init_data_out_r[7]                       ; Stuck at GND              ; bus:bus_a|init_port:u_init_port_2|pending_data[7]                                   ;
+;                                                                  ; due to stuck port data_in ;                                                                                     ;
++------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 410   ;
+; Number of registers using Synchronous Clear  ; 13    ;
+; Number of registers using Synchronous Load   ; 14    ;
+; Number of registers using Asynchronous Clear ; 359   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 254   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                                          ;
++---------------------------------------------------------------------------------------------+---------+
+; Inverted Register                                                                           ; Fan out ;
++---------------------------------------------------------------------------------------------+---------+
+; bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx|Tx    ; 3       ;
+; bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx|flag2 ; 3       ;
+; initiator:u_initiator_1|init_rw_r                                                           ; 3       ;
+; Total number of inverted registers = 3                                                      ;         ;
++---------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|split_target_port:u_split_target_port|target_data_in[0]                                     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|split_target_port:u_split_target_port|target_addr_in_valid                                  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|addr_decoder:u_addr_decoder|addr_shift[13]                                                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|target_port:u_target_port_2|target_addr_in_valid                                            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|target_port:u_target_port_1|target_addr_in_valid                                            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|split_target_port:u_split_target_port|tx_bits_remaining[3]                                  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|target_port:u_target_port_2|tx_bits_remaining[1]                                            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|target_port:u_target_port_1|tx_bits_remaining[1]                                            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|init_port:u_init_port_2|tx_shift[2]                                                         ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|init_port:u_init_port_1|tx_shift[4]                                                         ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|init_port:u_init_port_1|tx_shift[5]                                                         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|split_target_port:u_split_target_port|data_buffer[5]                                        ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|bus_bridge_target_if:u_target_if|current_addr_b[13]    ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|addr_decoder:u_addr_decoder|addr_bit_count[4]                                               ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|init_port:u_init_port_2|tx_bits_remaining[0]                                                ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus:bus_a|init_port:u_init_port_1|tx_bits_remaining[0]                                                ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|bus_bridge_target_if:u_target_if|current_write_data[1] ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx|bit_pos[1]      ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|receiver:uart_Rx|sample[2]          ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|receiver:uart_Rx|bit_count[3]       ;
+; 9:1                ; 7 bits    ; 42 LEs        ; 14 LEs               ; 28 LEs                 ; Yes        ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart_data_in[7]                                        ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |system_top_with_bus_bridge_a|bus:bus_a|target2_owner                                                                               ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |system_top_with_bus_bridge_a|bus:bus_a|target1_owner                                                                               ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |system_top_with_bus_bridge_a|bus:bus_a|active_init                                                                                 ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |system_top_with_bus_bridge_a|bus:bus_a|target3_owner                                                                               ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |system_top_with_bus_bridge_a|bus:bus_a|Selector9                                                                                   ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |system_top_with_bus_bridge_a|bus:bus_a|split_owner                                                                                 ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|Selector20                                             ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx|Selector1       ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |system_top_with_bus_bridge_a|bus:bus_a|response_owner.INIT_2                                                                       ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; No         ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|receiver:uart_Rx|state              ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; No         ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx|Selector0       ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |system_top_with_bus_bridge_a|bus:bus_a|arbiter:u_arbiter|Selector3                                                                 ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 6 LEs                ; 8 LEs                  ; No         ; |system_top_with_bus_bridge_a|bus_bridge_target_uart_wrapper:u_bridge_target|bus_bridge_target_if:u_target_if|Selector21            ;
+; 13:1               ; 7 bits    ; 56 LEs        ; 35 LEs               ; 21 LEs                 ; No         ; |system_top_with_bus_bridge_a|initiator:u_initiator_2|Selector8                                                                     ;
+; 15:1               ; 7 bits    ; 70 LEs        ; 42 LEs               ; 28 LEs                 ; No         ; |system_top_with_bus_bridge_a|initiator:u_initiator_1|Selector11                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: initiator:u_initiator_1 ;
++----------------+------------------+----------------------------------+
+; Parameter Name ; Value            ; Type                             ;
++----------------+------------------+----------------------------------+
+; WRITE_ADDR     ; 1000000000000100 ; Unsigned Binary                  ;
+; READ_ADDR      ; 1000000000000100 ; Unsigned Binary                  ;
+; MEM_INIT_DATA  ; 10100101         ; Unsigned Binary                  ;
++----------------+------------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: initiator:u_initiator_2 ;
++----------------+------------------+----------------------------------+
+; Parameter Name ; Value            ; Type                             ;
++----------------+------------------+----------------------------------+
+; WRITE_ADDR     ; 0000000000010000 ; Unsigned Binary                  ;
+; READ_ADDR      ; 0000000000010000 ; Unsigned Binary                  ;
+; MEM_INIT_DATA  ; 01011010         ; Unsigned Binary                  ;
++----------------+------------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: target:u_target_1 ;
++--------------------+-------+-----------------------------------+
+; Parameter Name     ; Value ; Type                              ;
++--------------------+-------+-----------------------------------+
+; INTERNAL_ADDR_BITS ; 11    ; Signed Integer                    ;
++--------------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: target:u_target_2 ;
++--------------------+-------+-----------------------------------+
+; Parameter Name     ; Value ; Type                              ;
++--------------------+-------+-----------------------------------+
+; INTERNAL_ADDR_BITS ; 11    ; Signed Integer                    ;
++--------------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bus_bridge_target_uart_wrapper:u_bridge_target ;
++-------------------+----------------------------------+--------------------------------------+
+; Parameter Name    ; Value                            ; Type                                 ;
++-------------------+----------------------------------+--------------------------------------+
+; BRIDGE_BASE_ADDR  ; 1000000000000000                 ; Unsigned Binary                      ;
+; TARGET0_SIZE      ; 00000000000000000001000000000000 ; Unsigned Binary                      ;
+; TARGET1_SIZE      ; 00000000000000000000100000000000 ; Unsigned Binary                      ;
+; TARGET2_SIZE      ; 00000000000000000001000000000000 ; Unsigned Binary                      ;
+; BUSB_TARGET0_BASE ; 1000000000000000                 ; Unsigned Binary                      ;
+; BUSB_TARGET1_BASE ; 0000000000000000                 ; Unsigned Binary                      ;
+; BUSB_TARGET2_BASE ; 0100000000000000                 ; Unsigned Binary                      ;
++-------------------+----------------------------------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bus_bridge_target_uart_wrapper:u_bridge_target|bus_bridge_target_if:u_target_if ;
++-------------------+----------------------------------+-----------------------------------------------------------------------+
+; Parameter Name    ; Value                            ; Type                                                                  ;
++-------------------+----------------------------------+-----------------------------------------------------------------------+
+; BRIDGE_BASE_ADDR  ; 1000000000000000                 ; Unsigned Binary                                                       ;
+; TARGET0_SIZE      ; 00000000000000000001000000000000 ; Unsigned Binary                                                       ;
+; TARGET1_SIZE      ; 00000000000000000000100000000000 ; Unsigned Binary                                                       ;
+; TARGET2_SIZE      ; 00000000000000000001000000000000 ; Unsigned Binary                                                       ;
+; BUSB_TARGET0_BASE ; 1000000000000000                 ; Unsigned Binary                                                       ;
+; BUSB_TARGET1_BASE ; 0000000000000000                 ; Unsigned Binary                                                       ;
+; BUSB_TARGET2_BASE ; 0100000000000000                 ; Unsigned Binary                                                       ;
++-------------------+----------------------------------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; DATA_BITS      ; 8     ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|baudrate:uart_baud ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; RX_ACC_MAX     ; 27    ; Signed Integer                                                                                           ;
+; TX_ACC_MAX     ; 434   ; Signed Integer                                                                                           ;
+; RX_ACC_WIDTH   ; 5     ; Signed Integer                                                                                           ;
+; TX_ACC_WIDTH   ; 9     ; Signed Integer                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; DATA_BITS      ; 8     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|receiver:uart_Rx ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; DATA_BITS      ; 8     ; Signed Integer                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bus:bus_a              ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; TARGET1_BASE   ; 0000000000000000                 ; Unsigned Binary ;
+; TARGET1_SIZE   ; 00000000000000000000100000000000 ; Unsigned Binary ;
+; TARGET2_BASE   ; 0100000000000000                 ; Unsigned Binary ;
+; TARGET2_SIZE   ; 00000000000000000001000000000000 ; Unsigned Binary ;
+; TARGET3_BASE   ; 1000000000000000                 ; Unsigned Binary ;
+; TARGET3_SIZE   ; 00000000000000000010100000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bus:bus_a|addr_decoder:u_addr_decoder ;
++----------------+----------------------------------+--------------------------------+
+; Parameter Name ; Value                            ; Type                           ;
++----------------+----------------------------------+--------------------------------+
+; TARGET1_BASE   ; 0000000000000000                 ; Unsigned Binary                ;
+; TARGET1_SIZE   ; 00000000000000000000100000000000 ; Unsigned Binary                ;
+; TARGET2_BASE   ; 0100000000000000                 ; Unsigned Binary                ;
+; TARGET2_SIZE   ; 00000000000000000001000000000000 ; Unsigned Binary                ;
+; TARGET3_BASE   ; 1000000000000000                 ; Unsigned Binary                ;
+; TARGET3_SIZE   ; 00000000000000000010100000000000 ; Unsigned Binary                ;
++----------------+----------------------------------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bus:bus_a|addr_decoder:u_addr_decoder"                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sel  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bus:bus_a|arbiter:u_arbiter"                                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sel  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "bus:bus_a|split_target_port:u_split_target_port" ;
++------------------+--------+----------+--------------------------------------+
+; Port             ; Type   ; Severity ; Details                              ;
++------------------+--------+----------+--------------------------------------+
+; split_ack        ; Output ; Info     ; Explicitly unconnected               ;
+; bus_target_ready ; Output ; Info     ; Explicitly unconnected               ;
+; bus_target_rw    ; Output ; Info     ; Explicitly unconnected               ;
++------------------+--------+----------+--------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "bus:bus_a|target_port:u_target_port_2" ;
++------------------+--------+----------+----------------------------+
+; Port             ; Type   ; Severity ; Details                    ;
++------------------+--------+----------+----------------------------+
+; bus_target_ready ; Output ; Info     ; Explicitly unconnected     ;
+; bus_target_rw    ; Output ; Info     ; Explicitly unconnected     ;
++------------------+--------+----------+----------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "bus:bus_a|target_port:u_target_port_1" ;
++------------------+--------+----------+----------------------------+
+; Port             ; Type   ; Severity ; Details                    ;
++------------------+--------+----------+----------------------------+
+; bus_target_ready ; Output ; Info     ; Explicitly unconnected     ;
+; bus_target_rw    ; Output ; Info     ; Explicitly unconnected     ;
++------------------+--------+----------+----------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bus:bus_a|init_port:u_init_port_2"                                                            ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; bus_init_ready ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bus:bus_a|init_port:u_init_port_1"                                                            ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; bus_init_ready ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart" ;
++-------+-------+----------+--------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                            ;
++-------+-------+----------+--------------------------------------------------------------------+
+; clear ; Input ; Info     ; Stuck at GND                                                       ;
++-------+-------+----------+--------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bus_bridge_target_uart_wrapper:u_bridge_target"                                                        ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                    ; Type   ; Severity ; Details                                                                             ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; split_target_last_write ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "target:u_target_2"                  ;
++-------------------+--------+----------+------------------------+
+; Port              ; Type   ; Severity ; Details                ;
++-------------------+--------+----------+------------------------+
+; target_last_write ; Output ; Info     ; Explicitly unconnected ;
++-------------------+--------+----------+------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "target:u_target_1"                  ;
++-------------------+--------+----------+------------------------+
+; Port              ; Type   ; Severity ; Details                ;
++-------------------+--------+----------+------------------------+
+; target_last_write ; Output ; Info     ; Explicitly unconnected ;
++-------------------+--------+----------+------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "initiator:u_initiator_2"          ;
++-----------------+--------+----------+------------------------+
+; Port            ; Type   ; Severity ; Details                ;
++-----------------+--------+----------+------------------------+
+; trigger         ; Input  ; Info     ; Stuck at GND           ;
+; done            ; Output ; Info     ; Explicitly unconnected ;
+; read_data_value ; Output ; Info     ; Explicitly unconnected ;
++-----------------+--------+----------+------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "initiator:u_initiator_1"          ;
++-----------------+--------+----------+------------------------+
+; Port            ; Type   ; Severity ; Details                ;
++-----------------+--------+----------+------------------------+
+; done            ; Output ; Info     ; Explicitly unconnected ;
+; read_data_value ; Output ; Info     ; Explicitly unconnected ;
++-----------------+--------+----------+------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 6                           ;
+; cycloneiii_ff         ; 410                         ;
+;     CLR               ; 118                         ;
+;     CLR SLD           ; 2                           ;
+;     ENA               ; 15                          ;
+;     ENA CLR           ; 221                         ;
+;     ENA CLR SCLR      ; 6                           ;
+;     ENA CLR SCLR SLD  ; 7                           ;
+;     ENA CLR SLD       ; 5                           ;
+;     plain             ; 36                          ;
+; cycloneiii_lcell_comb ; 534                         ;
+;     arith             ; 36                          ;
+;         2 data inputs ; 34                          ;
+;         3 data inputs ; 2                           ;
+;     normal            ; 498                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 18                          ;
+;         2 data inputs ; 71                          ;
+;         3 data inputs ; 133                         ;
+;         4 data inputs ; 275                         ;
+;                       ;                             ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 2.45                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Sun Dec  7 16:41:36 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Linuk_bus -c Linuk_bus
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/uart/uart.v
+    Info (12023): Found entity 1: uart File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/uart.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/uart/transmitter.v
+    Info (12023): Found entity 1: transmitter File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/transmitter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/uart/receiver.v
+    Info (12023): Found entity 1: receiver File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/receiver.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/uart/buadrate.v
+    Info (12023): Found entity 1: baudrate File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/buadrate.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/target_port.sv
+    Info (12023): Found entity 1: target_port File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/target_port.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/target.sv
+    Info (12023): Found entity 1: target File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/target.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/system_top_with_bus_bridge_b.sv
+    Info (12023): Found entity 1: system_top_with_bus_bridge_b File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/system_top_with_bus_bridge_b.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/system_top_with_bus_bridge_a.sv
+    Info (12023): Found entity 1: system_top_with_bus_bridge_a File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/system_top_with_bus_bridge_a.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/system_top_with_bus_bridge.sv
+    Info (12023): Found entity 1: system_top_with_bus_bridge File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/system_top_with_bus_bridge.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/system_top.sv
+    Info (12023): Found entity 1: system_top File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/system_top.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/split_target_port.sv
+    Info (12023): Found entity 1: split_target_port File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/split_target_port.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/split_target.sv
+    Info (12023): Found entity 1: split_target File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/split_target.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/initiator.sv
+    Info (12023): Found entity 1: initiator File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/initiator.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/init_port.sv
+    Info (12023): Found entity 1: init_port File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/init_port.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/bus_bridge_target_uart_wrapper.sv
+    Info (12023): Found entity 1: bus_bridge_target_uart_wrapper File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus_bridge_target_uart_wrapper.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/bus_bridge_target_if.sv
+    Info (12023): Found entity 1: bus_bridge_target_if File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus_bridge_target_if.sv Line: 3
+Info (12021): Found 1 design units, including 0 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/bus_bridge_pkg.sv
+    Info (12022): Found design unit 1: bus_bridge_pkg (SystemVerilog) File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus_bridge_pkg.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/bus_bridge_initiator_uart_wrapper.sv
+    Info (12023): Found entity 1: bus_bridge_initiator_uart_wrapper File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/bus_bridge_initiator_if.sv
+    Info (12023): Found entity 1: bus_bridge_initiator_if File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus_bridge_initiator_if.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/bus_bridge.sv
+    Info (12023): Found entity 1: bus_bridge File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus_bridge.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/bus.sv
+    Info (12023): Found entity 1: bus File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/arbiter.sv
+    Info (12023): Found entity 1: arbiter File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/arbiter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/pasir/desktop/github/ads-system-bus-main/bus_together/rtl_linuka/addr_decoder.sv
+    Info (12023): Found entity 1: addr_decoder File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/addr_decoder.sv Line: 1
+Warning (10222): Verilog HDL Parameter Declaration warning at transmitter.v(16): Parameter Declaration in module "transmitter" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/transmitter.v Line: 16
+Warning (10222): Verilog HDL Parameter Declaration warning at transmitter.v(17): Parameter Declaration in module "transmitter" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/transmitter.v Line: 17
+Warning (10222): Verilog HDL Parameter Declaration warning at transmitter.v(18): Parameter Declaration in module "transmitter" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/transmitter.v Line: 18
+Warning (10222): Verilog HDL Parameter Declaration warning at transmitter.v(19): Parameter Declaration in module "transmitter" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/transmitter.v Line: 19
+Warning (10222): Verilog HDL Parameter Declaration warning at receiver.v(16): Parameter Declaration in module "receiver" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/receiver.v Line: 16
+Warning (10222): Verilog HDL Parameter Declaration warning at receiver.v(17): Parameter Declaration in module "receiver" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/receiver.v Line: 17
+Warning (10222): Verilog HDL Parameter Declaration warning at receiver.v(18): Parameter Declaration in module "receiver" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/receiver.v Line: 18
+Warning (10222): Verilog HDL Parameter Declaration warning at receiver.v(19): Parameter Declaration in module "receiver" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/receiver.v Line: 19
+Info (12127): Elaborating entity "system_top_with_bus_bridge_a" for the top level hierarchy
+Info (12128): Elaborating entity "initiator" for hierarchy "initiator:u_initiator_1" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/system_top_with_bus_bridge_a.sv Line: 138
+Warning (10030): Net "write_mem.data_a" at initiator.sv(35) has no driver or initial value, using a default initial value '0' File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/initiator.sv Line: 35
+Warning (10030): Net "write_mem.waddr_a" at initiator.sv(35) has no driver or initial value, using a default initial value '0' File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/initiator.sv Line: 35
+Warning (10030): Net "write_mem.we_a" at initiator.sv(35) has no driver or initial value, using a default initial value '0' File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/initiator.sv Line: 35
+Info (12128): Elaborating entity "initiator" for hierarchy "initiator:u_initiator_2" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/system_top_with_bus_bridge_a.sv Line: 162
+Warning (10030): Net "write_mem.data_a" at initiator.sv(35) has no driver or initial value, using a default initial value '0' File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/initiator.sv Line: 35
+Warning (10030): Net "write_mem.waddr_a" at initiator.sv(35) has no driver or initial value, using a default initial value '0' File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/initiator.sv Line: 35
+Warning (10030): Net "write_mem.we_a" at initiator.sv(35) has no driver or initial value, using a default initial value '0' File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/initiator.sv Line: 35
+Info (12128): Elaborating entity "target" for hierarchy "target:u_target_1" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/system_top_with_bus_bridge_a.sv Line: 180
+Info (12128): Elaborating entity "bus_bridge_target_uart_wrapper" for hierarchy "bus_bridge_target_uart_wrapper:u_bridge_target" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/system_top_with_bus_bridge_a.sv Line: 225
+Info (10264): Verilog HDL Case Statement information at bus_bridge_target_uart_wrapper.sv(140): all case item expressions in this case statement are onehot File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus_bridge_target_uart_wrapper.sv Line: 140
+Info (12128): Elaborating entity "bus_bridge_target_if" for hierarchy "bus_bridge_target_uart_wrapper:u_bridge_target|bus_bridge_target_if:u_target_if" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus_bridge_target_uart_wrapper.sv Line: 68
+Info (12128): Elaborating entity "uart" for hierarchy "bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus_bridge_target_uart_wrapper.sv Line: 112
+Info (12128): Elaborating entity "baudrate" for hierarchy "bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|baudrate:uart_baud" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/uart.v Line: 22
+Info (12128): Elaborating entity "transmitter" for hierarchy "bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|transmitter:uart_Tx" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/uart.v Line: 33
+Info (12128): Elaborating entity "receiver" for hierarchy "bus_bridge_target_uart_wrapper:u_bridge_target|uart:u_target_uart|receiver:uart_Rx" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/uart/uart.v Line: 44
+Info (12128): Elaborating entity "bus" for hierarchy "bus:bus_a" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/system_top_with_bus_bridge_a.sv Line: 293
+Info (10264): Verilog HDL Case Statement information at bus.sv(483): all case item expressions in this case statement are onehot File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv Line: 483
+Info (10264): Verilog HDL Case Statement information at bus.sv(505): all case item expressions in this case statement are onehot File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv Line: 505
+Info (10264): Verilog HDL Case Statement information at bus.sv(514): all case item expressions in this case statement are onehot File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv Line: 514
+Info (10264): Verilog HDL Case Statement information at bus.sv(593): all case item expressions in this case statement are onehot File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv Line: 593
+Info (10264): Verilog HDL Case Statement information at bus.sv(607): all case item expressions in this case statement are onehot File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv Line: 607
+Info (10264): Verilog HDL Case Statement information at bus.sv(638): all case item expressions in this case statement are onehot File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv Line: 638
+Info (10264): Verilog HDL Case Statement information at bus.sv(653): all case item expressions in this case statement are onehot File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv Line: 653
+Info (12128): Elaborating entity "init_port" for hierarchy "bus:bus_a|init_port:u_init_port_1" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv Line: 199
+Info (12128): Elaborating entity "target_port" for hierarchy "bus:bus_a|target_port:u_target_port_1" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv Line: 251
+Info (12128): Elaborating entity "split_target_port" for hierarchy "bus:bus_a|split_target_port:u_split_target_port" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv Line: 304
+Info (12128): Elaborating entity "arbiter" for hierarchy "bus:bus_a|arbiter:u_arbiter" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv Line: 317
+Warning (10270): Verilog HDL Case Statement warning at arbiter.sv(63): incomplete case statement has no default case item File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/arbiter.sv Line: 63
+Info (10264): Verilog HDL Case Statement information at arbiter.sv(63): all case item expressions in this case statement are onehot File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/arbiter.sv Line: 63
+Info (12128): Elaborating entity "addr_decoder" for hierarchy "bus:bus_a|addr_decoder:u_addr_decoder" File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/bus.sv Line: 339
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276004): RAM logic "initiator:u_initiator_2|write_mem" is uninferred due to inappropriate RAM size File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/initiator.sv Line: 35
+    Info (276004): RAM logic "initiator:u_initiator_1|write_mem" is uninferred due to inappropriate RAM size File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/initiator.sv Line: 35
+Info (13000): Registers with preset signals will power-up high File: C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together/RTL_Linuka/initiator.sv Line: 87
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 54 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together_quartus/Linuka/output_files/Linuk_bus.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 678 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 672 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4858 megabytes
+    Info: Processing ended: Sun Dec  7 16:41:45 2025
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:20
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together_quartus/Linuka/output_files/Linuk_bus.map.smsg.
+
+

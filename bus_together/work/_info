@@ -1,15 +1,51 @@
 m255
 K4
 z2
-Z0 !s12c _opt1
+Z0 !s12c _opt2
 Z1 !s99 nomlopt
 R0
 R1
-!s12c _opt2
+R0
+R1
+Z2 !s12c _opt1
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
 R1
 R0
 R1
-R0
+R2
+R1
+R2
 R1
 !s12c _opt
 R1
@@ -20,231 +56,244 @@ R1
 !i10e 25
 !i10f 100
 cModel Technology
-Z2 dC:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together
+Z3 dC:/Users/pasir/Desktop/Github/ads-system-bus-main/bus_together
 T_opt
 !s110 1764656112
 VSJjb=QD4i?T>K[:<djBSO1
-Z3 04 15 4 work combined_top_tb fast 0
+Z4 04 15 4 work combined_top_tb fast 0
 =1-7c4d8f9bc2fe-692e83f0-17-6060
 R1
-Z4 !s12b OEM100
-Z5 !s124 OEM10U56 
+Z5 !s12b OEM100
+!s124 OEM10U56 
 Z6 o-quiet -auto_acc_if_foreign -work work +acc
 Z7 tCvgOpt 0
 n@_opt
 Z8 OL;O;2023.3;77
-R2
-T_opt1
-!s110 1764770901
-Vilc>h[D;fgF9??n>DfFYl3
 R3
-=1-7c4d8f9bc2fe-69304455-82-80a4
-R1
+T_opt1
+!s110 1765107558
+Vck>M=zDbnBhZ5^oo>cKH@1
 R4
+=1-7c4d8f9bc2fe-69356766-42-1ba8
+R1
 R5
+Z9 !s124 OEM10U57 
 R6
 R7
 n@_opt1
 R8
+R3
+T_opt2
+!s110 1765137622
+VD0i>UVNOoaJF8Sn75z]P]2
+R4
+=1-7c4d8f9bc2fe-6935dcd5-2c7-8e8
+R1
+R5
+R9
+R6
+R7
+n@_opt2
+R8
 vaddr_convert
 2RTL_Mavishan/addr_convert.v
-Z9 !s110 1764770896
+Z10 !s110 1765137617
 !i10b 1
 !s100 C>8kZQIUXI8i5mR[fHK8]1
 I:XPJMa6M`D9:bm1_^C6P:2
-R2
+R3
 w1764655132
 8RTL_Mavishan/addr_convert.v
 FRTL_Mavishan/addr_convert.v
 !i122 21
-Z10 L0 2 19
-Z11 VDg1SIo80bB@j0V0VzS_@n1
-Z12 OL;L;2023.3;77
+Z11 L0 2 19
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OL;L;2023.3;77
 r1
 !s85 0
 31
-Z13 !s108 1764770896.000000
+Z14 !s108 1765137616.000000
 !s107 RTL_Mavishan/addr_convert.v|
 !s90 -reportprogress|300|RTL_Mavishan/addr_convert.v|
 !i113 0
-Z14 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z15 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R7
 vaddr_decoder
 2RTL_Linuka/addr_decoder.sv
-Z15 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z16 !s110 1764770893
+Z16 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z17 !s110 1765137615
 !i10b 1
 !s100 0]KVJA45KXHW?B3mbj0YT1
 Inf9hGgio6zRG@9G`91QcB3
 S1
-R2
-Z17 w1764161303
+R3
+Z18 w1764161303
 8RTL_Linuka/addr_decoder.sv
 FRTL_Linuka/addr_decoder.sv
 !i122 2
 L0 1 124
-R11
 R12
+R13
 r1
 !s85 0
 31
-Z18 !s108 1764770893.000000
+Z19 !s108 1765137614.000000
 !s107 RTL_Linuka/addr_decoder.sv|
 !s90 -reportprogress|300|-sv|RTL_Linuka/addr_decoder.sv|
 !i113 0
-Z19 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z20 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R7
 vaddr_decoder_mav
 2RTL_Mavishan/addr_decoder_mav.v
-R9
+R10
 !i10b 1
 !s100 6R2_eER0>eoPO1VAW6NZA0
 I4J26g[L?BAoD:hQWXAUK:3
-R2
+R3
 w1764652909
 8RTL_Mavishan/addr_decoder_mav.v
 FRTL_Mavishan/addr_decoder_mav.v
 !i122 22
 L0 2 134
-R11
 R12
+R13
 r1
 !s85 0
 31
-R13
+Z21 !s108 1765137617.000000
 !s107 RTL_Mavishan/addr_decoder_mav.v|
 !s90 -reportprogress|300|RTL_Mavishan/addr_decoder_mav.v|
 !i113 0
-R14
+R15
 R7
 valtsyncram
 2RTL_Mavishan/altsyncram.v
-R16
+Z22 !s110 1765137614
 !i10b 1
 !s100 EDZ2dXz<P2@Q=>gVTKmCW0
 Iaf^4CA9]:8LZDH96Wg3Bi3
-R2
-w1764655574
+R3
+w1765104610
 8RTL_Mavishan/altsyncram.v
 FRTL_Mavishan/altsyncram.v
 !i122 0
 L0 7 132
-R11
 R12
+R13
 r1
 !s85 0
 31
-R18
+R19
 !s107 RTL_Mavishan/altsyncram.v|
 !s90 -reportprogress|300|RTL_Mavishan/altsyncram.v|
 !i113 0
-R14
+R15
 R7
 varbiter
 2RTL_Linuka/arbiter.sv
-R15
-Z20 !s110 1764770894
+R16
+R17
 !i10b 1
 !s100 7lDOIFcK[bY6B_OBJ7Khi0
 I@7VkR?hiRGQJUnj=QWa0<3
 S1
-R2
+R3
 w1764655186
 8RTL_Linuka/arbiter.sv
 FRTL_Linuka/arbiter.sv
 !i122 3
 L0 1 77
-R11
 R12
+R13
 r1
 !s85 0
 31
-R18
+Z23 !s108 1765137615.000000
 !s107 RTL_Linuka/arbiter.sv|
 !s90 -reportprogress|300|-sv|RTL_Linuka/arbiter.sv|
 !i113 0
-R19
+R20
 R7
 varbiter_mav
 2RTL_Mavishan/arbiter_mav.v
-R9
+R10
 !i10b 1
 !s100 [lA^@@6D[nmU^[94;0E]n3
 IU3cCE6S7Tz8D7fH9XiL0C0
-R2
+R3
 w1764655207
 8RTL_Mavishan/arbiter_mav.v
 FRTL_Mavishan/arbiter_mav.v
 !i122 23
 L0 1 121
-R11
 R12
+R13
 r1
 !s85 0
 31
-R13
+R21
 !s107 RTL_Mavishan/arbiter_mav.v|
 !s90 -reportprogress|300|RTL_Mavishan/arbiter_mav.v|
 !i113 0
-R14
+R15
 R7
 vbaudrate
 2RTL_Mavishan/baudrate.sv
-R15
-Z21 !s110 1764770897
+R16
+Z24 !s110 1765137618
 !i10b 1
 !s100 QFJXn>o@CB]@Kae^LQAec3
 IFhgUJMd=8U[<:l2Yg_3`21
 S1
-R2
-Z22 w1764314631
+R3
+Z25 w1764314631
 8RTL_Mavishan/baudrate.sv
 FRTL_Mavishan/baudrate.sv
 !i122 30
 L0 1 34
-R11
 R12
+R13
 r1
 !s85 0
 31
-Z23 !s108 1764770897.000000
+Z26 !s108 1765137618.000000
 !s107 RTL_Mavishan/baudrate.sv|
 !s90 -reportprogress|300|-sv|RTL_Mavishan/baudrate.sv|
 !i113 0
-R19
+R20
 R7
 vbus
 2RTL_Linuka/bus.sv
-R15
-R9
+R16
+Z27 !s110 1765137616
 !i10b 1
 !s100 1ZLTU;@4`gkIi1mO``6lA0
 ITM0fXHg2OB@JTokOVS57Q1
 S1
-R2
-R17
+R3
+R18
 8RTL_Linuka/bus.sv
 FRTL_Linuka/bus.sv
 !i122 19
 L0 1 670
-R11
 R12
+R13
 r1
 !s85 0
 31
-R13
+R14
 !s107 RTL_Linuka/bus.sv|
 !s90 -reportprogress|300|-sv|RTL_Linuka/bus.sv|
 !i113 0
-R19
+R20
 R7
 vbus_bridge
-Z24 2RTL_Linuka/bus_bridge.sv
-R15
-Z25 DXx4 work 14 bus_bridge_pkg 0 22 P?oY9Kh_1@?GhCT0>jORd2
+Z28 2RTL_Linuka/bus_bridge.sv
+R16
+Z29 DXx4 work 14 bus_bridge_pkg 0 22 P?oY9Kh_1@?GhCT0>jORd2
 DXx4 work 18 bus_bridge_sv_unit 0 22 Q4W0d?[nn3m12kg[P_KAh1
-Z26 !s110 1764770895
-R11
+R27
+R12
 r1
 !s85 0
 !i10b 1
@@ -252,27 +301,27 @@ r1
 IEHUF@ZjhKjZhMbib@=9nE3
 !s105 bus_bridge_sv_unit
 S1
-R2
-R17
-Z27 8RTL_Linuka/bus_bridge.sv
-Z28 FRTL_Linuka/bus_bridge.sv
+R3
+R18
+Z30 8RTL_Linuka/bus_bridge.sv
+Z31 FRTL_Linuka/bus_bridge.sv
 !i122 13
 L0 3 89
-R12
+R13
 31
-Z29 !s108 1764770895.000000
-Z30 !s107 RTL_Linuka/bus_bridge.sv|
-Z31 !s90 -reportprogress|300|-sv|RTL_Linuka/bus_bridge.sv|
+R14
+Z32 !s107 RTL_Linuka/bus_bridge.sv|
+Z33 !s90 -reportprogress|300|-sv|RTL_Linuka/bus_bridge.sv|
 !i113 0
-R19
+R20
 R7
 vbus_bridge_initiator_if
-Z32 2RTL_Linuka/bus_bridge_initiator_if.sv
-R15
-R25
+Z34 2RTL_Linuka/bus_bridge_initiator_if.sv
+R16
+R29
 DXx4 work 31 bus_bridge_initiator_if_sv_unit 0 22 9YcH=d@:nAUP7G2j_FE7?2
-R26
-R11
+R17
+R12
 r1
 !s85 0
 !i10b 1
@@ -280,25 +329,25 @@ r1
 IE6F>J??I_hNT?G9N5HbgW0
 !s105 bus_bridge_initiator_if_sv_unit
 S1
-R2
-R17
-Z33 8RTL_Linuka/bus_bridge_initiator_if.sv
-Z34 FRTL_Linuka/bus_bridge_initiator_if.sv
+R3
+R18
+Z35 8RTL_Linuka/bus_bridge_initiator_if.sv
+Z36 FRTL_Linuka/bus_bridge_initiator_if.sv
 !i122 11
 L0 3 155
-R12
+R13
 31
-R29
-Z35 !s107 RTL_Linuka/bus_bridge_initiator_if.sv|
-Z36 !s90 -reportprogress|300|-sv|RTL_Linuka/bus_bridge_initiator_if.sv|
+R23
+Z37 !s107 RTL_Linuka/bus_bridge_initiator_if.sv|
+Z38 !s90 -reportprogress|300|-sv|RTL_Linuka/bus_bridge_initiator_if.sv|
 !i113 0
-R19
+R20
 R7
 Xbus_bridge_initiator_if_sv_unit
-R32
-R15
-R25
-R26
+R34
+R16
+R29
+R17
 V9YcH=d@:nAUP7G2j_FE7?2
 r1
 !s85 0
@@ -307,27 +356,27 @@ r1
 I9YcH=d@:nAUP7G2j_FE7?2
 !i103 1
 S1
-R2
-R17
-R33
-R34
-!i122 11
-Z37 L0 1 0
-R12
-31
-R29
+R3
+R18
 R35
 R36
+!i122 11
+Z39 L0 1 0
+R13
+31
+R23
+R37
+R38
 !i113 0
-R19
+R20
 R7
 vbus_bridge_initiator_uart_wrapper
-Z38 2RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv
-R15
-R25
+Z40 2RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv
+R16
+R29
 DXx4 work 41 bus_bridge_initiator_uart_wrapper_sv_unit 0 22 =Ub=WbIfniL=ZcliH`N392
-R26
-R11
+R27
+R12
 r1
 !s85 0
 !i10b 1
@@ -335,25 +384,25 @@ r1
 IJ_^=`VZ;iW6zIzME<L9m40
 !s105 bus_bridge_initiator_uart_wrapper_sv_unit
 S1
-R2
-R17
-Z39 8RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv
-Z40 FRTL_Linuka/bus_bridge_initiator_uart_wrapper.sv
+R3
+R18
+Z41 8RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv
+Z42 FRTL_Linuka/bus_bridge_initiator_uart_wrapper.sv
 !i122 14
 L0 3 224
-R12
+R13
 31
-R29
-Z41 !s107 RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv|
-Z42 !s90 -reportprogress|300|-sv|RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv|
+R14
+Z43 !s107 RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv|
+Z44 !s90 -reportprogress|300|-sv|RTL_Linuka/bus_bridge_initiator_uart_wrapper.sv|
 !i113 0
-R19
+R20
 R7
 Xbus_bridge_initiator_uart_wrapper_sv_unit
-R38
-R15
-R25
-R26
+R40
+R16
+R29
+R27
 V=Ub=WbIfniL=ZcliH`N392
 r1
 !s85 0
@@ -362,96 +411,96 @@ r1
 I=Ub=WbIfniL=ZcliH`N392
 !i103 1
 S1
-R2
-R17
-R39
-R40
-!i122 14
-R37
-R12
-31
-R29
+R3
+R18
 R41
 R42
+!i122 14
+R39
+R13
+31
+R14
+R43
+R44
 !i113 0
-R19
+R20
 R7
 vbus_bridge_master
 2RTL_Mavishan/bus_bridge_master.v
-Z43 !s110 1764770898
+Z45 !s110 1765137619
 !i10b 1
-!s100 j=XN_JKHU8[44m`9g=COE3
-IejiDgj0ok6Th:[2k<bT_I1
-R2
-w1764655413
+!s100 33HIzC[mYi_54<IhA:dZT1
+IJA79Z=@]ln0P]1V2nYPUj2
+R3
+w1765107238
 8RTL_Mavishan/bus_bridge_master.v
 FRTL_Mavishan/bus_bridge_master.v
 !i122 37
-L0 6 198
-R11
+L0 6 216
 R12
+R13
 r1
 !s85 0
 31
-Z44 !s108 1764770898.000000
+Z46 !s108 1765137619.000000
 !s107 RTL_Mavishan/bus_bridge_master.v|
 !s90 -reportprogress|300|RTL_Mavishan/bus_bridge_master.v|
 !i113 0
-R14
+R15
 R7
 Xbus_bridge_pkg
 2RTL_Linuka/bus_bridge_pkg.sv
-R15
 R16
+R22
 !i10b 1
 !s100 =hldg;2_o<;R>gD9Ph^Od2
 IP?oY9Kh_1@?GhCT0>jORd2
 S1
-R2
-R17
+R3
+R18
 8RTL_Linuka/bus_bridge_pkg.sv
 FRTL_Linuka/bus_bridge_pkg.sv
 !i122 1
-R37
+R39
 VP?oY9Kh_1@?GhCT0>jORd2
-R12
+R13
 r1
 !s85 0
 31
-R18
+R19
 !s107 RTL_Linuka/bus_bridge_pkg.sv|
 !s90 -reportprogress|300|-sv|RTL_Linuka/bus_bridge_pkg.sv|
 !i113 0
-R19
+R20
 R7
 vbus_bridge_slave
 2RTL_Mavishan/bus_bridge_slave.v
-R43
+R45
 !i10b 1
-!s100 1WRG4hPS<]9AP@F`dk;3L1
-IZe9a4S`_lkhgXVn>zInEK0
-R2
-Z45 w1764649863
+!s100 eW]5Td_OR9MB0TL=P?58@3
+I:<_YnY=nhB1TaYnDP2DWZ1
+R3
+w1765136053
 8RTL_Mavishan/bus_bridge_slave.v
 FRTL_Mavishan/bus_bridge_slave.v
 !i122 38
 L0 1 152
-R11
 R12
+R13
 r1
 !s85 0
 31
-R44
+R46
 !s107 RTL_Mavishan/bus_bridge_slave.v|
 !s90 -reportprogress|300|RTL_Mavishan/bus_bridge_slave.v|
 !i113 0
-R14
+R15
 R7
 Xbus_bridge_sv_unit
-R24
-R15
-R25
-R26
+R28
+R16
+R29
+R27
 VQ4W0d?[nn3m12kg[P_KAh1
 r1
 !s85 0
@@ -460,27 +509,27 @@ r1
 IQ4W0d?[nn3m12kg[P_KAh1
 !i103 1
 S1
-R2
-R17
-R27
-R28
-!i122 13
-R37
-R12
-31
-R29
+R3
+R18
 R30
 R31
+!i122 13
+R39
+R13
+31
+R14
+R32
+R33
 !i113 0
-R19
+R20
 R7
 vbus_bridge_target_if
-Z46 2RTL_Linuka/bus_bridge_target_if.sv
-R15
-R25
+Z47 2RTL_Linuka/bus_bridge_target_if.sv
+R16
+R29
 DXx4 work 28 bus_bridge_target_if_sv_unit 0 22 @LdEEHMSlESa^kzS`^_472
-R26
-R11
+R27
+R12
 r1
 !s85 0
 !i10b 1
@@ -488,25 +537,25 @@ r1
 IL`Q3KUz3R]RUAh6FEhkbU0
 !s105 bus_bridge_target_if_sv_unit
 S1
-R2
-R17
-Z47 8RTL_Linuka/bus_bridge_target_if.sv
-Z48 FRTL_Linuka/bus_bridge_target_if.sv
+R3
+R18
+Z48 8RTL_Linuka/bus_bridge_target_if.sv
+Z49 FRTL_Linuka/bus_bridge_target_if.sv
 !i122 12
 L0 3 199
-R12
+R13
 31
-R29
-Z49 !s107 RTL_Linuka/bus_bridge_target_if.sv|
-Z50 !s90 -reportprogress|300|-sv|RTL_Linuka/bus_bridge_target_if.sv|
+R23
+Z50 !s107 RTL_Linuka/bus_bridge_target_if.sv|
+Z51 !s90 -reportprogress|300|-sv|RTL_Linuka/bus_bridge_target_if.sv|
 !i113 0
-R19
+R20
 R7
 Xbus_bridge_target_if_sv_unit
-R46
-R15
-R25
-R26
+R47
+R16
+R29
+R27
 V@LdEEHMSlESa^kzS`^_472
 r1
 !s85 0
@@ -515,27 +564,27 @@ r1
 I@LdEEHMSlESa^kzS`^_472
 !i103 1
 S1
-R2
-R17
-R47
+R3
+R18
 R48
-!i122 12
-R37
-R12
-31
-R29
 R49
+!i122 12
+R39
+R13
+31
+R23
 R50
+R51
 !i113 0
-R19
+R20
 R7
 vbus_bridge_target_uart_wrapper
-Z51 2RTL_Linuka/bus_bridge_target_uart_wrapper.sv
-R15
-R25
+Z52 2RTL_Linuka/bus_bridge_target_uart_wrapper.sv
+R16
+R29
 DXx4 work 38 bus_bridge_target_uart_wrapper_sv_unit 0 22 MeA[c6o;[3j^ab2j79:^91
-R26
-R11
+R27
+R12
 r1
 !s85 0
 !i10b 1
@@ -543,25 +592,25 @@ r1
 I>a;eBc?[^4L_`B1KC<;`X2
 !s105 bus_bridge_target_uart_wrapper_sv_unit
 S1
-R2
-R17
-Z52 8RTL_Linuka/bus_bridge_target_uart_wrapper.sv
-Z53 FRTL_Linuka/bus_bridge_target_uart_wrapper.sv
+R3
+R18
+Z53 8RTL_Linuka/bus_bridge_target_uart_wrapper.sv
+Z54 FRTL_Linuka/bus_bridge_target_uart_wrapper.sv
 !i122 15
 L0 3 252
-R12
+R13
 31
-R29
-Z54 !s107 RTL_Linuka/bus_bridge_target_uart_wrapper.sv|
-Z55 !s90 -reportprogress|300|-sv|RTL_Linuka/bus_bridge_target_uart_wrapper.sv|
+R14
+Z55 !s107 RTL_Linuka/bus_bridge_target_uart_wrapper.sv|
+Z56 !s90 -reportprogress|300|-sv|RTL_Linuka/bus_bridge_target_uart_wrapper.sv|
 !i113 0
-R19
+R20
 R7
 Xbus_bridge_target_uart_wrapper_sv_unit
-R51
-R15
-R25
-R26
+R52
+R16
+R29
+R27
 VMeA[c6o;[3j^ab2j79:^91
 r1
 !s85 0
@@ -570,771 +619,771 @@ r1
 IMeA[c6o;[3j^ab2j79:^91
 !i103 1
 S1
-R2
-R17
-R52
+R3
+R18
 R53
-!i122 15
-R37
-R12
-31
-R29
 R54
+!i122 15
+R39
+R13
+31
+R14
 R55
+R56
 !i113 0
-R19
+R20
 R7
 vbus_m2_s3
 2RTL_Mavishan/bus_m2_s3.v
-Z56 !s110 1764770899
+Z57 !s110 1765137620
 !i10b 1
 !s100 zOJ?3DbBa8ZL^Qh2DL4gX0
 Im5o<2CU_fWiRWAK7jnE]53
-R2
+R3
 w1764655220
 8RTL_Mavishan/bus_m2_s3.v
 FRTL_Mavishan/bus_m2_s3.v
 !i122 44
 L0 2 162
-R11
 R12
+R13
 r1
 !s85 0
 31
-Z57 !s108 1764770899.000000
+Z58 !s108 1765137620.000000
 !s107 RTL_Mavishan/bus_m2_s3.v|
 !s90 -reportprogress|300|RTL_Mavishan/bus_m2_s3.v|
 !i113 0
-R14
+R15
 R7
 vcombined_top
 2combined_top.sv
-R15
-R56
+R16
+R57
 !i10b 1
-!s100 g60kBINL<_4n:G7IX7jSB0
-I[zGZZDAl>8V`bX6[1_5Ea0
+!s100 I6K_Sh0@g9gYYQ]fz_[XI3
+I?R`NBLeJYQoC^QgXOL=4W1
 S1
-R2
-Z58 w1764651826
+R3
+w1765095401
 8combined_top.sv
 Fcombined_top.sv
 !i122 47
-L0 3 41
-R11
+L0 3 42
 R12
+R13
 r1
 !s85 0
 31
-R57
+R58
 !s107 combined_top.sv|
 !s90 -reportprogress|300|-sv|combined_top.sv|
 !i113 0
-R19
+R20
 R7
 vcombined_top_tb
 2combined_top_tb.sv
-R15
-R56
+R16
+R57
 !i10b 1
-!s100 T4L2ZEYX5Jnm=iO]Y?ANn1
-IjThcEc0GgJJ6KhnM;XBGG2
+!s100 CUgj4n30XDff4^WU:i]YG3
+ImjHXW<nTWBg8aknP0SJ@M0
 S1
-R2
-R58
+R3
+w1765137563
 8combined_top_tb.sv
 Fcombined_top_tb.sv
 !i122 48
-L0 3 102
-R11
+L0 3 69
 R12
+R13
 r1
 !s85 0
 31
-R57
+R58
 !s107 combined_top_tb.sv|
 !s90 -reportprogress|300|-sv|combined_top_tb.sv|
 !i113 0
-R19
+R20
 R7
 vdec3
 2RTL_Mavishan/dec3.v
-R21
+R10
 !i10b 1
 !s100 Cfn774_^8^8kjXU3?6gG@2
 ILRH]?J`dbW8>2DYS?jHZh2
-R2
-R22
+R3
+R25
 8RTL_Mavishan/dec3.v
 FRTL_Mavishan/dec3.v
 !i122 24
-R10
 R11
 R12
+R13
 r1
 !s85 0
 31
-R13
+R21
 !s107 RTL_Mavishan/dec3.v|
 !s90 -reportprogress|300|RTL_Mavishan/dec3.v|
 !i113 0
-R14
+R15
 R7
 vdemo_top_bb
 2RTL_Mavishan/demo_top_bb.v
-R56
+R57
 !i10b 1
-!s100 `7LTBlCgcZ>36ZW=N9A_Q3
-IamASO<4BNb<Ll=WRo0CzY1
-R2
-R45
+!s100 Q9N6l7PdUjd?^=Ub^`Nal1
+IzFe:Q8J];>2;M`iie=[B>0
+R3
+w1765107240
 8RTL_Mavishan/demo_top_bb.v
 FRTL_Mavishan/demo_top_bb.v
 !i122 46
-L0 1 171
-R11
+L0 1 176
 R12
+R13
 r1
 !s85 0
 31
-R57
+R58
 !s107 RTL_Mavishan/demo_top_bb.v|
 !s90 -reportprogress|300|RTL_Mavishan/demo_top_bb.v|
 !i113 0
-R14
+R15
 R7
 vfifo
 2RTL_Mavishan/fifo.v
-R21
+R24
 !i10b 1
 !s100 0:3`Ro;[biB?m7<7YoDj=2
 IziooRGHO3lVL13mo4DOjm1
-R2
-R45
+R3
+w1765088226
 8RTL_Mavishan/fifo.v
 FRTL_Mavishan/fifo.v
 !i122 29
 L0 2 39
-R11
 R12
+R13
 r1
 !s85 0
 31
-R23
+R21
 !s107 RTL_Mavishan/fifo.v|
 !s90 -reportprogress|300|RTL_Mavishan/fifo.v|
 !i113 0
-R14
+R15
 R7
 vinit_port
 2RTL_Linuka/init_port.sv
-R15
-R20
+R16
+R17
 !i10b 1
 !s100 F8W<Lf0h@oJTW@JnlScfD1
 IOOD4fQ`QLWa<n4UY5:V^Q1
 S1
-R2
-R17
+R3
+R18
 8RTL_Linuka/init_port.sv
 FRTL_Linuka/init_port.sv
 !i122 4
 L0 1 211
-R11
 R12
+R13
 r1
 !s85 0
 31
-Z59 !s108 1764770894.000000
+R23
 !s107 RTL_Linuka/init_port.sv|
 !s90 -reportprogress|300|-sv|RTL_Linuka/init_port.sv|
 !i113 0
-R19
+R20
 R7
 vinitiator
 2RTL_Linuka/initiator.sv
-R15
-R9
+R16
+R27
 !i10b 1
 !s100 e?Tn9QQa0dU4?RN6XQj`_1
 I7`EERK_;IW<S4<?gZe3Wf3
 S1
-R2
-R17
+R3
+R18
 8RTL_Linuka/initiator.sv
 FRTL_Linuka/initiator.sv
 !i122 16
 L0 1 230
-R11
 R12
+R13
 r1
 !s85 0
 31
-R29
+R14
 !s107 RTL_Linuka/initiator.sv|
 !s90 -reportprogress|300|-sv|RTL_Linuka/initiator.sv|
 !i113 0
-R19
+R20
 R7
 vmaster_bram
 2RTL_Mavishan/master_bram.v
-R56
+R57
 !i10b 1
 !s100 Idoa:4n`0NPF0RMH2lhEW3
 I4W<j4C^GVg`iXCGA9GBLS2
-R2
-R22
+R3
+w1765103483
 8RTL_Mavishan/master_bram.v
 FRTL_Mavishan/master_bram.v
 !i122 43
 L0 40 66
-R11
 R12
+R13
 r1
 !s85 0
 31
-R57
+R58
 !s107 RTL_Mavishan/master_bram.v|
 !s90 -reportprogress|300|RTL_Mavishan/master_bram.v|
 !i113 0
-R14
+R15
 R7
 vmaster_port
 2RTL_Mavishan/master_port.v
-R21
+R10
 !i10b 1
 !s100 OjCzA[ek@m8hG_DPM4zkf0
 ICF;zkYez^]JgTLeAAlS5J0
-R2
-R22
+R3
+R25
 8RTL_Mavishan/master_port.v
 FRTL_Mavishan/master_port.v
 !i122 27
-Z60 L0 1 161
-R11
+Z59 L0 1 161
 R12
+R13
 r1
 !s85 0
 31
-R23
+R21
 !s107 RTL_Mavishan/master_port.v|
 !s90 -reportprogress|300|RTL_Mavishan/master_port.v|
 !i113 0
-R14
+R15
 R7
 vmux2
 2RTL_Mavishan/mux2.v
-R21
+R10
 !i10b 1
 !s100 H>b^ag@oW3LY`5Plcd@7b0
 ID0UWX:@F@SzlnTViZ[DTi3
-R2
-R22
+R3
+R25
 8RTL_Mavishan/mux2.v
 FRTL_Mavishan/mux2.v
 !i122 25
 L0 1 12
-R11
 R12
+R13
 r1
 !s85 0
 31
-R23
+R21
 !s107 RTL_Mavishan/mux2.v|
 !s90 -reportprogress|300|RTL_Mavishan/mux2.v|
 !i113 0
-R14
+R15
 R7
 vmux3
 2RTL_Mavishan/mux3.v
-R21
+R10
 !i10b 1
 !s100 FJ3367PTS@>RZdBKQ[9Ym2
 IPZ]P9Pomh@@Ee`75gPJ0j2
-R2
-R22
+R3
+R25
 8RTL_Mavishan/mux3.v
 FRTL_Mavishan/mux3.v
 !i122 26
 L0 1 20
-R11
 R12
+R13
 r1
 !s85 0
 31
-R23
+R21
 !s107 RTL_Mavishan/mux3.v|
 !s90 -reportprogress|300|RTL_Mavishan/mux3.v|
 !i113 0
-R14
+R15
 R7
 vreceiver
 2RTL_Linuka/uart/receiver.v
-R20
+R17
 !i10b 1
 !s100 8MaQHP;HD7alb2fj9V86n3
 IbQ0YSd_a_hnaR5D8jLYL<2
-R2
-R17
+R3
+R18
 8RTL_Linuka/uart/receiver.v
 FRTL_Linuka/uart/receiver.v
 !i122 8
 L0 1 104
-R11
 R12
-r1
-!s85 0
-31
-R59
-!s107 RTL_Linuka/uart/receiver.v|
-!s90 -reportprogress|300|RTL_Linuka/uart/receiver.v|
-!i113 0
-R14
-R7
-vslave_bram
-2RTL_Mavishan/slave_bram.v
-R43
-!i10b 1
-!s100 KoN;^?=;Qi64MY:^7[]BP0
-I@0CRmAXX4UOFzbL@P@Gf?2
-R2
-R22
-8RTL_Mavishan/slave_bram.v
-FRTL_Mavishan/slave_bram.v
-!i122 39
-Z61 L0 40 68
-R11
-R12
-r1
-!s85 0
-31
-R44
-!s107 RTL_Mavishan/slave_bram.v|
-!s90 -reportprogress|300|RTL_Mavishan/slave_bram.v|
-!i113 0
-R14
-R7
-vslave_bram_2k
-2RTL_Mavishan/slave_bram_2k.v
-R56
-!i10b 1
-!s100 oRY^fCSHZmcjWdQMJBW4c1
-I7AjaG<hDm_@`J_J5j?jkP0
-R2
-R22
-8RTL_Mavishan/slave_bram_2k.v
-FRTL_Mavishan/slave_bram_2k.v
-!i122 40
-R61
-R11
-R12
-r1
-!s85 0
-31
-R57
-!s107 RTL_Mavishan/slave_bram_2k.v|
-!s90 -reportprogress|300|RTL_Mavishan/slave_bram_2k.v|
-!i113 0
-R14
-R7
-vslave_memory_bram
-2RTL_Mavishan/slave_memory_bram.v
-R56
-!i10b 1
-!s100 [n]l>Ad?6o>l9T1gQeTZ<1
-IlAU1VI;<X5A0?LmlG`c^53
-R2
-R22
-8RTL_Mavishan/slave_memory_bram.v
-FRTL_Mavishan/slave_memory_bram.v
-!i122 41
-L0 1 56
-R11
-R12
-r1
-!s85 0
-31
-R57
-!s107 RTL_Mavishan/slave_memory_bram.v|
-!s90 -reportprogress|300|RTL_Mavishan/slave_memory_bram.v|
-!i113 0
-R14
-R7
-vslave_port
-2RTL_Mavishan/slave_port.v
-R21
-!i10b 1
-!s100 Q^lC9NU[d27gDZR4CDUja1
-IH3HIoLEaV<]hKn[m4j@g_2
-R2
-Z62 w1764621780
-8RTL_Mavishan/slave_port.v
-FRTL_Mavishan/slave_port.v
-!i122 28
-L0 1 200
-R11
-R12
+R13
 r1
 !s85 0
 31
 R23
-!s107 RTL_Mavishan/slave_port.v|
-!s90 -reportprogress|300|RTL_Mavishan/slave_port.v|
+!s107 RTL_Linuka/uart/receiver.v|
+!s90 -reportprogress|300|RTL_Linuka/uart/receiver.v|
 !i113 0
-R14
+R15
 R7
-vslave_with_bram
-2RTL_Mavishan/slave_with_bram.v
-R56
+vslave_bram
+2RTL_Mavishan/slave_bram.v
+R45
 !i10b 1
-!s100 ORLlc69fd:lEK@7GPi?A72
-IPo[<F5Y3HXo;AmJn>De6l3
-R2
-R62
-8RTL_Mavishan/slave_with_bram.v
-FRTL_Mavishan/slave_with_bram.v
-!i122 42
-L0 1 69
-R11
+!s100 KoN;^?=;Qi64MY:^7[]BP0
+I@0CRmAXX4UOFzbL@P@Gf?2
+R3
+R25
+8RTL_Mavishan/slave_bram.v
+FRTL_Mavishan/slave_bram.v
+!i122 39
+Z60 L0 40 68
 R12
+R13
 r1
 !s85 0
 31
+R46
+!s107 RTL_Mavishan/slave_bram.v|
+!s90 -reportprogress|300|RTL_Mavishan/slave_bram.v|
+!i113 0
+R15
+R7
+vslave_bram_2k
+2RTL_Mavishan/slave_bram_2k.v
+R45
+!i10b 1
+!s100 oRY^fCSHZmcjWdQMJBW4c1
+I7AjaG<hDm_@`J_J5j?jkP0
+R3
+R25
+8RTL_Mavishan/slave_bram_2k.v
+FRTL_Mavishan/slave_bram_2k.v
+!i122 40
+R60
+R12
+R13
+r1
+!s85 0
+31
+R46
+!s107 RTL_Mavishan/slave_bram_2k.v|
+!s90 -reportprogress|300|RTL_Mavishan/slave_bram_2k.v|
+!i113 0
+R15
+R7
+vslave_memory_bram
+2RTL_Mavishan/slave_memory_bram.v
+R45
+!i10b 1
+!s100 [n]l>Ad?6o>l9T1gQeTZ<1
+IlAU1VI;<X5A0?LmlG`c^53
+R3
+R25
+8RTL_Mavishan/slave_memory_bram.v
+FRTL_Mavishan/slave_memory_bram.v
+!i122 41
+L0 1 56
+R12
+R13
+r1
+!s85 0
+31
+R46
+!s107 RTL_Mavishan/slave_memory_bram.v|
+!s90 -reportprogress|300|RTL_Mavishan/slave_memory_bram.v|
+!i113 0
+R15
+R7
+vslave_port
+2RTL_Mavishan/slave_port.v
+R10
+!i10b 1
+!s100 BDaSh=CBXbYHN=Nz6X^OL0
+IZ1gVIFm<90`h_aTZcmz>V0
+R3
+w1765098597
+8RTL_Mavishan/slave_port.v
+FRTL_Mavishan/slave_port.v
+!i122 28
+L0 1 196
+R12
+R13
+r1
+!s85 0
+31
+R21
+!s107 RTL_Mavishan/slave_port.v|
+!s90 -reportprogress|300|RTL_Mavishan/slave_port.v|
+!i113 0
+R15
+R7
+vslave_with_bram
+2RTL_Mavishan/slave_with_bram.v
 R57
+!i10b 1
+!s100 eNnkWJ=gldW_n22e_WZKd3
+I^i^kf=DUEBfT:NCB=f<jg1
+R3
+w1765099325
+8RTL_Mavishan/slave_with_bram.v
+FRTL_Mavishan/slave_with_bram.v
+!i122 42
+L0 1 79
+R12
+R13
+r1
+!s85 0
+31
+R58
 !s107 RTL_Mavishan/slave_with_bram.v|
 !s90 -reportprogress|300|RTL_Mavishan/slave_with_bram.v|
 !i113 0
-R14
+R15
 R7
 vsplit_target
 2RTL_Linuka/split_target.sv
-R15
-R9
+R16
+R27
 !i10b 1
 !s100 URljWZ<c^bz5ZXi]Qb=Om2
 I5BEDBm^n[;j=H<U^;d_JC2
 S1
-R2
-R17
+R3
+R18
 8RTL_Linuka/split_target.sv
 FRTL_Linuka/split_target.sv
 !i122 18
 L0 1 130
-R11
 R12
+R13
 r1
 !s85 0
 31
-R13
+R14
 !s107 RTL_Linuka/split_target.sv|
 !s90 -reportprogress|300|-sv|RTL_Linuka/split_target.sv|
 !i113 0
-R19
+R20
 R7
 vsplit_target_port
 2RTL_Linuka/split_target_port.sv
-R15
-R20
+R16
+R17
 !i10b 1
 !s100 cci2iFMRN]l=Qm9]Ro3aR3
 IUZ5J=gfH;eR[KY;_l3iMf1
 S1
-R2
-R17
+R3
+R18
 8RTL_Linuka/split_target_port.sv
 FRTL_Linuka/split_target_port.sv
 !i122 6
-R60
-R11
+R59
 R12
+R13
 r1
 !s85 0
 31
-R59
+R23
 !s107 RTL_Linuka/split_target_port.sv|
 !s90 -reportprogress|300|-sv|RTL_Linuka/split_target_port.sv|
 !i113 0
-R19
+R20
 R7
 vsystem_top_with_bus_bridge_a
 2RTL_Linuka/system_top_with_bus_bridge_a.sv
-R15
-R9
+R16
+R27
 !i10b 1
-!s100 REiScYd5mf@QGAElFD0kN2
-I6^O^IW_Kk<;4UaSLWKj_=2
+!s100 BF4_1hT@DzRgm_F[^;Dza1
+I7X>J?7VJ=3Te0?;lk?<Kh2
 S1
-R2
-R17
+R3
+w1765105852
 8RTL_Linuka/system_top_with_bus_bridge_a.sv
 FRTL_Linuka/system_top_with_bus_bridge_a.sv
 !i122 20
-L0 3 287
-R11
+L0 3 292
 R12
+R13
 r1
 !s85 0
 31
-R13
+R14
 !s107 RTL_Linuka/system_top_with_bus_bridge_a.sv|
 !s90 -reportprogress|300|-sv|RTL_Linuka/system_top_with_bus_bridge_a.sv|
 !i113 0
-R19
+R20
 R7
 vtarget
 2RTL_Linuka/target.sv
-R15
-R9
+R16
+R27
 !i10b 1
 !s100 mlWXjPd]6<zJ;Gb95lO6h3
 I6ReKa3D@Z;oPJ_=?VZ0eR2
 S1
-R2
-R17
+R3
+R18
 8RTL_Linuka/target.sv
 FRTL_Linuka/target.sv
 !i122 17
 L0 1 76
-R11
 R12
+R13
 r1
 !s85 0
 31
-R13
+R14
 !s107 RTL_Linuka/target.sv|
 !s90 -reportprogress|300|-sv|RTL_Linuka/target.sv|
 !i113 0
-R19
+R20
 R7
 vtarget_port
 2RTL_Linuka/target_port.sv
-R15
-R20
+R16
+R17
 !i10b 1
 !s100 <<93iSmJfh1<LJXEN4S@93
 IN:8LjI:ig?0Me<dH@niWY3
 S1
-R2
-R17
+R3
+R18
 8RTL_Linuka/target_port.sv
 FRTL_Linuka/target_port.sv
 !i122 5
 L0 1 149
-R11
 R12
+R13
 r1
 !s85 0
 31
-R59
+R23
 !s107 RTL_Linuka/target_port.sv|
 !s90 -reportprogress|300|-sv|RTL_Linuka/target_port.sv|
 !i113 0
-R19
+R20
 R7
 vtop_with_bb_v1
 2RTL_Mavishan/top_with_bb_v1.v
-R56
+R57
 !i10b 1
-!s100 gD6;AWER5<kl[S9J^0^AD0
-IRDX^FUNA`V4C4hC9`ZV8P3
-R2
-R62
+!s100 W^>XP<>]f?KcnGKehcDBH3
+IGh>Kc>n1T80fz^SPM<[F@2
+R3
+w1765107430
 8RTL_Mavishan/top_with_bb_v1.v
 FRTL_Mavishan/top_with_bb_v1.v
 !i122 45
-L0 1 228
-R11
+L0 1 245
 R12
+R13
 r1
 !s85 0
 31
-R57
+R58
 !s107 RTL_Mavishan/top_with_bb_v1.v|
 !s90 -reportprogress|300|RTL_Mavishan/top_with_bb_v1.v|
 !i113 0
-R14
+R15
 R7
 vtransmitter
 2RTL_Linuka/uart/transmitter.v
-R20
+R17
 !i10b 1
 !s100 >:H1H9H4iV63Fj=FZ7n@j2
 I3PR@T^eM7JRSIkbJ7Oea83
-R2
-R17
+R3
+R18
 8RTL_Linuka/uart/transmitter.v
 FRTL_Linuka/uart/transmitter.v
 !i122 9
 L0 1 91
-R11
 R12
+R13
 r1
 !s85 0
 31
-R59
+R23
 !s107 RTL_Linuka/uart/transmitter.v|
 !s90 -reportprogress|300|RTL_Linuka/uart/transmitter.v|
 !i113 0
-R14
+R15
 R7
 vuart
 2RTL_Linuka/uart/uart.v
-R26
+R17
 !i10b 1
 !s100 EDHf<iOQ5noELIXY?F@l60
 I?zFSBQ<:`N9P[Q@=L;d;d1
-R2
-R17
+R3
+R18
 8RTL_Linuka/uart/uart.v
 FRTL_Linuka/uart/uart.v
 !i122 10
 L0 1 46
-R11
 R12
+R13
 r1
 !s85 0
 31
-R59
+R23
 !s107 RTL_Linuka/uart/uart.v|
 !s90 -reportprogress|300|RTL_Linuka/uart/uart.v|
 !i113 0
-R14
+R15
 R7
 vuart_mav
 2RTL_Mavishan/uart_mav.v
-R43
+R24
 !i10b 1
 !s100 6F_;>B0zEQ2bI<5]kYVU>0
 IeahF3X43:2HPiPMY[Ofl^1
-R2
+R3
 w1764655520
 8RTL_Mavishan/uart_mav.v
 FRTL_Mavishan/uart_mav.v
 !i122 33
 L0 1 43
-R11
 R12
+R13
 r1
 !s85 0
 31
-R44
+R26
 !s107 RTL_Mavishan/uart_mav.v|
 !s90 -reportprogress|300|RTL_Mavishan/uart_mav.v|
 !i113 0
-R14
+R15
 R7
 vuart_other
 2RTL_Mavishan/uart_other.v
-R43
+R45
 !i10b 1
 !s100 7Z<`nB@<gddNMJK`RO5n21
 IRUceT[YToddKh5Dm1]Rc52
-R2
+R3
 w1764336904
 8RTL_Mavishan/uart_other.v
 FRTL_Mavishan/uart_other.v
 !i122 36
 L0 1 63
-R11
 R12
+R13
 r1
 !s85 0
 31
-R44
+R46
 !s107 RTL_Mavishan/uart_other.v|
 !s90 -reportprogress|300|RTL_Mavishan/uart_other.v|
 !i113 0
-R14
+R15
 R7
 vuart_rx
 2RTL_Mavishan/uart_rx.v
-R21
+R24
 !i10b 1
 !s100 J>abU3QAE2_2hU1I[7i<b0
 IiGQYca<fZPLe_16Am9zWH3
-R2
-R22
+R3
+R25
 8RTL_Mavishan/uart_rx.v
 FRTL_Mavishan/uart_rx.v
 !i122 31
 L0 1 78
-R11
 R12
+R13
 r1
 !s85 0
 31
-R23
+R26
 !s107 RTL_Mavishan/uart_rx.v|
 !s90 -reportprogress|300|RTL_Mavishan/uart_rx.v|
 !i113 0
-R14
+R15
 R7
 vuart_rx_other
 2RTL_Mavishan/uart_rx_other.v
-R43
+R24
 !i10b 1
 !s100 DE>9SID2?dO>f@WW8:b9L3
 IHZkaiJZ7gSVlDc:K<Ll@<3
-R2
+R3
 w1764344810
 8RTL_Mavishan/uart_rx_other.v
 FRTL_Mavishan/uart_rx_other.v
 !i122 34
 L0 1 98
-R11
 R12
+R13
 r1
 !s85 0
 31
-R44
+R26
 !s107 RTL_Mavishan/uart_rx_other.v|
 !s90 -reportprogress|300|RTL_Mavishan/uart_rx_other.v|
 !i113 0
-R14
+R15
 R7
 vuart_tx
 2RTL_Mavishan/uart_tx.v
-R43
+R24
 !i10b 1
 !s100 XBRf@5CAm5@fIb<m<dUke1
 IVcKd;e[U^6I@i8BYB>;dj2
-R2
-R22
+R3
+R25
 8RTL_Mavishan/uart_tx.v
 FRTL_Mavishan/uart_tx.v
 !i122 32
 L0 1 85
-R11
 R12
+R13
 r1
 !s85 0
 31
-R23
+R26
 !s107 RTL_Mavishan/uart_tx.v|
 !s90 -reportprogress|300|RTL_Mavishan/uart_tx.v|
 !i113 0
-R14
+R15
 R7
 vuart_tx_other
 2RTL_Mavishan/uart_tx_other.v
-R43
+R45
 !i10b 1
 !s100 bD_5Q0ASoN1mf^?gdn_U32
 IYZiM:M=8PGOXhK9Lzi>WE0
-R2
-R45
+R3
+w1764649863
 8RTL_Mavishan/uart_tx_other.v
 FRTL_Mavishan/uart_tx_other.v
 !i122 35
 L0 1 88
-R11
 R12
+R13
 r1
 !s85 0
 31
-R44
+R26
 !s107 RTL_Mavishan/uart_tx_other.v|
 !s90 -reportprogress|300|RTL_Mavishan/uart_tx_other.v|
 !i113 0
-R14
+R15
 R7
