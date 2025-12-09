@@ -19,7 +19,7 @@
 # vmap work work 
 # Modifying modelsim.ini
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 11:34:52 on Dec 09,2025
+# Start time: 14:39:19 on Dec 09,2025
 # vlog -reportprogress 300 "+define+QUESTA_SIM" -sv RTL_Mavishan/uart_tx_32.v RTL_Mavishan/uart_rx_other_16.v RTL_Mavishan/uart_other_32_16.v RTL_Mavishan/addr_convert.v RTL_Mavishan/addr_decoder_mav.v RTL_Mavishan/arbiter_mav.v RTL_Mavishan/bus_bridge_master.v RTL_Mavishan/bus_bridge_slave.v RTL_Mavishan/bus_m2_s3.v RTL_Mavishan/dec3.v RTL_Mavishan/demo_top_bb.v RTL_Mavishan/fifo.v RTL_Mavishan/master_bram.v RTL_Mavishan/master_port.v RTL_Mavishan/mux2.v RTL_Mavishan/mux3.v RTL_Mavishan/slave_bram.v RTL_Mavishan/slave_bram_2k.v RTL_Mavishan/slave_memory_bram.v RTL_Mavishan/slave_port.v RTL_Mavishan/slave_with_bram.v RTL_Mavishan/top_with_bb_v1.v RTL_Mavishan/uart_other.v RTL_Mavishan/uart_other_32_16.v RTL_Mavishan/uart_rx_other.v RTL_Mavishan/uart_rx_other_16.v RTL_Mavishan/uart_tx_32.v RTL_Mavishan/uart_tx_other.v RTL_Mavishan/baudrate.sv demo_top_bb_dual.v demo_top_bb_dual_tb.sv 
 # -- Compiling module uart_tx_32
 # -- Compiling module uart_rx_other_16
@@ -59,11 +59,13 @@
 # Top level modules:
 # 	addr_convert
 # 	demo_top_bb_dual_tb
-# End time: 11:34:52 on Dec 09,2025, Elapsed time: 0:00:00
+# End time: 14:39:19 on Dec 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 3
 # vsim -voptargs="+acc" demo_top_bb_dual_tb 
-# Start time: 11:34:52 on Dec 09,2025
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Start time: 14:39:19 on Dec 09,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
 # Loading work.demo_top_bb_dual_tb(fast)
 # Loading work.demo_top_bb_dual(fast)
@@ -101,7 +103,7 @@
 # Loading work.altsyncram(fast__2)
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: pasir  Hostname: MAVISHAN  ProcessID: 32740
-#           Attempting to use alternate WLF file "./wlft47gy88".
+#           Attempting to use alternate WLF file "./wlft5cx7vt".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft47gy88
+#           Using alternate file: ./wlft5cx7vt
 # Causality operation skipped due to absence of debug database file

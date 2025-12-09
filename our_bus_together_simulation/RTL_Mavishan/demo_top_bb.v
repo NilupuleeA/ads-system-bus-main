@@ -78,8 +78,8 @@ module demo_top_bb #(
         else start_prev <= start; 
     end
 
-    localparam [15:0] ADDR = 16'b0100_1000_0000_0001;
-    localparam [4:0] WRITE_OFFSET = 16;
+    localparam [15:0] ADDR = 16'b1000_1000_0000_0001;
+    localparam [4:0] WRITE_OFFSET = 5;
     localparam [7:0] DATA_PATTERN = 8'hA5;
 
     localparam IDLE = 2'b00,

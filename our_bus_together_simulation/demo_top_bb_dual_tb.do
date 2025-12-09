@@ -115,4 +115,4 @@ add wave -group "UART Links" sim:/demo_top_bb_dual_tb/dut/b_s_u_tx
 add wave -group "UART Links" sim:/demo_top_bb_dual_tb/dut/b_m_u_rx
 add wave -group "UART Links" sim:/demo_top_bb_dual_tb/dut/b_s_u_rx
 
-run 12ms
+run 8ms

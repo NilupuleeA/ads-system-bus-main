@@ -1,8 +1,8 @@
 module demo_top_bb_dual #(
     parameter ADDR_WIDTH = 16,
     parameter DATA_WIDTH = 8,
-    parameter SLAVE_MEM_ADDR_WIDTH = 13,
-    parameter BB_ADDR_WIDTH = 13,
+    parameter SLAVE_MEM_ADDR_WIDTH = 14,
+    parameter BB_ADDR_WIDTH = 15,
     parameter UART_CLOCKS_PER_PULSE = 5208
 )(
     input clk,

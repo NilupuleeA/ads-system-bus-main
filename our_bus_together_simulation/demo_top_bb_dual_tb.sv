@@ -45,18 +45,37 @@ module demo_top_bb_dual_tb;
         repeat (20) @(posedge clk);
         #8000000;
 
-        // rstn = 1'b0; 
-        // repeat (2) @(posedge clk);   
-        // rstn = 1'b1;
-        // repeat (2) @(posedge clk);
+
+
 
         
-        mode_a = 1'b0;
-        start_a = 1'b0; repeat (5) @(posedge clk); start_a = 1'b1;
-        repeat (5) @(posedge clk);
-        //  wait (ready_a);
-        repeat (20) @(posedge clk);
-        #6000000;
+        // mode_a = 1'b0;
+        // repeat (5) @(posedge clk);
+        // start_a = 1'b0; repeat (5) @(posedge clk); start_a = 1'b1;
+        // repeat (5) @(posedge clk);
+        // //  wait (ready_a);
+        // repeat (20) @(posedge clk);
+        // #8000000;
+
+
+
+        // mode_a = 1'b1;
+        // repeat (5) @(posedge clk);
+        // start_a = 1'b0; repeat (5) @(posedge clk); start_a = 1'b1;
+        // repeat (5) @(posedge clk);
+        // //  wait (ready_a);
+        // repeat (20) @(posedge clk);
+        // #8000000;
+
+
+        // mode_a = 1'b0;
+        // repeat (5) @(posedge clk);
+        // start_a = 1'b0; repeat (5) @(posedge clk); start_a = 1'b1;
+        // repeat (5) @(posedge clk);
+        // //  wait (ready_a);
+        // repeat (20) @(posedge clk);
+        // #8000000;
+
 
         // // B writes to A
         // mode_b = 1'b1;

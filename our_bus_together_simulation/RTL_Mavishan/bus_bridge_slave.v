@@ -120,12 +120,12 @@ module bus_bridge_slave #(
 
                 WSEND : begin
                     // Send address , data, mode
-                    u_din <= { {(UART_TX_PADDED_WIDTH-UART_TX_PAYLOAD_WIDTH){1'b0}}, 1'b1, smemwdata, 3'b0 ,smemaddr}; //[0:11] ADDR  [12:19] WDATA [20] mode
+                    u_din <= { {(UART_TX_PADDED_WIDTH-UART_TX_PAYLOAD_WIDTH){1'b0}}, 1'b1, smemwdata, 2'b0 ,smemaddr}; //[0:11] ADDR  [12:19] WDATA [20] mode
                     u_en  <= 1'b1;
                 end
                 RSEND : begin
                     // Send read address, mode
-                    u_din <= { {(UART_TX_PADDED_WIDTH-UART_TX_PAYLOAD_WIDTH){1'b0}}, 1'b0, {DATA_WIDTH{1'b0}}, 3'b0, smemaddr}; //[0:11] ADDR  [12:19] WDATA [20] mode
+                    u_din <= { {(UART_TX_PADDED_WIDTH-UART_TX_PAYLOAD_WIDTH){1'b0}}, 1'b0, {DATA_WIDTH{1'b0}}, 2'b0, smemaddr}; //[0:11] ADDR  [12:19] WDATA [20] mode
                     u_en  <= 1'b1;                
                 end
                 RDATA : begin
