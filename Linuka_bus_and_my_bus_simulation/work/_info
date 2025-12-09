@@ -1,0 +1,1476 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation
+T_opt
+!s110 1765277202
+VeMHRU62_9oK1i3zmRYe5g2
+04 15 4 work dual_bus_top_tb fast 0
+=1-7c4d8f9bc2fe-6937fe12-18d-58f8
+R0
+!s12b OEM100
+!s124 OEM10U62 
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+R1
+vaddr_convert
+Z3 2c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/addr_convert.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/addr_decoder_mav.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/arbiter_mav.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_bridge_master.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_bridge_slave.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_m2_s3.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/dec3.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/demo_top_bb.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/fifo.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/master_bram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/master_port.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/mux2.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/mux3.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_bram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_bram_2k.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_memory_bram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_port.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_with_bram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/top_with_bb_v1.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_other.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_other_32_16.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_rx_other.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_rx_other_16.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_tx_32.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_tx_other.v
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1765279364
+!i10b 1
+!s100 DIg7mQ4`JWmALH6=S`Va70
+I`DnUT1PnQZ2Gie6Hl_9RH3
+S1
+R1
+w1764655132
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/addr_convert.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/addr_convert.v
+!i122 31
+Z6 L0 2 19
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z9 !s108 1765279364.000000
+Z10 !s107 c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_tx_other.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_tx_32.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_rx_other_16.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_rx_other.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_other_32_16.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_other.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/top_with_bb_v1.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_with_bram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_port.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_memory_bram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_bram_2k.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_bram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/mux3.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/mux2.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/master_port.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/master_bram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/fifo.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/demo_top_bb.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/dec3.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_m2_s3.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_bridge_slave.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_bridge_master.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/arbiter_mav.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/addr_decoder_mav.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/addr_convert.v|
+Z11 !s90 -reportprogress|300|-sv|-work|work|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/addr_convert.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/addr_decoder_mav.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/arbiter_mav.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_bridge_master.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_bridge_slave.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_m2_s3.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/dec3.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/demo_top_bb.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/fifo.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/master_bram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/master_port.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/mux2.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/mux3.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_bram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_bram_2k.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_memory_bram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_port.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_with_bram.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/top_with_bb_v1.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_other.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_other_32_16.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_rx_other.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_rx_other_16.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_tx_32.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_tx_other.v|
+!i113 0
+Z12 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vaddr_decoder
+Z13 2c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/addr_decoder.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/arbiter.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_if.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_uart_wrapper.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_pkg.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_if.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_uart_wrapper.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/init_port.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/initiator.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/split_target.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/split_target_port.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_a.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_b.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_symmetric.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/target.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/target_port.sv
+R4
+R5
+!i10b 1
+!s100 0]KVJA45KXHW?B3mbj0YT1
+I7LPTOdc3i@?E_:6L`6Y0>1
+S1
+R1
+w1765274415
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/addr_decoder.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/addr_decoder.sv
+!i122 29
+L0 1 124
+R7
+R8
+r1
+!s85 0
+31
+R9
+Z14 !s107 c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/target_port.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/target.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_symmetric.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_b.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_a.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/split_target_port.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/split_target.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/initiator.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/init_port.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_uart_wrapper.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_if.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_pkg.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_uart_wrapper.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_if.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/arbiter.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/addr_decoder.sv|
+Z15 !s90 -reportprogress|300|-sv|-work|work|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/addr_decoder.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/arbiter.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_if.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_uart_wrapper.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_pkg.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_if.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_uart_wrapper.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/init_port.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/initiator.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/split_target.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/split_target_port.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_a.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_b.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_symmetric.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/target.sv|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/target_port.sv|
+!i113 0
+R12
+R2
+vaddr_decoder_mav
+R3
+R4
+R5
+!i10b 1
+!s100 j4d]JNT8P]z`dEkQlVaaM2
+InnjOF:z4T:Zdgd8K7zn=D1
+S1
+R1
+w1764652909
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/addr_decoder_mav.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/addr_decoder_mav.v
+!i122 31
+L0 2 134
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+valtsyncram
+R3
+R4
+R5
+!i10b 1
+!s100 j1:aJ_J[OK;ZMJ0SzI4io1
+I5azeY0LVU4@3JO:Xno6f23
+S1
+R1
+w1765277188
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v
+!i122 31
+L0 8 132
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+varbiter
+R13
+R4
+R5
+!i10b 1
+!s100 7lDOIFcK[bY6B_OBJ7Khi0
+I3e;>`bm1jj9^U`hf<eAR>0
+S1
+R1
+Z16 w1765274416
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/arbiter.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/arbiter.sv
+!i122 29
+L0 1 77
+R7
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+varbiter_mav
+R3
+R4
+R5
+!i10b 1
+!s100 56E2md:[YE28bWzjz9X;o1
+I6Z^=6HA=nz=?UZbU6:InU0
+S1
+R1
+w1764655207
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/arbiter_mav.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/arbiter_mav.v
+!i122 31
+L0 1 121
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vbaudrate
+Z17 2c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/buadrate.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/receiver.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/transmitter.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/uart.v
+R4
+R5
+!i10b 1
+!s100 `n=Q<O88a5:o8Go1jMI]31
+IKd1Y:ihiIF`g>`VTDS9Ra3
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/buadrate.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/buadrate.v
+!i122 30
+L0 4 56
+R7
+R8
+r1
+!s85 0
+31
+R9
+Z18 !s107 c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/uart.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/transmitter.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/receiver.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/buadrate.v|
+Z19 !s90 -reportprogress|300|-sv|-work|work|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/buadrate.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/receiver.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/transmitter.v|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/uart.v|
+!i113 0
+R12
+R2
+vbus
+R13
+R4
+R5
+!i10b 1
+!s100 1ZLTU;@4`gkIi1mO``6lA0
+I185clB3g;`SFbgk7O1G]a0
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus.sv
+!i122 29
+L0 1 670
+R7
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vbus_bridge
+R13
+R4
+Z20 DXx4 work 14 bus_bridge_pkg 0 22 RnIiUQ^AQ`EhYG_b`HRLc2
+DXx4 work 18 bus_bridge_sv_unit 0 22 :oBd_:?C<Le:YFib]HYOB2
+R5
+R7
+r1
+!s85 0
+!i10b 1
+!s100 M?X_5fF2=zznGH0H2:FAf2
+In[I_0<C7Q<YJU@SXbofRS0
+!s105 bus_bridge_sv_unit
+S1
+R1
+R16
+Z21 8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge.sv
+Z22 Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge.sv
+!i122 29
+L0 3 89
+R8
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vbus_bridge_initiator_if
+R13
+R4
+R20
+DXx4 work 31 bus_bridge_initiator_if_sv_unit 0 22 D`Ad`T<9cfVlVIoS=j1LU1
+R5
+R7
+r1
+!s85 0
+!i10b 1
+!s100 oC:O@JC^``VJD^QllF2Qe0
+IfB:E5jR9agWeLX5[YRXPf0
+!s105 bus_bridge_initiator_if_sv_unit
+S1
+R1
+R16
+Z23 8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_if.sv
+Z24 Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_if.sv
+!i122 29
+L0 3 155
+R8
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+Xbus_bridge_initiator_if_sv_unit
+R13
+R4
+R20
+R5
+VD`Ad`T<9cfVlVIoS=j1LU1
+r1
+!s85 0
+!i10b 1
+!s100 8aI9o6]YdMT<HgEU]8B?m2
+ID`Ad`T<9cfVlVIoS=j1LU1
+!i103 1
+S1
+R1
+R16
+R23
+R24
+!i122 29
+Z25 L0 1 0
+R8
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vbus_bridge_initiator_uart_wrapper
+R13
+R4
+R20
+DXx4 work 41 bus_bridge_initiator_uart_wrapper_sv_unit 0 22 JoAAV9f1nf=Ll2a9JZ8VB3
+R5
+R7
+r1
+!s85 0
+!i10b 1
+!s100 gT;O55Fnd3@T7doJQJeW;1
+Ibc;b@o>[8l2oLWK=Jf^iZ3
+!s105 bus_bridge_initiator_uart_wrapper_sv_unit
+S1
+R1
+R16
+Z26 8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_uart_wrapper.sv
+Z27 Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_uart_wrapper.sv
+!i122 29
+L0 3 224
+R8
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+Xbus_bridge_initiator_uart_wrapper_sv_unit
+R13
+R4
+R20
+R5
+VJoAAV9f1nf=Ll2a9JZ8VB3
+r1
+!s85 0
+!i10b 1
+!s100 18L^GTXkYk[aoL[>dG2:n0
+IJoAAV9f1nf=Ll2a9JZ8VB3
+!i103 1
+S1
+R1
+R16
+R26
+R27
+!i122 29
+R25
+R8
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vbus_bridge_master
+R3
+R4
+R5
+!i10b 1
+!s100 PV0FJbJ2jX]d03U9`bzD?0
+IDLXUNJLGM?MGnK1KGL??B2
+S1
+R1
+w1765192304
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_bridge_master.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_bridge_master.v
+!i122 31
+L0 1 216
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+Xbus_bridge_pkg
+R13
+R4
+R5
+!i10b 1
+!s100 =hldg;2_o<;R>gD9Ph^Od2
+IRnIiUQ^AQ`EhYG_b`HRLc2
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_pkg.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_pkg.sv
+!i122 29
+R25
+VRnIiUQ^AQ`EhYG_b`HRLc2
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vbus_bridge_slave
+R3
+R4
+R5
+!i10b 1
+!s100 WI2]M4;hk3]1_D7nhOZIN0
+I:An0gBe^ThPmQcYGUlOZL3
+S1
+R1
+w1765269676
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_bridge_slave.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_bridge_slave.v
+!i122 31
+Z28 L0 1 149
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+Xbus_bridge_sv_unit
+R13
+R4
+R20
+R5
+V:oBd_:?C<Le:YFib]HYOB2
+r1
+!s85 0
+!i10b 1
+!s100 oMDk01SVQKBn=iSH03Z8b1
+I:oBd_:?C<Le:YFib]HYOB2
+!i103 1
+S1
+R1
+R16
+R21
+R22
+!i122 29
+R25
+R8
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vbus_bridge_target_if
+R13
+R4
+R20
+DXx4 work 28 bus_bridge_target_if_sv_unit 0 22 YS1l@SaGNDZ;@@IVZ_27X0
+R5
+R7
+r1
+!s85 0
+!i10b 1
+!s100 nz89>BICYeA<O?VENSGKB1
+I4G:;hcT5zUVm<?6NPcZ0K2
+!s105 bus_bridge_target_if_sv_unit
+S1
+R1
+R16
+Z29 8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_if.sv
+Z30 Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_if.sv
+!i122 29
+L0 3 199
+R8
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+Xbus_bridge_target_if_sv_unit
+R13
+R4
+R20
+R5
+VYS1l@SaGNDZ;@@IVZ_27X0
+r1
+!s85 0
+!i10b 1
+!s100 hY[Smj^<dI:]AN=m@b=mk1
+IYS1l@SaGNDZ;@@IVZ_27X0
+!i103 1
+S1
+R1
+R16
+R29
+R30
+!i122 29
+R25
+R8
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vbus_bridge_target_uart_wrapper
+R13
+R4
+R20
+DXx4 work 38 bus_bridge_target_uart_wrapper_sv_unit 0 22 h]YIZc<6Tej^aeEfMeOHS1
+R5
+R7
+r1
+!s85 0
+!i10b 1
+!s100 abKV_ITH0XP>l7AG@Ie4m3
+IoAj`aCAcECiGTN1>XoRRm2
+!s105 bus_bridge_target_uart_wrapper_sv_unit
+S1
+R1
+R16
+Z31 8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_uart_wrapper.sv
+Z32 Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_uart_wrapper.sv
+!i122 29
+L0 3 252
+R8
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+Xbus_bridge_target_uart_wrapper_sv_unit
+R13
+R4
+R20
+R5
+Vh]YIZc<6Tej^aeEfMeOHS1
+r1
+!s85 0
+!i10b 1
+!s100 S2SPRL4>UkL4Jbb<^<=hz0
+Ih]YIZc<6Tej^aeEfMeOHS1
+!i103 1
+S1
+R1
+R16
+R31
+R32
+!i122 29
+R25
+R8
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vbus_m2_s3
+R3
+R4
+R5
+!i10b 1
+!s100 <4j_5CEhBEZ58>1`niV4Z1
+IjP1dbUacFVcYL0?eH:?9P2
+S1
+R1
+w1764655220
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_m2_s3.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_m2_s3.v
+!i122 31
+L0 2 162
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vdec3
+R3
+R4
+R5
+!i10b 1
+!s100 F6iEB>;Ye?NMo<7;hPh=F0
+Ik<>][AZcc3g58?G96lMDP1
+S1
+R1
+Z33 w1764314631
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/dec3.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/dec3.v
+!i122 31
+R6
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vdemo_top_bb
+R3
+R4
+R5
+!i10b 1
+!s100 9GD^g7@UF1ifRGXhSnXcB1
+ICec0iAgc8j`?>K1KL:^_U2
+S1
+R1
+w1765270510
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/demo_top_bb.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/demo_top_bb.v
+!i122 31
+L0 1 178
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vdual_bus_top
+2c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/sim/dual_bus_top.sv
+R4
+Z34 !s110 1765279365
+!i10b 1
+!s100 >KSY6=hPj1QZhlISgb^2e0
+IC7_B[:bfIEBk^KWGPN8Rz2
+S1
+R1
+Z35 w1765276837
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/sim/dual_bus_top.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/sim/dual_bus_top.sv
+!i122 32
+L0 3 51
+R7
+R8
+r1
+!s85 0
+31
+Z36 !s108 1765279365.000000
+!s107 c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/sim/dual_bus_top.sv|
+!s90 -reportprogress|300|-sv|-work|work|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/sim/dual_bus_top.sv|
+!i113 0
+R12
+R2
+vdual_bus_top_tb
+2c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/sim/dual_bus_top_tb.sv
+R4
+R34
+!i10b 1
+!s100 kRChm30Mz8FLTlBWn9<@m1
+IR6O8B1n09Zneln[TIEmIk3
+S1
+R1
+R35
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/sim/dual_bus_top_tb.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/sim/dual_bus_top_tb.sv
+!i122 33
+L0 3 91
+R7
+R8
+r1
+!s85 0
+31
+R36
+!s107 c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/sim/dual_bus_top_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/sim/dual_bus_top_tb.sv|
+!i113 0
+R12
+R2
+vfifo
+R3
+R4
+R5
+!i10b 1
+!s100 fLJ9oYoPFXL5=5Y0>Q2@G1
+II;`Rgj`PnGAU5ScdWIm582
+S1
+R1
+w1765088226
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/fifo.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/fifo.v
+!i122 31
+L0 2 39
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vinit_port
+R13
+R4
+R5
+!i10b 1
+!s100 F8W<Lf0h@oJTW@JnlScfD1
+ILZzlldZ@fBaAMiZJgTHme1
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/init_port.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/init_port.sv
+!i122 29
+L0 1 211
+R7
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vinitiator
+R13
+R4
+R5
+!i10b 1
+!s100 e?Tn9QQa0dU4?RN6XQj`_1
+IH:`;U28@CiBRb]iGfLNi23
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/initiator.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/initiator.sv
+!i122 29
+L0 1 230
+R7
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vmaster_bram
+R3
+R4
+R5
+!i10b 1
+!s100 4CScSoCSVUf=gR?bH3D^N2
+I^NC8`6hMW]hMj22Sj3cz41
+S1
+R1
+Z37 w1765257472
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/master_bram.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/master_bram.v
+!i122 31
+L0 40 70
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vmaster_port
+R3
+R4
+R5
+!i10b 1
+!s100 SWC=WlERO?_4AJ?Si]Jz12
+I:LlRLf2`4h4QJkj1Ch]>?3
+S1
+R1
+R33
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/master_port.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/master_port.v
+!i122 31
+Z38 L0 1 161
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vmux2
+R3
+R4
+R5
+!i10b 1
+!s100 CH_fHnD7V_8VY=ojkk>T[3
+I3EalWTRdlZD0[Q<_0Fh^13
+S1
+R1
+R33
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/mux2.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/mux2.v
+!i122 31
+L0 1 12
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vmux3
+R3
+R4
+R5
+!i10b 1
+!s100 SAge9FXUncJCMV<@l8Zjc1
+Ih;:B`1?oLU56hI1Zc3YG[3
+S1
+R1
+R33
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/mux3.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/mux3.v
+!i122 31
+L0 1 20
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vreceiver
+R17
+R4
+R5
+!i10b 1
+!s100 V5WIELHOnWP1dkVmaILTP1
+IUSTASi0H>LMV87_=O7Bhk0
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/receiver.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/receiver.v
+!i122 30
+L0 1 104
+R7
+R8
+r1
+!s85 0
+31
+R9
+R18
+R19
+!i113 0
+R12
+R2
+vslave_bram
+R3
+R4
+R5
+!i10b 1
+!s100 0:fJMn?PNk_m`V@WAW:k<0
+I9G_GWmhof4E@0zhHJ8;_@3
+S1
+R1
+R37
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_bram.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_bram.v
+!i122 31
+Z39 L0 40 73
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vslave_bram_2k
+R3
+R4
+R5
+!i10b 1
+!s100 1fkon2P1@NVF=f_FDUI?g2
+Ib@7@dYY^bPL^>l44b^=<h1
+S1
+R1
+R37
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_bram_2k.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_bram_2k.v
+!i122 31
+R39
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vslave_memory_bram
+R3
+R4
+R5
+!i10b 1
+!s100 ]1JDOOd=^AhK>i`D4]3Og0
+IVFl@>UT8jSnEA>DLKDg1[2
+S1
+R1
+R33
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_memory_bram.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_memory_bram.v
+!i122 31
+L0 1 56
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vslave_port
+R3
+R4
+R5
+!i10b 1
+!s100 [2ZDNNGKTVKfOo=@FIhIb2
+IjJ?FNc1]z5CzzG5b`:9L<1
+S1
+R1
+w1765098597
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_port.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_port.v
+!i122 31
+L0 1 196
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vslave_with_bram
+R3
+R4
+R5
+!i10b 1
+!s100 B<2]^DOTJmQ55h2LiBTbZ3
+IV[:km;T^WY9kU@;eYck311
+S1
+R1
+w1765224101
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_with_bram.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_with_bram.v
+!i122 31
+L0 1 79
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vsplit_target
+R13
+R4
+R5
+!i10b 1
+!s100 URljWZ<c^bz5ZXi]Qb=Om2
+Il_?UZC:J0IV0cj0R;n`Y11
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/split_target.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/split_target.sv
+!i122 29
+L0 1 130
+R7
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vsplit_target_port
+R13
+R4
+R5
+!i10b 1
+!s100 cci2iFMRN]l=Qm9]Ro3aR3
+I<=X:0oO@jcndHH?Ho^zO41
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/split_target_port.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/split_target_port.sv
+!i122 29
+R38
+R7
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vsystem_top
+R13
+R4
+R5
+!i10b 1
+!s100 nn1Q[PXFlSTa<oWY`aQ:O2
+IIZLIc<EA=dH^N9bOd0IA62
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top.sv
+!i122 29
+L0 3 294
+R7
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vsystem_top_with_bus_bridge
+R13
+R4
+R5
+!i10b 1
+!s100 ER96Ld3_U[?CWMWmDN2ga2
+IS=nJL:8AQ`BF2>G0fKEeC2
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge.sv
+!i122 29
+L0 3 481
+R7
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vsystem_top_with_bus_bridge_a
+R13
+R4
+R5
+!i10b 1
+!s100 3fO5lokD2GgfRI1gNeLC=1
+I2iThIonK[i0Z965eAG;Ue1
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_a.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_a.sv
+!i122 29
+L0 3 287
+R7
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vsystem_top_with_bus_bridge_b
+R13
+R4
+R5
+!i10b 1
+!s100 2b20X]o28SHWj^D=DSi@33
+ILg^0gEUiM<m9zmCV>6S8G0
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_b.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_b.sv
+!i122 29
+L0 3 236
+R7
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vsystem_top_with_bus_bridge_symmetric
+R13
+R4
+R5
+!i10b 1
+!s100 nT<hegMz=:N:DF?G4dHcE2
+I_h5jAhomQ6F6VkmWLRI]h1
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_symmetric.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_symmetric.sv
+!i122 29
+L0 3 298
+R7
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vtarget
+R13
+R4
+R5
+!i10b 1
+!s100 mlWXjPd]6<zJ;Gb95lO6h3
+IECc3P:]e<8k28zH[QkNmh1
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/target.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/target.sv
+!i122 29
+L0 1 76
+R7
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vtarget_port
+R13
+R4
+R5
+!i10b 1
+!s100 <<93iSmJfh1<LJXEN4S@93
+I3Ji0EPibUSFeUXa6o@<950
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/target_port.sv
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/target_port.sv
+!i122 29
+R28
+R7
+R8
+r1
+!s85 0
+31
+R9
+R14
+R15
+!i113 0
+R12
+R2
+vtop_with_bb_v1
+R3
+R4
+R5
+!i10b 1
+!s100 D53XN;D<GD`B=bThT:V1:2
+Ijjk3;XF1zL`:B`MGG;jf?1
+S1
+R1
+w1765223772
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/top_with_bb_v1.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/top_with_bb_v1.v
+!i122 31
+L0 1 245
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vtransmitter
+R17
+R4
+R5
+!i10b 1
+!s100 UzjM1m>z2m;InZ2a6OdBb0
+IaLS88fWiR]MAzYAiFi`mP0
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/transmitter.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/transmitter.v
+!i122 30
+L0 1 91
+R7
+R8
+r1
+!s85 0
+31
+R9
+R18
+R19
+!i113 0
+R12
+R2
+vuart
+R17
+R4
+R5
+!i10b 1
+!s100 mAW<WN9J3W@[d]LiG`06A0
+Ig::]1>gNYkSFG;ickDI?<2
+S1
+R1
+R16
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/uart.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/uart.v
+!i122 30
+L0 1 46
+R7
+R8
+r1
+!s85 0
+31
+R9
+R18
+R19
+!i113 0
+R12
+R2
+vuart_other
+R3
+R4
+R5
+!i10b 1
+!s100 FkP_e9L>kb6kV<PiWS13z2
+IARU;RPZofCBd8RV:XUmDS2
+S1
+R1
+w1764336904
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_other.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_other.v
+!i122 31
+L0 1 63
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vuart_other_32_16
+R3
+R4
+R5
+!i10b 1
+!s100 OeEFA<XL?zbSVH4?zhhOo3
+IXZVG9E@RU3QE^NLCe[I?k1
+S1
+R1
+w1765198283
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_other_32_16.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_other_32_16.v
+!i122 31
+L0 3 49
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vuart_rx_other
+R3
+R4
+R5
+!i10b 1
+!s100 B<bb0P[3RFbJk8YifX4T_0
+Ic[S;GFBhE:^]J8X=[SC[L0
+S1
+R1
+w1764344810
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_rx_other.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_rx_other.v
+!i122 31
+L0 1 98
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vuart_rx_other_16
+R3
+R4
+R34
+!i10b 1
+!s100 ^b7fV26D=dXbI^FKOh8HG3
+ICR`;mK^@Y58VO@8ezEO@m2
+S1
+R1
+w1765196433
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_rx_other_16.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_rx_other_16.v
+!i122 31
+L0 1 82
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vuart_tx_32
+R3
+R4
+R34
+!i10b 1
+!s100 ojE8`O^j<EK_SIaDmgRa^0
+Ig80fG:F;mQmFnRH4W^1bH1
+S1
+R1
+w1765197142
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_tx_32.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_tx_32.v
+!i122 31
+L0 2 89
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vuart_tx_other
+R3
+R4
+R34
+!i10b 1
+!s100 ?;J<c7omz[g?=PYKm3YIL0
+I=2:Z;915z=4PnYl9ND_En1
+S1
+R1
+w1764649863
+8c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_tx_other.v
+Fc:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_tx_other.v
+!i122 31
+L0 1 88
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2

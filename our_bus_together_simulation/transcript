@@ -107,3 +107,5 @@
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 #           Using alternate file: ./wlft5cx7vt
 # Causality operation skipped due to absence of debug database file
+# End time: 16:10:50 on Dec 09,2025, Elapsed time: 1:31:31
+# Errors: 0, Warnings: 3

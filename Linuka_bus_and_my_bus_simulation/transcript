@@ -1,0 +1,273 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do sim/dual_bus_top_tb.do
+# 
+# vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# vmap work work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap work work 
+# Modifying modelsim.ini
+# 
+# set root "c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation"
+# c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation
+# 
+# Symmetric bus design (package first)
+# vlog -sv -work work "$root/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_pkg.sv"
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:52:44 on Dec 09,2025
+# vlog -reportprogress 300 -sv -work work c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_pkg.sv 
+# -- Compiling package bus_bridge_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 16:52:44 on Dec 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work "$root/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/*.sv"
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:52:44 on Dec 09,2025
+# vlog -reportprogress 300 -sv -work work c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/addr_decoder.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/arbiter.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_if.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_uart_wrapper.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_pkg.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_if.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_uart_wrapper.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/init_port.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/initiator.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/split_target.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/split_target_port.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_a.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_b.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/system_top_with_bus_bridge_symmetric.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/target.sv c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/target_port.sv 
+# -- Compiling module addr_decoder
+# -- Compiling module arbiter
+# -- Compiling module bus
+# -- Compiling package bus_bridge_sv_unit
+# -- Importing package bus_bridge_pkg
+# -- Compiling module bus_bridge
+# ** Warning: c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_if.sv(8): (vlog-13314) Defaulting port 'req_payload' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# -- Compiling package bus_bridge_initiator_if_sv_unit
+# -- Compiling module bus_bridge_initiator_if
+# ** Warning: c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_initiator_if.sv(8): (vlog-13314) Defaulting port 'req_payload' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# -- Compiling package bus_bridge_initiator_uart_wrapper_sv_unit
+# -- Compiling module bus_bridge_initiator_uart_wrapper
+# -- Compiling package bus_bridge_pkg
+# ** Warning: c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_if.sv(32): (vlog-13314) Defaulting port 'resp_payload' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# -- Compiling package bus_bridge_target_if_sv_unit
+# -- Compiling module bus_bridge_target_if
+# ** Warning: c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/bus_bridge_target_if.sv(32): (vlog-13314) Defaulting port 'resp_payload' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# -- Compiling package bus_bridge_target_uart_wrapper_sv_unit
+# -- Compiling module bus_bridge_target_uart_wrapper
+# -- Compiling module init_port
+# -- Compiling module initiator
+# -- Compiling module split_target
+# -- Compiling module split_target_port
+# -- Compiling module system_top
+# -- Compiling module system_top_with_bus_bridge
+# -- Compiling module system_top_with_bus_bridge_a
+# -- Compiling module system_top_with_bus_bridge_b
+# -- Compiling module system_top_with_bus_bridge_symmetric
+# -- Compiling module target
+# -- Compiling module target_port
+# 
+# Top level modules:
+# 	system_top
+# 	system_top_with_bus_bridge
+# 	system_top_with_bus_bridge_a
+# 	system_top_with_bus_bridge_b
+# 	system_top_with_bus_bridge_symmetric
+# End time: 16:52:44 on Dec 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vlog -sv -work work "$root/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/*.v"
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:52:44 on Dec 09,2025
+# vlog -reportprogress 300 -sv -work work c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/buadrate.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/receiver.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/transmitter.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL/serial-bus-design-uart_dual_fpga_symmetric/rtl/uart/uart.v 
+# -- Compiling module baudrate
+# -- Compiling module receiver
+# -- Compiling module transmitter
+# -- Compiling module uart
+# 
+# Top level modules:
+# 	uart
+# End time: 16:52:44 on Dec 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# Demo bus design
+# vlog -sv -work work "$root/RTL_Mavishan/*.v"
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:52:44 on Dec 09,2025
+# vlog -reportprogress 300 -sv -work work c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/addr_convert.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/addr_decoder_mav.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/arbiter_mav.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_bridge_master.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_bridge_slave.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/bus_m2_s3.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/dec3.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/demo_top_bb.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/fifo.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/master_bram.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/master_port.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/mux2.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/mux3.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_bram.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_bram_2k.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_memory_bram.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_port.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/slave_with_bram.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/top_with_bb_v1.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_other.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_other_32_16.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_rx_other.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_rx_other_16.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_tx_32.v c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/uart_tx_other.v 
+# -- Compiling module addr_convert
+# -- Compiling module addr_decoder_mav
+# -- Compiling module altsyncram
+# -- Compiling module arbiter_mav
+# -- Compiling module bus_bridge_master
+# -- Compiling module bus_bridge_slave
+# -- Compiling module bus_m2_s3
+# -- Compiling module dec3
+# -- Compiling module demo_top_bb
+# -- Compiling module fifo
+# -- Compiling module master_bram
+# -- Compiling module master_port
+# -- Compiling module mux2
+# -- Compiling module mux3
+# -- Compiling module slave_bram
+# -- Compiling module slave_bram_2k
+# -- Compiling module slave_memory_bram
+# -- Compiling module slave_port
+# -- Compiling module slave_with_bram
+# -- Compiling module top_with_bb_v1
+# -- Compiling module uart_other
+# -- Compiling module uart_other_32_16
+# -- Compiling module uart_rx_other
+# -- Compiling module uart_rx_other_16
+# -- Compiling module uart_tx_32
+# -- Compiling module uart_tx_other
+# 
+# Top level modules:
+# 	addr_convert
+# 	demo_top_bb
+# End time: 16:52:45 on Dec 09,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# Combined top and testbench
+# vlog -sv -work work "$root/sim/dual_bus_top.sv"
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:52:45 on Dec 09,2025
+# vlog -reportprogress 300 -sv -work work c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/sim/dual_bus_top.sv 
+# -- Compiling module dual_bus_top
+# 
+# Top level modules:
+# 	dual_bus_top
+# End time: 16:52:45 on Dec 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work "$root/sim/dual_bus_top_tb.sv"
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:52:45 on Dec 09,2025
+# vlog -reportprogress 300 -sv -work work c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/sim/dual_bus_top_tb.sv 
+# -- Compiling module dual_bus_top_tb
+# 
+# Top level modules:
+# 	dual_bus_top_tb
+# End time: 16:52:45 on Dec 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.dual_bus_top_tb
+# vsim -voptargs="+acc" work.dual_bus_top_tb 
+# Start time: 16:52:45 on Dec 09,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.dual_bus_top_tb(fast)
+# Loading work.dual_bus_top(fast)
+# Loading work.system_top_with_bus_bridge_symmetric(fast)
+# Loading work.initiator(fast)
+# Loading work.bus_bridge_pkg(fast)
+# Loading work.bus_bridge_initiator_uart_wrapper_sv_unit(fast)
+# Loading work.bus_bridge_initiator_uart_wrapper(fast)
+# Loading work.bus_bridge_initiator_if_sv_unit(fast)
+# Loading work.bus_bridge_initiator_if(fast)
+# Loading work.uart(fast)
+# Loading work.baudrate(fast)
+# Loading work.transmitter(fast)
+# Loading work.receiver(fast)
+# Loading work.target(fast)
+# Loading work.target(fast__1)
+# Loading work.bus_bridge_target_uart_wrapper_sv_unit(fast)
+# Loading work.bus_bridge_target_uart_wrapper(fast)
+# Loading work.bus_bridge_target_if_sv_unit(fast)
+# Loading work.bus_bridge_target_if(fast)
+# Loading work.bus(fast)
+# Loading work.init_port(fast)
+# Loading work.target_port(fast)
+# Loading work.split_target_port(fast)
+# Loading work.arbiter(fast)
+# Loading work.addr_decoder(fast)
+# Loading work.demo_top_bb(fast)
+# Loading work.top_with_bb_v1(fast)
+# Loading work.master_port(fast)
+# Loading work.bus_bridge_master(fast)
+# Loading work.fifo(fast)
+# Loading work.uart_other(fast)
+# Loading work.uart_tx_other(fast)
+# Loading work.uart_rx_other(fast)
+# Loading work.slave_with_bram(fast)
+# Loading work.slave_port(fast)
+# Loading work.slave_memory_bram(fast)
+# Loading work.slave_bram_2k(fast)
+# Loading work.altsyncram(fast)
+# Loading work.slave_with_bram(fast__1)
+# Loading work.slave_memory_bram(fast__1)
+# Loading work.slave_bram(fast)
+# Loading work.altsyncram(fast__1)
+# Loading work.bus_bridge_slave(fast)
+# Loading work.slave_port(fast__1)
+# Loading work.uart_other_32_16(fast)
+# Loading work.uart_tx_32(fast)
+# Loading work.uart_rx_other_16(fast)
+# Loading work.bus_m2_s3(fast)
+# Loading work.arbiter_mav(fast)
+# Loading work.addr_decoder_mav(fast)
+# Loading work.dec3(fast)
+# Loading work.mux2(fast)
+# Loading work.mux2(fast__1)
+# Loading work.mux3(fast)
+# Loading work.master_bram(fast)
+# Loading work.altsyncram(fast__2)
+# 
+# Waves grouped for readability
+# add wave -group {tb_top}   sim:/dual_bus_top_tb/*
+# 
+# System (symmetric) bus hierarchy
+# add wave -group {sys_top}      sim:/dual_bus_top_tb/dut/u_system/*
+# add wave -group {sys_bus}      sim:/dual_bus_top_tb/dut/u_system/system_bus/*
+# add wave -group {sys_init0}    sim:/dual_bus_top_tb/dut/u_system/u_initiator_local/*
+# add wave -group {sys_init1}    sim:/dual_bus_top_tb/dut/u_system/u_bridge_initiator/*
+# add wave -group {sys_tgt0}     sim:/dual_bus_top_tb/dut/u_system/u_target0/*
+# add wave -group {sys_tgt1}     sim:/dual_bus_top_tb/dut/u_system/u_target1/*
+# add wave -group {sys_bridge_t} sim:/dual_bus_top_tb/dut/u_system/u_bridge_target/*
+# 
+# Demo bus hierarchy
+# add wave -group {demo_top}     sim:/dual_bus_top_tb/dut/u_demo/*
+# add wave -group {demo_bus}     sim:/dual_bus_top_tb/dut/u_demo/bus/*
+# add wave -group {demo_mem}     sim:/dual_bus_top_tb/dut/u_demo/memory/*
+# 
+# run 5 us
+# ** Warning: (vsim-PLI-3410) Illegal character 'W' in data on line 1 of file "meminit/slave2k.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/bus/slave1/sm/genblk1/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character 'I' in data on line 1 of file "meminit/slave2k.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/bus/slave1/sm/genblk1/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character 'T' in data on line 1 of file "meminit/slave2k.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/bus/slave1/sm/genblk1/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character 'H' in data on line 1 of file "meminit/slave2k.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/bus/slave1/sm/genblk1/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character '=' in data on line 1 of file "meminit/slave2k.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/bus/slave1/sm/genblk1/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character ';' in data on line 1 of file "meminit/slave2k.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/bus/slave1/sm/genblk1/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character 'W' in data on line 1 of file "meminit/slave4k.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/bus/slave2/sm/genblk1/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character 'I' in data on line 1 of file "meminit/slave4k.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/bus/slave2/sm/genblk1/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character 'T' in data on line 1 of file "meminit/slave4k.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/bus/slave2/sm/genblk1/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character 'H' in data on line 1 of file "meminit/slave4k.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/bus/slave2/sm/genblk1/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character '=' in data on line 1 of file "meminit/slave4k.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/bus/slave2/sm/genblk1/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character ';' in data on line 1 of file "meminit/slave4k.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/bus/slave2/sm/genblk1/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character 'W' in data on line 1 of file "meminit/master_init.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character 'I' in data on line 1 of file "meminit/master_init.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character 'T' in data on line 1 of file "meminit/master_init.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character 'H' in data on line 1 of file "meminit/master_init.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character '=' in data on line 1 of file "meminit/master_init.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/memory/altsyncram_component
+# ** Warning: (vsim-PLI-3410) Illegal character ';' in data on line 1 of file "meminit/master_init.mif".    : c:/Users/pasir/Desktop/Github/ads-system-bus-main/Linuka_bus_and_my_bus_simulation/RTL_Mavishan/altsyncram.v(107)
+#    Time: 0 ps  Iteration: 0  Instance: /dual_bus_top_tb/dut/u_demo/memory/altsyncram_component
+# End time: 17:02:47 on Dec 09,2025, Elapsed time: 0:10:02
+# Errors: 0, Warnings: 18
