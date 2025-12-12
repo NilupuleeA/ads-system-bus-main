@@ -1,0 +1,230 @@
+module test_slave_bridge #(
+	parameter DATA_WIDTH                = 8,
+	parameter ADDR_WIDTH                = 12,
+    parameter UART_CLOCKS_PER_PULSE     = 5208,
+    parameter UART_DATA_WIDTH           = 8,
+	 parameter SLAVE_DEVICE_ADDR = 4'b0
+)(
+    input                               clk, 
+    input                               rstn,
+    // Signals connecting to serial bus
+	input                               swdata,	
+	input                               smode,	
+	input                               mvalid,	
+    input                               split_grant, 
+    output                              srdata,
+	output                              svalid,
+    output                              sready,
+    output                              ssplit,
+
+    // Bus bridge UART signals
+    output                              u_tx,
+    input                               u_rx
+	 
+);
+    localparam UART_TX_DATA_WIDTH       = DATA_WIDTH + ADDR_WIDTH + 1;   
+    localparam UART_RX_DATA_WIDTH       = DATA_WIDTH;     
+    localparam SPLIT_EN                 = 1'b0;
+    
+    wire                                spready;
+    reg                                 rvalid;
+
+
+
+    // Signals connecting to UART
+    reg [8-1:0]                         u_din;
+    reg                                 u_en;
+    wire                                u_tx_busy;
+    wire                                u_rx_ready;
+    wire [UART_RX_DATA_WIDTH-1:0]       u_dout;
+
+    // signals connecting to slave memory interface
+    wire [ADDR_WIDTH-1:0]               mem_addr;
+    wire                                mem_wen;
+    wire                                mem_ren;
+    reg [DATA_WIDTH-1:0]                mem_rdata;
+    reg                                 mem_rvalid;
+    wire [DATA_WIDTH-1:0]               mem_wdata;
+    wire                                mem_wvalid;
+
+    // uart helper signals
+    reg [ADDR_WIDTH-1:0]                uart_slave_mem_addr;
+    reg [DATA_WIDTH-1:0]                uart_slave_mem_wdata;
+    reg  [7:0]                          uart_slave_mem_mode;
+    reg                                 uart_send_data;
+    reg [3:0]                           uart_tx_byte_counter;
+    wire [31:0]                         uart_tx_data_pkt;
+    reg                                 uart_ready_prev;
+    reg                                 uart_tx_reg_busy;
+    reg                                 mem_wen_prev;
+    reg                                 mem_ren_prev;
+
+
+    // Slave port
+    slave_interface #(
+        .ADDR_WIDTH                     (ADDR_WIDTH), 
+        .DATA_WIDTH                     (DATA_WIDTH), 
+        .SPLIT_EN                       (SPLIT_EN)
+    )slave(
+        .clk                            (clk), 
+        .rstn                           (rstn),
+        // slave memory interface
+        .mem_addr                       (mem_addr),
+        .mem_wen                        (mem_wen), 
+        .mem_ren                        (mem_ren),
+        .mem_rdata                      (mem_rdata), 
+        .mem_rvalid                     (mem_rvalid),
+        .mem_wdata                      (mem_wdata),
+        .mem_wvalid                     (),
+
+        // serial bus interface
+        .bwdata                         (swdata),	
+        .brdata                         (srdata),	
+        .bmode                          (smode),	
+        .bwvalid                        (mvalid),	
+        .brvalid                        (svalid),	
+        .sready                         (spready), 
+        .split_grant                    (split_grant), 
+        .ssplit                         (ssplit)
+    );
+
+
+    // UART module
+    uart #(
+        .CLOCKS_PER_PULSE               (UART_CLOCKS_PER_PULSE),
+        .TX_DATA_WIDTH                  (8),
+        .RX_DATA_WIDTH                  (8)
+    ) uart_module (
+        .data_input                     (u_din),
+        .data_en                        (u_en),
+        .clk                            (clk),
+        .rstn                           (rstn),
+        .tx                             (u_tx), 
+        .tx_busy                        (u_tx_busy),
+        .rx                             (u_rx),  
+        .ready                          (u_rx_ready),   
+        .data_output                    (u_dout)
+    );
+
+    /*
+    UART transmit data packet formation
+        write :
+
+            mode(flags)         - 4 bits
+            mem_wdata           - 4 bits
+            slave_device_addr   - 4 bits
+            slave_mem_addr      - 12 bits
+        
+        read :
+            mode(flags)         - 4 bits
+            mem_wdata           - 4 bits (0s)
+            slave_device_addr   - 4 bits
+            slave_mem_addr      - 12 bits
+    */
+    assign uart_tx_data_pkt             = {uart_slave_mem_mode, uart_slave_mem_wdata, SLAVE_DEVICE_ADDR, uart_slave_mem_addr};
+
+    always @(posedge clk) begin
+        if (!rstn) begin
+            uart_slave_mem_addr         <= 0;
+            uart_slave_mem_wdata        <= 0;
+            uart_slave_mem_mode         <= 0;
+            uart_send_data              <= 0;
+ 
+            uart_tx_byte_counter        <= 0;
+            u_en                        <= 1'b0;
+            u_din                       <= 8'b0;
+            uart_tx_reg_busy            <= 1'b0;
+            mem_wen_prev                <= 1'b1;
+            mem_ren_prev                <= 1'b1;
+
+        end
+        else begin
+            uart_tx_reg_busy            <= u_tx_busy;
+            mem_wen_prev                <= mem_wen;
+            mem_ren_prev                <= mem_ren;
+            if (mem_wen && !mem_wen_prev) begin
+                uart_slave_mem_addr     <= mem_addr;
+                uart_slave_mem_wdata    <= mem_wdata;
+                uart_slave_mem_mode     <= 1'b1;
+                uart_send_data          <= 1'b1;
+                
+            end
+            else if (mem_ren && !mem_ren_prev) begin
+                uart_slave_mem_addr     <= mem_addr;
+                uart_slave_mem_wdata    <= 8'b0;
+                uart_slave_mem_mode     <= 1'b0;
+                uart_send_data          <= 1'b1;
+                
+            end
+            else begin
+                uart_slave_mem_addr     <= uart_slave_mem_addr;
+                uart_slave_mem_wdata    <= uart_slave_mem_wdata;
+                uart_slave_mem_mode     <= uart_slave_mem_mode;
+                uart_send_data          <= uart_send_data;
+                
+            end
+            if (uart_send_data) begin
+
+                if (!u_tx_busy && !u_en) begin   
+
+                    case (uart_tx_byte_counter)
+                        0: u_din        <= uart_tx_data_pkt[7:0];
+                        1: u_din        <= uart_tx_data_pkt[15:8];
+                        2: u_din        <= uart_tx_data_pkt[23:16];
+                        3: u_din        <= uart_tx_data_pkt[31:24];
+                        default: u_din  <= 8'h00;
+                    endcase
+
+                    u_en <= 1'b1;
+
+                    // Increment or wrap byte counter
+                    if (uart_tx_byte_counter == 3) begin
+                        uart_tx_byte_counter        <= 0;
+                        uart_send_data              <= 0;
+                    end
+                    else begin
+                        uart_tx_byte_counter        <= uart_tx_byte_counter + 1;
+                    end
+
+                end 
+                else begin
+                    u_en                            <= 1'b0;   
+                end
+
+            end
+            else begin
+                u_en                                <= 1'b0;
+            end
+        end
+    end
+
+
+    always @(posedge clk) begin
+        if(!rstn) begin
+            uart_ready_prev                         <= 1;
+            mem_rvalid                              <= 0;
+            mem_rdata                               <= 0;
+        end
+        else begin
+            uart_ready_prev                         <= u_rx_ready;
+            if (!mem_ren) begin
+                mem_rvalid                          <= 0;
+            end 
+            else begin
+                if (!uart_ready_prev & u_rx_ready) begin
+                    mem_rdata                       <= u_dout;
+                    mem_rvalid                      <= 1'b1;
+                end 
+                else begin
+                    mem_rvalid                      <= 1'b0;
+                end
+            end
+        end
+    end
+
+
+
+
+    assign sready    = spready && !mem_wen && !mem_ren  && !uart_send_data;
+
+endmodule

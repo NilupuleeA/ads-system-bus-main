@@ -1,0 +1,107 @@
+# ERROR: No extended dataflow license exists
+# do demo_top_bb_dual_tb.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is pasir@MAVISHAN.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is pasir@MAVISHAN.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:08:38 on Dec 10,2025
+# vlog -reportprogress 300 -sv "+define+MODEL_SIM" RTL_Mavishan/uart_tx_32.v RTL_Mavishan/uart_rx_other_16.v RTL_Mavishan/uart_other_32_16.v RTL_Mavishan/addr_convert.v RTL_Mavishan/addr_decoder_mav.v RTL_Mavishan/arbiter_mav.v RTL_Mavishan/bus_bridge_master.v RTL_Mavishan/bus_bridge_slave.v RTL_Mavishan/bus_m2_s3.v RTL_Mavishan/dec3.v RTL_Mavishan/demo_top_bbA.v RTL_Mavishan/demo_top_bbB.v RTL_Mavishan/fifo.v RTL_Mavishan/master_bram.v RTL_Mavishan/master_port.v RTL_Mavishan/mux2.v RTL_Mavishan/mux3.v RTL_Mavishan/slave_bram.v RTL_Mavishan/slave_bram_2k.v RTL_Mavishan/slave_memory_bram.v RTL_Mavishan/slave_port.v RTL_Mavishan/slave_with_bram.v RTL_Mavishan/top_with_bb_v1.v RTL_Mavishan/uart_other.v RTL_Mavishan/uart_other_32_16.v RTL_Mavishan/uart_rx_other.v RTL_Mavishan/uart_rx_other_16.v RTL_Mavishan/uart_tx_32.v RTL_Mavishan/uart_tx_other.v RTL_Mavishan/altsyncram.sv RTL_Mavishan/baudrate.sv demo_top_bb_dual.v demo_top_bb_dual_tb.sv 
+# -- Compiling module uart_tx_32
+# -- Compiling module uart_rx_other_16
+# -- Compiling module uart_other_32_16
+# -- Compiling module addr_convert
+# -- Compiling module addr_decoder_mav
+# -- Compiling module arbiter_mav
+# -- Compiling module bus_bridge_master
+# -- Compiling module bus_bridge_slave
+# -- Compiling module bus_m2_s3
+# -- Compiling module dec3
+# -- Compiling module demo_top_bbA
+# -- Compiling module demo_top_bbB
+# -- Compiling module fifo
+# -- Compiling module master_bram
+# -- Compiling module master_port
+# -- Compiling module mux2
+# -- Compiling module mux3
+# -- Compiling module slave_bram
+# -- Compiling module slave_bram_2k
+# -- Compiling module slave_memory_bram
+# -- Compiling module slave_port
+# -- Compiling module slave_with_bram
+# -- Compiling module top_with_bb_v1
+# -- Compiling module uart_other
+# ** Warning: RTL_Mavishan/uart_other_32_16.v(3): (vlog-2275) 'uart_other_32_16' already exists and will be overwritten.
+# -- Compiling module uart_other_32_16
+# -- Compiling module uart_rx_other
+# ** Warning: RTL_Mavishan/uart_rx_other_16.v(1): (vlog-2275) 'uart_rx_other_16' already exists and will be overwritten.
+# -- Compiling module uart_rx_other_16
+# ** Warning: RTL_Mavishan/uart_tx_32.v(2): (vlog-2275) 'uart_tx_32' already exists and will be overwritten.
+# -- Compiling module uart_tx_32
+# -- Compiling module uart_tx_other
+# -- Compiling module altsyncram
+# -- Compiling module baudrate
+# -- Compiling module demo_top_bb_dual
+# -- Compiling module demo_top_bb_dual_tb
+# 
+# Top level modules:
+# 	addr_convert
+# 	demo_top_bb_dual_tb
+# End time: 01:08:38 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.demo_top_bb_dual_tb 
+# Start time: 01:08:38 on Dec 10,2025
+# Loading sv_std.std
+# Loading work.demo_top_bb_dual_tb
+# Loading work.demo_top_bb_dual
+# Loading work.demo_top_bbA
+# Loading work.top_with_bb_v1
+# Loading work.master_port
+# Loading work.bus_bridge_master
+# Loading work.fifo
+# Loading work.uart_other
+# Loading work.uart_tx_other
+# Loading work.uart_rx_other
+# Loading work.baudrate
+# Loading work.slave_with_bram
+# Loading work.slave_port
+# Loading work.slave_memory_bram
+# Loading work.bus_bridge_slave
+# Loading work.uart_other_32_16
+# Loading work.uart_tx_32
+# Loading work.uart_rx_other_16
+# Loading work.bus_m2_s3
+# Loading work.arbiter_mav
+# Loading work.addr_decoder_mav
+# Loading work.dec3
+# Loading work.mux2
+# Loading work.mux3
+# Loading work.master_bram
+# Loading work.altsyncram
+# Loading work.demo_top_bbB
+# Loading work.slave_bram_2k
+# Loading work.slave_bram
+# ** Warning: (vsim-3017) RTL_Mavishan/top_with_bb_v1.v(157): [TFMPC] - Too few port connections. Expected 10, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /demo_top_bb_dual_tb/dut/demo_a/bus/slave2 File: RTL_Mavishan/slave_with_bram.v
+# ** Warning: (vsim-3722) RTL_Mavishan/top_with_bb_v1.v(157): [TFMPC] - Missing connection for port 'demo_data'.
+# ** Warning: (vsim-3017) RTL_Mavishan/bus_bridge_slave.v(53): [TFMPC] - Too few port connections. Expected 17, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /demo_top_bb_dual_tb/dut/demo_a/bus/bb_slave/slave File: RTL_Mavishan/slave_port.v
+# ** Warning: (vsim-3722) RTL_Mavishan/bus_bridge_slave.v(53): [TFMPC] - Missing connection for port 'demo_data'.
+# ** Warning: (vsim-3017) RTL_Mavishan/top_with_bb_v1.v(157): [TFMPC] - Too few port connections. Expected 10, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /demo_top_bb_dual_tb/dut/demo_b/bus/slave2 File: RTL_Mavishan/slave_with_bram.v
+# ** Warning: (vsim-3722) RTL_Mavishan/top_with_bb_v1.v(157): [TFMPC] - Missing connection for port 'demo_data'.
+# ** Warning: (vsim-3017) RTL_Mavishan/bus_bridge_slave.v(53): [TFMPC] - Too few port connections. Expected 17, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /demo_top_bb_dual_tb/dut/demo_b/bus/bb_slave/slave File: RTL_Mavishan/slave_port.v
+# ** Warning: (vsim-3722) RTL_Mavishan/bus_bridge_slave.v(53): [TFMPC] - Missing connection for port 'demo_data'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: pasir  Hostname: MAVISHAN  ProcessID: 32740
+#           Attempting to use alternate WLF file "./wlfttj07h9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttj07h9
+run
+# Break key hit
+# Break in Module demo_top_bbA at RTL_Mavishan/demo_top_bbA.v line 110
+# End time: 01:09:32 on Dec 10,2025, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 10

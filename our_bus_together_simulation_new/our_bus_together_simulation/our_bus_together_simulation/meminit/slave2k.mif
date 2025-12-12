@@ -1,0 +1,16 @@
+WIDTH=8;
+DEPTH=2048;
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+CONTENT BEGIN
+	0   : 0F;
+	1   : F0;
+	2   : A5;
+	3   : 5A;
+	4   : C3;
+	5   : 3C;
+	6   : 7E;
+	7   : E7;
+	[8..127]    : 11;
+	[128..2047] : EE;
+END;

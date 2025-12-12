@@ -1,0 +1,161 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "s_mem_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "s_mem_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "s_mem_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "s_mem_1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "s_mem_1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "s_mem_1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "s_mem_1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "s_mem_1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "m_read_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "m_read_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "m_read_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "m_read_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "m_read_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "m_read_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "m_read_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "m_read_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "test_led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "master_select_sw",
+					"strict" : false
+				},
+				{
+					"name" : "rstn",
+					"strict" : false
+				},
+				{
+					"name" : "mode_sw",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "slave_mem_addr_sw[2]",
+					"strict" : false
+				},
+				{
+					"name" : "slave_mem_addr_sw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "slave_mem_addr_sw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "slave_mem_addr_sw[3]",
+					"strict" : false
+				},
+				{
+					"name" : "device_addr_sw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "device_addr_sw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "slave_mem_addr_sw[5]",
+					"strict" : false
+				},
+				{
+					"name" : "slave_mem_addr_sw[4]",
+					"strict" : false
+				},
+				{
+					"name" : "m_write_data_sw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "m_write_data_sw[2]",
+					"strict" : false
+				},
+				{
+					"name" : "m_write_data_sw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "m_write_data_sw[3]",
+					"strict" : false
+				},
+				{
+					"name" : "m_write_data_sw[6]",
+					"strict" : false
+				},
+				{
+					"name" : "m_write_data_sw[5]",
+					"strict" : false
+				},
+				{
+					"name" : "m_write_data_sw[4]",
+					"strict" : false
+				},
+				{
+					"name" : "m_write_data_sw[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

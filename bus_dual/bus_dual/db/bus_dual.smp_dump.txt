@@ -1,0 +1,97 @@
+
+State Machine - |demo_top_bbA|bus:bus_a|split_owner
+Name split_owner.INIT_NONE split_owner.INIT_2 split_owner.INIT_1 
+split_owner.INIT_NONE 0 0 0 
+split_owner.INIT_1 1 0 1 
+split_owner.INIT_2 1 1 0 
+
+State Machine - |demo_top_bbA|bus:bus_a|active_init
+Name active_init.INIT_NONE active_init.INIT_2 active_init.INIT_1 
+active_init.INIT_NONE 0 0 0 
+active_init.INIT_1 1 0 1 
+active_init.INIT_2 1 1 0 
+
+State Machine - |demo_top_bbA|bus:bus_a|s3_owner
+Name s3_owner.INIT_NONE s3_owner.INIT_2 s3_owner.INIT_1 
+s3_owner.INIT_NONE 0 0 0 
+s3_owner.INIT_1 1 0 1 
+s3_owner.INIT_2 1 1 0 
+
+State Machine - |demo_top_bbA|bus:bus_a|s2_owner
+Name s2_owner.INIT_NONE s2_owner.INIT_2 s2_owner.INIT_1 
+s2_owner.INIT_NONE 0 0 0 
+s2_owner.INIT_1 1 0 1 
+s2_owner.INIT_2 1 1 0 
+
+State Machine - |demo_top_bbA|bus:bus_a|s1_owner
+Name s1_owner.INIT_NONE s1_owner.INIT_2 s1_owner.INIT_1 
+s1_owner.INIT_NONE 0 0 0 
+s1_owner.INIT_1 1 0 1 
+s1_owner.INIT_2 1 1 0 
+
+State Machine - |demo_top_bbA|bus:bus_a|arbiter:u_arbiter|present_state
+Name present_state.ST_GRANT_SPLIT_TGT present_state.ST_GRANT_INIT2 present_state.ST_GRANT_INIT1 present_state.ST_IDLE 
+present_state.ST_IDLE 0 0 0 0 
+present_state.ST_GRANT_INIT1 0 0 1 1 
+present_state.ST_GRANT_INIT2 0 1 0 1 
+present_state.ST_GRANT_SPLIT_TGT 1 0 0 1 
+
+State Machine - |demo_top_bbA|bus_bridge_s_uart_wrapper:u_bridge_slave|resp_rx_state
+Name resp_rx_state.RESP_RX_IDLE resp_rx_state.RESP_RX_HOLD resp_rx_state.RESP_RX_WAIT_FLAGS 
+resp_rx_state.RESP_RX_IDLE 0 0 0 
+resp_rx_state.RESP_RX_WAIT_FLAGS 1 0 1 
+resp_rx_state.RESP_RX_HOLD 1 1 0 
+
+State Machine - |demo_top_bbA|bus_bridge_s_uart_wrapper:u_bridge_slave|req_tx_state
+Name req_tx_state.REQ_TX_SEND_FLAGS req_tx_state.REQ_TX_WAIT_DATA req_tx_state.REQ_TX_SEND_DATA req_tx_state.REQ_TX_WAIT_ADDR_H req_tx_state.REQ_TX_SEND_ADDR_H req_tx_state.REQ_TX_WAIT_ADDR_L req_tx_state.REQ_TX_SEND_ADDR_L req_tx_state.REQ_TX_IDLE req_tx_state.REQ_TX_WAIT_FLAGS 
+req_tx_state.REQ_TX_IDLE 0 0 0 0 0 0 0 0 0 
+req_tx_state.REQ_TX_SEND_ADDR_L 0 0 0 0 0 0 1 1 0 
+req_tx_state.REQ_TX_WAIT_ADDR_L 0 0 0 0 0 1 0 1 0 
+req_tx_state.REQ_TX_SEND_ADDR_H 0 0 0 0 1 0 0 1 0 
+req_tx_state.REQ_TX_WAIT_ADDR_H 0 0 0 1 0 0 0 1 0 
+req_tx_state.REQ_TX_SEND_DATA 0 0 1 0 0 0 0 1 0 
+req_tx_state.REQ_TX_WAIT_DATA 0 1 0 0 0 0 0 1 0 
+req_tx_state.REQ_TX_SEND_FLAGS 1 0 0 0 0 0 0 1 0 
+req_tx_state.REQ_TX_WAIT_FLAGS 0 0 0 0 0 0 0 1 1 
+
+State Machine - |demo_top_bbA|bus_bridge_s_uart_wrapper:u_bridge_slave|uart:u_s_uart|receiver:uart_Rx|state
+Name state.RX_STATE_READY_CLEAR state.RX_STATE_STOP state.RX_STATE_DATA state.RX_STATE_START 
+state.RX_STATE_START 0 0 0 0 
+state.RX_STATE_DATA 0 0 1 1 
+state.RX_STATE_STOP 0 1 0 1 
+state.RX_STATE_READY_CLEAR 1 0 0 1 
+
+State Machine - |demo_top_bbA|bus_bridge_s_uart_wrapper:u_bridge_slave|uart:u_s_uart|transmitter:uart_Tx|state
+Name state.TX_STATE_STOP state.TX_STATE_DATA state.TX_STATE_START state.TX_STATE_IDLE 
+state.TX_STATE_IDLE 0 0 0 0 
+state.TX_STATE_START 0 0 1 1 
+state.TX_STATE_DATA 0 1 0 1 
+state.TX_STATE_STOP 1 0 0 1 
+
+State Machine - |demo_top_bbA|bus_bridge_s_uart_wrapper:u_bridge_slave|bus_bridge_s_if:u_s_if|present_state
+Name present_state.STATE_TGT_WAIT_RESP present_state.STATE_TGT_SEND_REQUEST present_state.STATE_TGT_WAIT_WR_DATA present_state.STATE_TGT_IDLE present_state.STATE_TGT_WAIT_RD_GRANT 
+present_state.STATE_TGT_IDLE 0 0 0 0 0 
+present_state.STATE_TGT_WAIT_WR_DATA 0 0 1 1 0 
+present_state.STATE_TGT_SEND_REQUEST 0 1 0 1 0 
+present_state.STATE_TGT_WAIT_RESP 1 0 0 1 0 
+present_state.STATE_TGT_WAIT_RD_GRANT 0 0 0 1 1 
+
+State Machine - |demo_top_bbA|master:u_master_2|current_state
+Name current_state.STATE_COMPLETE current_state.STATE_RD_WAIT current_state.STATE_RD_REQUEST current_state.STATE_WR_WAIT_ACK current_state.STATE_WR_HOLD current_state.STATE_WR_REQUEST current_state.STATE_IDLE 
+current_state.STATE_IDLE 0 0 0 0 0 0 0 
+current_state.STATE_WR_REQUEST 0 0 0 0 0 1 1 
+current_state.STATE_WR_HOLD 0 0 0 0 1 0 1 
+current_state.STATE_WR_WAIT_ACK 0 0 0 1 0 0 1 
+current_state.STATE_RD_REQUEST 0 0 1 0 0 0 1 
+current_state.STATE_RD_WAIT 0 1 0 0 0 0 1 
+current_state.STATE_COMPLETE 1 0 0 0 0 0 1 
+
+State Machine - |demo_top_bbA|master:u_master_1|current_state
+Name current_state.STATE_COMPLETE current_state.STATE_RD_WAIT current_state.STATE_RD_REQUEST current_state.STATE_WR_WAIT_ACK current_state.STATE_WR_HOLD current_state.STATE_WR_REQUEST current_state.STATE_IDLE 
+current_state.STATE_IDLE 0 0 0 0 0 0 0 
+current_state.STATE_WR_REQUEST 0 0 0 0 0 1 1 
+current_state.STATE_WR_HOLD 0 0 0 0 1 0 1 
+current_state.STATE_WR_WAIT_ACK 0 0 0 1 0 0 1 
+current_state.STATE_RD_REQUEST 0 0 1 0 0 0 1 
+current_state.STATE_RD_WAIT 0 1 0 0 0 0 1 
+current_state.STATE_COMPLETE 1 0 0 0 0 0 1 

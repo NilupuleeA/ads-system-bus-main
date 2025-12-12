@@ -35,6 +35,14 @@ R0
 R1
 R0
 R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
 Z2 !s12c _opt
 R1
 R2
@@ -107,10 +115,10 @@ n@_opt
 Z9 OL;O;2023.3;77
 R3
 T_opt1
-!s110 1765271361
-V?`J7NgIOd8C6;l[VR1N3_2
+!s110 1765308018
+VX2eN]BK`W1MZOhjD?D3Tk2
 R4
-=1-7c4d8f9bc2fe-6937e741-7-89e8
+=1-7c4d8f9bc2fe-69387672-31-939c
 R1
 R5
 R6
@@ -119,9 +127,9 @@ R8
 n@_opt1
 R9
 vaddr_convert
-Z10 2RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/addr_convert.v|RTL_Mavishan/addr_decoder_mav.v|RTL_Mavishan/arbiter_mav.v|RTL_Mavishan/bus_bridge_master.v|RTL_Mavishan/bus_bridge_slave.v|RTL_Mavishan/bus_m2_s3.v|RTL_Mavishan/dec3.v|RTL_Mavishan/demo_top_bb.v|RTL_Mavishan/fifo.v|RTL_Mavishan/master_bram.v|RTL_Mavishan/master_port.v|RTL_Mavishan/mux2.v|RTL_Mavishan/mux3.v|RTL_Mavishan/slave_bram.v|RTL_Mavishan/slave_bram_2k.v|RTL_Mavishan/slave_memory_bram.v|RTL_Mavishan/slave_port.v|RTL_Mavishan/slave_with_bram.v|RTL_Mavishan/top_with_bb_v1.v|RTL_Mavishan/uart_other.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/uart_rx_other.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_tx_other.v|RTL_Mavishan/baudrate.sv|demo_top_bb_dual.v|demo_top_bb_dual_tb.sv
+Z10 2RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/addr_convert.v|RTL_Mavishan/addr_decoder_mav.v|RTL_Mavishan/altsyncram.v|RTL_Mavishan/arbiter_mav.v|RTL_Mavishan/bus_bridge_master.v|RTL_Mavishan/bus_bridge_slave.v|RTL_Mavishan/bus_m2_s3.v|RTL_Mavishan/dec3.v|RTL_Mavishan/demo_top_bb.v|RTL_Mavishan/fifo.v|RTL_Mavishan/master_bram.v|RTL_Mavishan/master_port.v|RTL_Mavishan/mux2.v|RTL_Mavishan/mux3.v|RTL_Mavishan/slave_bram.v|RTL_Mavishan/slave_bram_2k.v|RTL_Mavishan/slave_memory_bram.v|RTL_Mavishan/slave_port.v|RTL_Mavishan/slave_with_bram.v|RTL_Mavishan/top_with_bb_v1.v|RTL_Mavishan/uart_other.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/uart_rx_other.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_tx_other.v|RTL_Mavishan/baudrate.sv|demo_top_bb_dual.v|demo_top_bb_dual_tb.sv
 Z11 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z12 !s110 1765271359
+Z12 !s110 1765308016
 !i10b 1
 !s100 DIg7mQ4`JWmALH6=S`Va70
 ImGaPD8gCHf7K=da<GjHTN0
@@ -130,16 +138,16 @@ R3
 w1764655132
 8RTL_Mavishan/addr_convert.v
 FRTL_Mavishan/addr_convert.v
-!i122 58
+!i122 63
 Z13 L0 2 19
 Z14 VDg1SIo80bB@j0V0VzS_@n1
 Z15 OL;L;2023.3;77
 r1
 !s85 0
 31
-Z16 !s108 1765271359.000000
-Z17 !s107 demo_top_bb_dual_tb.sv|demo_top_bb_dual.v|RTL_Mavishan/baudrate.sv|RTL_Mavishan/uart_tx_other.v|RTL_Mavishan/uart_rx_other.v|RTL_Mavishan/uart_other.v|RTL_Mavishan/top_with_bb_v1.v|RTL_Mavishan/slave_with_bram.v|RTL_Mavishan/slave_port.v|RTL_Mavishan/slave_memory_bram.v|RTL_Mavishan/slave_bram_2k.v|RTL_Mavishan/slave_bram.v|RTL_Mavishan/mux3.v|RTL_Mavishan/mux2.v|RTL_Mavishan/master_port.v|RTL_Mavishan/master_bram.v|RTL_Mavishan/fifo.v|RTL_Mavishan/demo_top_bb.v|RTL_Mavishan/dec3.v|RTL_Mavishan/bus_m2_s3.v|RTL_Mavishan/bus_bridge_slave.v|RTL_Mavishan/bus_bridge_master.v|RTL_Mavishan/arbiter_mav.v|RTL_Mavishan/addr_decoder_mav.v|RTL_Mavishan/addr_convert.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_tx_32.v|
-Z18 !s90 -reportprogress|300|+define+QUESTA_SIM|-sv|RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/addr_convert.v|RTL_Mavishan/addr_decoder_mav.v|RTL_Mavishan/arbiter_mav.v|RTL_Mavishan/bus_bridge_master.v|RTL_Mavishan/bus_bridge_slave.v|RTL_Mavishan/bus_m2_s3.v|RTL_Mavishan/dec3.v|RTL_Mavishan/demo_top_bb.v|RTL_Mavishan/fifo.v|RTL_Mavishan/master_bram.v|RTL_Mavishan/master_port.v|RTL_Mavishan/mux2.v|RTL_Mavishan/mux3.v|RTL_Mavishan/slave_bram.v|RTL_Mavishan/slave_bram_2k.v|RTL_Mavishan/slave_memory_bram.v|RTL_Mavishan/slave_port.v|RTL_Mavishan/slave_with_bram.v|RTL_Mavishan/top_with_bb_v1.v|RTL_Mavishan/uart_other.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/uart_rx_other.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_tx_other.v|RTL_Mavishan/baudrate.sv|demo_top_bb_dual.v|demo_top_bb_dual_tb.sv|
+Z16 !s108 1765308016.000000
+Z17 !s107 demo_top_bb_dual_tb.sv|demo_top_bb_dual.v|RTL_Mavishan/baudrate.sv|RTL_Mavishan/uart_tx_other.v|RTL_Mavishan/uart_rx_other.v|RTL_Mavishan/uart_other.v|RTL_Mavishan/top_with_bb_v1.v|RTL_Mavishan/slave_with_bram.v|RTL_Mavishan/slave_port.v|RTL_Mavishan/slave_memory_bram.v|RTL_Mavishan/slave_bram_2k.v|RTL_Mavishan/slave_bram.v|RTL_Mavishan/mux3.v|RTL_Mavishan/mux2.v|RTL_Mavishan/master_port.v|RTL_Mavishan/master_bram.v|RTL_Mavishan/fifo.v|RTL_Mavishan/demo_top_bb.v|RTL_Mavishan/dec3.v|RTL_Mavishan/bus_m2_s3.v|RTL_Mavishan/bus_bridge_slave.v|RTL_Mavishan/bus_bridge_master.v|RTL_Mavishan/arbiter_mav.v|RTL_Mavishan/altsyncram.v|RTL_Mavishan/addr_decoder_mav.v|RTL_Mavishan/addr_convert.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_tx_32.v|
+Z18 !s90 -reportprogress|300|+define+QUESTA_SIM|-sv|RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/addr_convert.v|RTL_Mavishan/addr_decoder_mav.v|RTL_Mavishan/altsyncram.v|RTL_Mavishan/arbiter_mav.v|RTL_Mavishan/bus_bridge_master.v|RTL_Mavishan/bus_bridge_slave.v|RTL_Mavishan/bus_m2_s3.v|RTL_Mavishan/dec3.v|RTL_Mavishan/demo_top_bb.v|RTL_Mavishan/fifo.v|RTL_Mavishan/master_bram.v|RTL_Mavishan/master_port.v|RTL_Mavishan/mux2.v|RTL_Mavishan/mux3.v|RTL_Mavishan/slave_bram.v|RTL_Mavishan/slave_bram_2k.v|RTL_Mavishan/slave_memory_bram.v|RTL_Mavishan/slave_port.v|RTL_Mavishan/slave_with_bram.v|RTL_Mavishan/top_with_bb_v1.v|RTL_Mavishan/uart_other.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/uart_rx_other.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_tx_other.v|RTL_Mavishan/baudrate.sv|demo_top_bb_dual.v|demo_top_bb_dual_tb.sv|
 !i113 0
 Z19 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z20 !s92 +define+QUESTA_SIM -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
@@ -156,7 +164,7 @@ R3
 w1764652909
 8RTL_Mavishan/addr_decoder_mav.v
 FRTL_Mavishan/addr_decoder_mav.v
-!i122 58
+!i122 63
 L0 2 134
 R14
 R15
@@ -171,29 +179,30 @@ R19
 R20
 R8
 valtsyncram
-2RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/addr_convert.v|RTL_Mavishan/addr_decoder_mav.v|RTL_Mavishan/altsyncram.v|RTL_Mavishan/arbiter_mav.v|RTL_Mavishan/bus_bridge_master.v|RTL_Mavishan/bus_bridge_slave.v|RTL_Mavishan/bus_m2_s3.v|RTL_Mavishan/dec3.v|RTL_Mavishan/demo_top_bb.v|RTL_Mavishan/fifo.v|RTL_Mavishan/master_bram.v|RTL_Mavishan/master_port.v|RTL_Mavishan/mux2.v|RTL_Mavishan/mux3.v|RTL_Mavishan/slave_bram.v|RTL_Mavishan/slave_bram_2k.v|RTL_Mavishan/slave_memory_bram.v|RTL_Mavishan/slave_port.v|RTL_Mavishan/slave_with_bram.v|RTL_Mavishan/top_with_bb_v1.v|RTL_Mavishan/uart_other.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/uart_rx_other.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_tx_other.v|RTL_Mavishan/baudrate.sv|demo_top_bb_dual.v|demo_top_bb_dual_tb.sv
+R10
 R11
-!s110 1765223784
+R12
 !i10b 1
 !s100 g5Ff_8IaSO@X0QAh3ViYd0
-IckAHCM0RA7CE4QF4_[E3@1
+Io`;H62J`@>CZ6YIQzVI781
 S1
 R3
-w1765104610
+w1765277048
 8RTL_Mavishan/altsyncram.v
 FRTL_Mavishan/altsyncram.v
-!i122 28
+!i122 63
 L0 7 132
 R14
 R15
 r1
 !s85 0
 31
-!s108 1765223784.000000
-!s107 demo_top_bb_dual_tb.sv|demo_top_bb_dual.v|RTL_Mavishan/baudrate.sv|RTL_Mavishan/uart_tx_other.v|RTL_Mavishan/uart_rx_other.v|RTL_Mavishan/uart_other.v|RTL_Mavishan/top_with_bb_v1.v|RTL_Mavishan/slave_with_bram.v|RTL_Mavishan/slave_port.v|RTL_Mavishan/slave_memory_bram.v|RTL_Mavishan/slave_bram_2k.v|RTL_Mavishan/slave_bram.v|RTL_Mavishan/mux3.v|RTL_Mavishan/mux2.v|RTL_Mavishan/master_port.v|RTL_Mavishan/master_bram.v|RTL_Mavishan/fifo.v|RTL_Mavishan/demo_top_bb.v|RTL_Mavishan/dec3.v|RTL_Mavishan/bus_m2_s3.v|RTL_Mavishan/bus_bridge_slave.v|RTL_Mavishan/bus_bridge_master.v|RTL_Mavishan/arbiter_mav.v|RTL_Mavishan/altsyncram.v|RTL_Mavishan/addr_decoder_mav.v|RTL_Mavishan/addr_convert.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_tx_32.v|
-!s90 -reportprogress|300|-sv|RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/addr_convert.v|RTL_Mavishan/addr_decoder_mav.v|RTL_Mavishan/altsyncram.v|RTL_Mavishan/arbiter_mav.v|RTL_Mavishan/bus_bridge_master.v|RTL_Mavishan/bus_bridge_slave.v|RTL_Mavishan/bus_m2_s3.v|RTL_Mavishan/dec3.v|RTL_Mavishan/demo_top_bb.v|RTL_Mavishan/fifo.v|RTL_Mavishan/master_bram.v|RTL_Mavishan/master_port.v|RTL_Mavishan/mux2.v|RTL_Mavishan/mux3.v|RTL_Mavishan/slave_bram.v|RTL_Mavishan/slave_bram_2k.v|RTL_Mavishan/slave_memory_bram.v|RTL_Mavishan/slave_port.v|RTL_Mavishan/slave_with_bram.v|RTL_Mavishan/top_with_bb_v1.v|RTL_Mavishan/uart_other.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/uart_rx_other.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_tx_other.v|RTL_Mavishan/baudrate.sv|demo_top_bb_dual.v|demo_top_bb_dual_tb.sv|
+R16
+R17
+R18
 !i113 0
 R19
+R20
 R8
 varbiter_mav
 R10
@@ -207,7 +216,7 @@ R3
 w1764655207
 8RTL_Mavishan/arbiter_mav.v
 FRTL_Mavishan/arbiter_mav.v
-!i122 58
+!i122 63
 L0 1 121
 R14
 R15
@@ -233,7 +242,7 @@ R3
 w1765141364
 8RTL_Mavishan/baudrate.sv
 FRTL_Mavishan/baudrate.sv
-!i122 58
+!i122 63
 L0 1 34
 R14
 R15
@@ -259,7 +268,7 @@ R3
 w1765192304
 8RTL_Mavishan/bus_bridge_master.v
 FRTL_Mavishan/bus_bridge_master.v
-!i122 58
+!i122 63
 L0 1 216
 R14
 R15
@@ -285,7 +294,7 @@ R3
 w1765269676
 8RTL_Mavishan/bus_bridge_slave.v
 FRTL_Mavishan/bus_bridge_slave.v
-!i122 58
+!i122 63
 L0 1 149
 R14
 R15
@@ -311,7 +320,7 @@ R3
 w1764655220
 8RTL_Mavishan/bus_m2_s3.v
 FRTL_Mavishan/bus_m2_s3.v
-!i122 58
+!i122 63
 L0 2 162
 R14
 R15
@@ -337,7 +346,7 @@ R3
 Z21 w1764314631
 8RTL_Mavishan/dec3.v
 FRTL_Mavishan/dec3.v
-!i122 58
+!i122 63
 R13
 R14
 R15
@@ -356,14 +365,14 @@ R10
 R11
 R12
 !i10b 1
-!s100 9GD^g7@UF1ifRGXhSnXcB1
-I[mQ5b2bGiYJoLXAbMmcZY0
+!s100 g_gAb2347:]dVS]1J`P=Z3
+I9Ef;iNV4IQ2HFiz:6Xga<2
 S1
 R3
-w1765270510
+w1765307747
 8RTL_Mavishan/demo_top_bb.v
 FRTL_Mavishan/demo_top_bb.v
-!i122 58
+!i122 63
 L0 1 178
 R14
 R15
@@ -389,7 +398,7 @@ R3
 w1765269641
 8demo_top_bb_dual.v
 Fdemo_top_bb_dual.v
-!i122 58
+!i122 63
 L0 1 69
 R14
 R15
@@ -408,14 +417,14 @@ R10
 R11
 R12
 !i10b 1
-!s100 [o0>Z`09_k50Oe=:_Md=>3
-I=RQkEdYVF?>gLPR2c0^gM1
+!s100 ^jgOmD]hbeiMBFLJ_<jXo3
+IdI1nH@J:6e1mi3W3:Q>zn0
 S1
 R3
-w1765270630
+w1765307988
 8demo_top_bb_dual_tb.sv
 Fdemo_top_bb_dual_tb.sv
-!i122 58
+!i122 63
 L0 3 104
 R14
 R15
@@ -441,7 +450,7 @@ R3
 w1765088226
 8RTL_Mavishan/fifo.v
 FRTL_Mavishan/fifo.v
-!i122 58
+!i122 63
 L0 2 39
 R14
 R15
@@ -467,7 +476,7 @@ R3
 Z22 w1765257472
 8RTL_Mavishan/master_bram.v
 FRTL_Mavishan/master_bram.v
-!i122 58
+!i122 63
 L0 40 70
 R14
 R15
@@ -493,7 +502,7 @@ R3
 R21
 8RTL_Mavishan/master_port.v
 FRTL_Mavishan/master_port.v
-!i122 58
+!i122 63
 L0 1 161
 R14
 R15
@@ -519,7 +528,7 @@ R3
 R21
 8RTL_Mavishan/mux2.v
 FRTL_Mavishan/mux2.v
-!i122 58
+!i122 63
 L0 1 12
 R14
 R15
@@ -545,7 +554,7 @@ R3
 R21
 8RTL_Mavishan/mux3.v
 FRTL_Mavishan/mux3.v
-!i122 58
+!i122 63
 L0 1 20
 R14
 R15
@@ -571,7 +580,7 @@ R3
 R22
 8RTL_Mavishan/slave_bram.v
 FRTL_Mavishan/slave_bram.v
-!i122 58
+!i122 63
 Z23 L0 40 73
 R14
 R15
@@ -597,7 +606,7 @@ R3
 R22
 8RTL_Mavishan/slave_bram_2k.v
 FRTL_Mavishan/slave_bram_2k.v
-!i122 58
+!i122 63
 R23
 R14
 R15
@@ -623,7 +632,7 @@ R3
 R21
 8RTL_Mavishan/slave_memory_bram.v
 FRTL_Mavishan/slave_memory_bram.v
-!i122 58
+!i122 63
 L0 1 56
 R14
 R15
@@ -649,7 +658,7 @@ R3
 w1765098597
 8RTL_Mavishan/slave_port.v
 FRTL_Mavishan/slave_port.v
-!i122 58
+!i122 63
 L0 1 196
 R14
 R15
@@ -675,7 +684,7 @@ R3
 w1765224101
 8RTL_Mavishan/slave_with_bram.v
 FRTL_Mavishan/slave_with_bram.v
-!i122 58
+!i122 63
 L0 1 79
 R14
 R15
@@ -701,7 +710,7 @@ R3
 w1765223772
 8RTL_Mavishan/top_with_bb_v1.v
 FRTL_Mavishan/top_with_bb_v1.v
-!i122 58
+!i122 63
 L0 1 245
 R14
 R15
@@ -752,7 +761,7 @@ R3
 w1764336904
 8RTL_Mavishan/uart_other.v
 FRTL_Mavishan/uart_other.v
-!i122 58
+!i122 63
 L0 1 63
 R14
 R15
@@ -778,7 +787,7 @@ R3
 w1765198283
 8RTL_Mavishan/uart_other_32_16.v
 FRTL_Mavishan/uart_other_32_16.v
-!i122 58
+!i122 63
 L0 3 49
 R14
 R15
@@ -829,7 +838,7 @@ R3
 w1764344810
 8RTL_Mavishan/uart_rx_other.v
 FRTL_Mavishan/uart_rx_other.v
-!i122 58
+!i122 63
 L0 1 98
 R14
 R15
@@ -855,7 +864,7 @@ R3
 w1765196433
 8RTL_Mavishan/uart_rx_other_16.v
 FRTL_Mavishan/uart_rx_other_16.v
-!i122 58
+!i122 63
 L0 1 82
 R14
 R15
@@ -906,7 +915,7 @@ R3
 w1765197142
 8RTL_Mavishan/uart_tx_32.v
 FRTL_Mavishan/uart_tx_32.v
-!i122 58
+!i122 63
 L0 2 89
 R14
 R15
@@ -932,7 +941,7 @@ R3
 w1764649863
 8RTL_Mavishan/uart_tx_other.v
 FRTL_Mavishan/uart_tx_other.v
-!i122 58
+!i122 63
 L0 1 88
 R14
 R15

@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "uart_a_tx",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "btn_reset",
+					"strict" : false
+				},
+				{
+					"name" : "uart_a_rx",
+					"strict" : false
+				},
+				{
+					"name" : "btn_trigger",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

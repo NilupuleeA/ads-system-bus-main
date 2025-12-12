@@ -1,0 +1,873 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+Z2 !s12c _opt
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 dC:/Users/pasir/Desktop/Github/ads-system-bus-main/our_bus_together_simulation
+T_opt
+!s110 1765228439
+VZ3NVE9QEc2Inm8oi@3ME90
+Z4 04 19 4 work demo_top_bb_dual_tb fast 0
+=1-7c4d8f9bc2fe-69373f96-238-7fe4
+R1
+Z5 !s12b OEM100
+Z6 !s124 OEM10U74 
+Z7 o-quiet -auto_acc_if_foreign -work work +acc
+Z8 tCvgOpt 0
+n@_opt
+Z9 OL;O;2023.3;77
+R3
+T_opt1
+!s110 1765271361
+V?`J7NgIOd8C6;l[VR1N3_2
+R4
+=1-7c4d8f9bc2fe-6937e741-7-89e8
+R1
+R5
+R6
+R7
+R8
+n@_opt1
+R9
+R3
+vaddr_convert
+Z10 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z11 !s110 1765309118
+!i10b 1
+!s100 dbOK3DM2fdWQg==ffL=GS0
+IHNd_jVD]2_]o:M2`[N:nX2
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+!s105 addr_convert_v_unit
+S1
+Z13 dC:/Users/DELL/Documents/ads-system-bus-main/mavishan's/ads-system-bus-main-main/our_bus_together_simulation
+Z14 w1765255023
+8RTL_Mavishan/addr_convert.v
+FRTL_Mavishan/addr_convert.v
+L0 2
+Z15 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z16 !s108 1765309118.000000
+Z17 !s107 demo_top_bb_dual_tb.sv|demo_top_bb_dual.v|RTL_Mavishan/baudrate.sv|RTL_Mavishan/altsyncram.sv|RTL_Mavishan/uart_tx_other.v|RTL_Mavishan/uart_rx_other.v|RTL_Mavishan/uart_other.v|RTL_Mavishan/top_with_bb_v1.v|RTL_Mavishan/slave_with_bram.v|RTL_Mavishan/slave_port.v|RTL_Mavishan/slave_memory_bram.v|RTL_Mavishan/slave_bram_2k.v|RTL_Mavishan/slave_bram.v|RTL_Mavishan/mux3.v|RTL_Mavishan/mux2.v|RTL_Mavishan/master_port.v|RTL_Mavishan/master_bram.v|RTL_Mavishan/fifo.v|RTL_Mavishan/demo_top_bbB.v|RTL_Mavishan/demo_top_bbA.v|RTL_Mavishan/dec3.v|RTL_Mavishan/bus_m2_s3.v|RTL_Mavishan/bus_bridge_slave.v|RTL_Mavishan/bus_bridge_master.v|RTL_Mavishan/arbiter_mav.v|RTL_Mavishan/addr_decoder_mav.v|RTL_Mavishan/addr_convert.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_tx_32.v|
+Z18 !s90 -reportprogress|300|-sv|+define+MODEL_SIM|RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/addr_convert.v|RTL_Mavishan/addr_decoder_mav.v|RTL_Mavishan/arbiter_mav.v|RTL_Mavishan/bus_bridge_master.v|RTL_Mavishan/bus_bridge_slave.v|RTL_Mavishan/bus_m2_s3.v|RTL_Mavishan/dec3.v|RTL_Mavishan/demo_top_bbA.v|RTL_Mavishan/demo_top_bbB.v|RTL_Mavishan/fifo.v|RTL_Mavishan/master_bram.v|RTL_Mavishan/master_port.v|RTL_Mavishan/mux2.v|RTL_Mavishan/mux3.v|RTL_Mavishan/slave_bram.v|RTL_Mavishan/slave_bram_2k.v|RTL_Mavishan/slave_memory_bram.v|RTL_Mavishan/slave_port.v|RTL_Mavishan/slave_with_bram.v|RTL_Mavishan/top_with_bb_v1.v|RTL_Mavishan/uart_other.v|RTL_Mavishan/uart_other_32_16.v|RTL_Mavishan/uart_rx_other.v|RTL_Mavishan/uart_rx_other_16.v|RTL_Mavishan/uart_tx_32.v|RTL_Mavishan/uart_tx_other.v|RTL_Mavishan/altsyncram.sv|RTL_Mavishan/baudrate.sv|demo_top_bb_dual.v|demo_top_bb_dual_tb.sv|
+!i113 1
+Z19 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z20 !s92 -sv +define+MODEL_SIM -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vaddr_decoder_mav
+R10
+R11
+!i10b 1
+!s100 8A`[izX>>4HR6hWZ7NK]P1
+I`ZCHh3AoPRHe^aJ^04CI@2
+R12
+!s105 addr_decoder_mav_v_unit
+S1
+R13
+w1765272295
+8RTL_Mavishan/addr_decoder_mav.v
+FRTL_Mavishan/addr_decoder_mav.v
+L0 2
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+valtsyncram
+R10
+R11
+!i10b 1
+!s100 6f`g9MQb2XV16]5M3<Di^0
+I6cV;:h?=ZBTm@CFiO^ZmN3
+R12
+!s105 altsyncram_sv_unit
+S1
+R13
+w1765256046
+8RTL_Mavishan/altsyncram.sv
+FRTL_Mavishan/altsyncram.sv
+L0 6
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+varbiter_mav
+R10
+R11
+!i10b 1
+!s100 iKf3UO54<F;;=<fA4C3fK0
+IRKPFD7gZ[M6B7;=ma;_I20
+R12
+!s105 arbiter_mav_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/arbiter_mav.v
+FRTL_Mavishan/arbiter_mav.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vbaudrate
+R10
+R11
+!i10b 1
+!s100 1RTnF<^hGeL9MGb?DhQ^52
+I<LDZiWzn6Un[7>h90ZFzi0
+R12
+!s105 baudrate_sv_unit
+S1
+R13
+R14
+8RTL_Mavishan/baudrate.sv
+FRTL_Mavishan/baudrate.sv
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vbus_bridge_master
+R10
+R11
+!i10b 1
+!s100 QB`k1`1?eZBFK9m>^fmg_0
+I@^OkkZjKWGQGYcf_JK<f;0
+R12
+!s105 bus_bridge_master_v_unit
+S1
+R13
+w1765307626
+8RTL_Mavishan/bus_bridge_master.v
+FRTL_Mavishan/bus_bridge_master.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vbus_bridge_slave
+R10
+R11
+!i10b 1
+!s100 W<I5X?F:<=iZeTF3KPF@:3
+ImV;@j]HlcKgJ^[;9KP4kG0
+R12
+!s105 bus_bridge_slave_v_unit
+S1
+R13
+w1765264541
+8RTL_Mavishan/bus_bridge_slave.v
+FRTL_Mavishan/bus_bridge_slave.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vbus_m2_s3
+R10
+R11
+!i10b 1
+!s100 R_Rc>b7ffT8IMo::ZMe?S3
+IE7fOi::007E9aHX>M7Lk@0
+R12
+!s105 bus_m2_s3_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/bus_m2_s3.v
+FRTL_Mavishan/bus_m2_s3.v
+L0 2
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vdec3
+R10
+R11
+!i10b 1
+!s100 X1^FfJAi[4__36W2a03Nz1
+IjU]i40X3z0NRcf8:5A6Vh0
+R12
+!s105 dec3_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/dec3.v
+FRTL_Mavishan/dec3.v
+L0 2
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vdemo_top_bb_dual
+R10
+R11
+!i10b 1
+!s100 <L1aUa:USVKNa>]XKJFkk1
+Ig34EeL4;2J:zS5EgLniM`3
+R12
+!s105 demo_top_bb_dual_v_unit
+S1
+R13
+w1765308231
+8demo_top_bb_dual.v
+Fdemo_top_bb_dual.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vdemo_top_bb_dual_tb
+R10
+R11
+!i10b 1
+!s100 N06Vn6jT6>MC`UbD1X@Q[2
+I:MSP2lO[hnN4obA^3L]eG2
+R12
+!s105 demo_top_bb_dual_tb_sv_unit
+S1
+R13
+w1765309094
+8demo_top_bb_dual_tb.sv
+Fdemo_top_bb_dual_tb.sv
+L0 3
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vdemo_top_bbA
+R10
+R11
+!i10b 1
+!s100 Rhl=7zg3OfYcJ>L<oKF>]2
+IG:9@X1Z<`DXNz[V^8i=@o1
+R12
+!s105 demo_top_bbA_v_unit
+S1
+R13
+w1765308723
+8RTL_Mavishan/demo_top_bbA.v
+FRTL_Mavishan/demo_top_bbA.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+ndemo_top_bb@a
+vdemo_top_bbB
+R10
+R11
+!i10b 1
+!s100 E>=;W6<;91L]mSUb<WfjT1
+IZ`?=6bIE]hK2L_z1V]Z;G2
+R12
+!s105 demo_top_bbB_v_unit
+S1
+R13
+w1765307424
+8RTL_Mavishan/demo_top_bbB.v
+FRTL_Mavishan/demo_top_bbB.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+ndemo_top_bb@b
+vfifo
+R10
+R11
+!i10b 1
+!s100 2hYT3k]R7aIZ<?a7A0>;_3
+IAE3;?FIS]V;n;:`CC_RWf1
+R12
+!s105 fifo_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/fifo.v
+FRTL_Mavishan/fifo.v
+L0 2
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vmaster_bram
+R10
+R11
+!i10b 1
+!s100 o:`fz2Q>6;PJi5FJAb68l2
+I0Bbje6DjYWde=mN2jFQ0Z1
+R12
+!s105 master_bram_v_unit
+S1
+R13
+w1765256448
+8RTL_Mavishan/master_bram.v
+FRTL_Mavishan/master_bram.v
+Z21 L0 40
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vmaster_port
+R10
+R11
+!i10b 1
+!s100 8fMOh51=UF8EHQ4cYNSPg1
+Izh<<[DGQZeZGYY]1_?cSM0
+R12
+!s105 master_port_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/master_port.v
+FRTL_Mavishan/master_port.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vmux2
+R10
+R11
+!i10b 1
+!s100 Hg79k4e_^oYmZhEnzndWE0
+I4Ao@<cb1a?46Jn17iYMf^3
+R12
+!s105 mux2_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/mux2.v
+FRTL_Mavishan/mux2.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vmux3
+R10
+R11
+!i10b 1
+!s100 Oh;iOd_UdzjchG3^R_P>L1
+Id^GNz<C:0QK2[SQPV7SKM1
+R12
+!s105 mux3_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/mux3.v
+FRTL_Mavishan/mux3.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vslave_bram
+R10
+R11
+!i10b 1
+!s100 z96UeVHYhzeX=gd]GoIim1
+IL0AdH10kDjJ@4>dADH^dG2
+R12
+!s105 slave_bram_v_unit
+S1
+R13
+w1765256280
+8RTL_Mavishan/slave_bram.v
+FRTL_Mavishan/slave_bram.v
+R21
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vslave_bram_2k
+R10
+R11
+!i10b 1
+!s100 nV=8>SZWOzh0]P2H<4Eeg2
+ID23m^8<eT5MTE2PPGCA_X0
+R12
+!s105 slave_bram_2k_v_unit
+S1
+R13
+w1765256331
+8RTL_Mavishan/slave_bram_2k.v
+FRTL_Mavishan/slave_bram_2k.v
+R21
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vslave_memory_bram
+R10
+R11
+!i10b 1
+!s100 P0UG9@c:8GmTJ1^5ZBnJn2
+Iz3ZXILPQ^;MW@?ZD@f_Z61
+R12
+!s105 slave_memory_bram_v_unit
+S1
+R13
+w1765272179
+8RTL_Mavishan/slave_memory_bram.v
+FRTL_Mavishan/slave_memory_bram.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vslave_port
+R10
+R11
+!i10b 1
+!s100 gWg865o:OTKOdQbC^m`=S3
+IS<460Pai7WLR@;aB^T2aJ3
+R12
+!s105 slave_port_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/slave_port.v
+FRTL_Mavishan/slave_port.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vslave_with_bram
+R10
+R11
+!i10b 1
+!s100 CK9M>LD@6eN;CecIEFC6b0
+IhBh<kFC?g]7m>dG3bmLFZ2
+R12
+!s105 slave_with_bram_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/slave_with_bram.v
+FRTL_Mavishan/slave_with_bram.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vtop_with_bb_v1
+R10
+R11
+!i10b 1
+!s100 55cW@UOh9N^O8zG8AB@TI3
+Ig]lAiLnJan157dW6OnfM;1
+R12
+!s105 top_with_bb_v1_v_unit
+S1
+R13
+w1765308128
+8RTL_Mavishan/top_with_bb_v1.v
+FRTL_Mavishan/top_with_bb_v1.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vuart_other
+R10
+R11
+!i10b 1
+!s100 il<b1DB_A4[0>bZ:>ZZ7T0
+IeFkb]XW4k]=P:CL<1O1TD1
+R12
+!s105 uart_other_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/uart_other.v
+FRTL_Mavishan/uart_other.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vuart_other_32_16
+R10
+R11
+!i10b 1
+!s100 lT>K4>h;`f[<SKE8S783i3
+If>HZ;@D]T;_PNcTl19lK52
+R12
+!s105 uart_other_32_16_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/uart_other_32_16.v
+FRTL_Mavishan/uart_other_32_16.v
+L0 3
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vuart_rx_other
+R10
+R11
+!i10b 1
+!s100 Snk_d[kO]Y6XSX:GdLYBg0
+IK^GL`M^KA1?7RSC]Wdh3Y0
+R12
+!s105 uart_rx_other_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/uart_rx_other.v
+FRTL_Mavishan/uart_rx_other.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vuart_rx_other_16
+R10
+R11
+!i10b 1
+!s100 PzOLU:fRFfJi_ncI5ed:O2
+IAVM91Afz?fdB9oBFhS1@V3
+R12
+!s105 uart_rx_other_16_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/uart_rx_other_16.v
+FRTL_Mavishan/uart_rx_other_16.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vuart_tx_32
+R10
+R11
+!i10b 1
+!s100 cO`0;DGP[WSekMR6X=k4G1
+ITM`7mmOHeXOBE<]NAjJGS0
+R12
+!s105 uart_tx_32_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/uart_tx_32.v
+FRTL_Mavishan/uart_tx_32.v
+L0 2
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8
+vuart_tx_other
+R10
+R11
+!i10b 1
+!s100 DoGY:Sj`SL@bJnzV<eV[C2
+II?2`0TnBXF[EjiQ9>R@o;3
+R12
+!s105 uart_tx_other_v_unit
+S1
+R13
+R14
+8RTL_Mavishan/uart_tx_other.v
+FRTL_Mavishan/uart_tx_other.v
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R19
+R20
+R8

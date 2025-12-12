@@ -1,0 +1,39 @@
+module slave_memory #(
+    parameter ADDR_WIDTH = 12,
+    parameter DATA_WIDTH = 8,
+    parameter DEBUG_ADDR = 0
+)(
+    input  wire                     clk,
+    input  wire                     wen,
+    input wire                      ren,
+    input  wire                     wvalid,
+    input  wire [ADDR_WIDTH-1:0]    addr,
+    input  wire [DATA_WIDTH-1:0]    wdata,
+    output reg                      rvalid,
+    output reg  [DATA_WIDTH-1:0]    rdata,
+    output wire [DATA_WIDTH-1:0]    debug_led_out
+);
+
+    // Memory Array
+    reg [DATA_WIDTH-1:0] memory [0:(1<<ADDR_WIDTH)-1];
+	 
+	 assign debug_led_out = memory[DEBUG_ADDR];
+
+    //assign debug_led_out = memory[DEBUG_ADDR]; // For debugging: show first memory location
+
+    always @(posedge clk) begin
+        rvalid <= 0;
+
+        // Write operation
+        if (wvalid && wen && !ren) begin
+            memory[addr] <= wdata;
+        end
+
+        // Read operation
+        if (ren && !wen) begin
+            rdata  <= memory[addr];
+            rvalid <= 1;
+        end
+    end
+
+endmodule

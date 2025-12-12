@@ -1,0 +1,251 @@
+/*
+    Data from UART should be sent as 
+    {mode, data, addr}
+*/
+
+module test_master_bridge #(
+	parameter ADDR_WIDTH                = 16, 
+	parameter DATA_WIDTH                = 8,
+	parameter SLAVE_MEM_ADDR_WIDTH      = 12,
+    parameter UART_CLOCKS_PER_PULSE     = 10,
+    parameter FIFO_DEPTH                = 8,
+    parameter FIFO_ENABLE               = 1
+)(
+	input                               clk, 
+    input                               rstn,
+    input                               bus_busy,
+	
+	// Signals connecting to serial bus
+	input                               mrdata,	
+	output                              mwdata,	
+	output                              mmode,	
+	output                              mvalid,	
+	input                               svalid,	
+	output                              mbreq,
+	input                               mbgrant,
+	input                               msplit,
+	input                               ack,
+
+    // Bus bridge UART signals
+    output                              u_tx,
+    input                               u_rx
+);
+    localparam UART_RX_DATA_WIDTH       = DATA_WIDTH + ADDR_WIDTH + 8;    
+    localparam UART_TX_DATA_WIDTH       = DATA_WIDTH;     
+    
+	// Addumulated data from uart line
+	reg [DATA_WIDTH-1:0]                dwdata; 
+	wire [DATA_WIDTH-1:0]               drdata;	
+	reg  [ADDR_WIDTH-1:0]               daddr;
+	reg                                 dwvalid; 
+    wire                                drvalid;
+	wire                                dready;
+	reg                                 dmode;	
+
+    // Signals connecting to FIFO
+    reg                                 fifo_enq;
+    reg                                 fifo_deq;
+    reg [UART_RX_DATA_WIDTH-1:0]        fifo_din;
+    wire [UART_RX_DATA_WIDTH-1:0]       fifo_dout;
+    wire                                fifo_empty;
+
+    // Signals connecting to UART
+    reg [8-1:0]        u_din;
+    reg                                 u_en;
+    wire                                u_tx_busy;
+    wire                                u_rx_ready;
+    wire [8-1:0]       u_dout;
+
+    reg                                 expect_rdata;
+    reg                                 prev_u_ready;
+    reg                                 prev_m_ready;
+
+    reg [7:0]                           rx_byte0;     
+    reg [7:0]                           rx_byte1;   
+    reg [7:0]                           rx_byte2;     
+    reg [7:0]                           rx_byte3;
+    reg [1:0]                           rx_count;
+    reg                                 uart_complete;
+    reg [7:0]                           uart_tx_data;
+
+    // Instantiate modules
+
+    master_interface #(
+        .ADDR_WIDTH                     (ADDR_WIDTH),
+        .DATA_WIDTH                     (DATA_WIDTH),
+        .SLAVE_MEM_ADDR_WIDTH           (SLAVE_MEM_ADDR_WIDTH)
+    ) master1_inst (
+        .clk                            (clk),
+        .rstn                           (rstn),
+        .bus_busy                       (bus_busy),
+        //signals from master
+        .mwdata                         (dwdata),
+        .maddr                          (daddr),
+        .mwvalid                        (dwvalid),
+        .mrdata                         (drdata),
+        .mrvalid                        (drvalid),
+        .mready                         (dready),
+        .wen                            (dmode),
+        //signals to serial bus
+        .bwdata                         (mwdata),
+        .brdata                         (mrdata),
+        .bmode                          (mmode),
+        .bwvalid                        (mvalid),
+        .brvalid                        (svalid),
+        .mbreq                          (mbreq),
+        .mbgrant                        (mbgrant),
+        .msplit                         (msplit),
+        .ack                            (ack)
+    );
+
+
+    // FIFO module
+    fifo #(
+        .DATA_WIDTH                     (UART_RX_DATA_WIDTH),
+        .DEPTH                          (FIFO_DEPTH)
+    ) fifo_queue (
+        .clk                            (clk),
+        .rstn                           (rstn),
+        .enq                            (fifo_enq),
+        .deq                            (fifo_deq),
+        .data_in                        (fifo_din),
+        .data_out                       (fifo_dout),
+        .empty                          (fifo_empty)
+    );
+
+    // UART module
+    uart #(
+        .CLOCKS_PER_PULSE               (UART_CLOCKS_PER_PULSE),
+        .TX_DATA_WIDTH                  (8),
+        .RX_DATA_WIDTH                  (8)
+    ) uart_module (
+        .data_input                     (u_din),
+        .data_en                        (u_en),
+        .clk                            (clk),
+        .rstn                           (rstn),
+        .tx                             (u_tx),  
+        .tx_busy                        (u_tx_busy),
+        .rx                             (u_rx),  
+        .ready                          (u_rx_ready),   
+        .data_output                    (u_dout)
+    );
+
+
+ 
+
+    always @(posedge clk) begin
+        if (!rstn) begin
+            rx_count                    <= 0;
+            prev_u_ready                <= 1;
+            uart_complete               <= 0;
+            rx_byte0                    <= 0;
+            rx_byte1                    <= 0;
+            rx_byte2                    <= 0;
+            rx_byte3                    <= 0;
+        end
+        else begin
+            //fifo_enq                    <= 0;
+            prev_u_ready                <= u_rx_ready;
+            uart_complete               <= 0;
+
+            if (u_rx_ready && !prev_u_ready) begin
+                case (rx_count)
+                    0: rx_byte0         <= u_dout;   
+                    1: rx_byte1         <= u_dout;   
+                    2: rx_byte2         <= u_dout;   
+                    3: begin
+                        rx_byte3        <= u_dout;  
+                        rx_count        <= 0;
+                        uart_complete   <= 1;
+                    end
+                endcase
+
+                rx_count                <= rx_count + 1;
+            end
+        end
+    end
+
+    always @(*) begin
+	       if (!rstn) begin
+            fifo_enq                    <= 0;
+            fifo_din                    <= 0;
+   
+        end
+		
+        if (uart_complete) begin
+            fifo_din                    <= {rx_byte3, rx_byte2, rx_byte1, rx_byte0};
+            fifo_enq                    <= 1;
+        end
+        else begin
+            fifo_din                    <= fifo_din;
+            fifo_enq                    <= 0;
+        end
+    end
+
+    // Send FIFO data to master port 
+    always @(posedge clk) begin
+        if (!rstn) begin
+            daddr                       <= 'b0;
+            dwdata                      <= 'b0;
+            dmode                       <= 1'b0;
+            dwvalid                      <= 1'b0;
+            fifo_deq                    <= 1'b0;
+            expect_rdata                <= 1'b0;
+        end
+        else begin
+            if(FIFO_ENABLE) begin
+                if (dready & !fifo_empty & !dwvalid) begin
+                    daddr                   <= fifo_dout[ADDR_WIDTH-1:0];
+                    dwdata                  <= fifo_dout[ADDR_WIDTH+:DATA_WIDTH];
+                    dmode                   <= fifo_dout[ADDR_WIDTH + DATA_WIDTH];
+                    dwvalid                  <= 1'b1;
+                    fifo_deq                <= 1'b1;
+                    expect_rdata            <= !(fifo_dout[SLAVE_MEM_ADDR_WIDTH + DATA_WIDTH]);
+                end
+                else begin
+                    daddr                   <= daddr;
+                    dwdata                  <= dwdata;
+                    dmode                   <= dmode;
+                    dwvalid                  <= 1'b0;
+                    fifo_deq                <= 1'b0;
+                    expect_rdata            <= expect_rdata;
+                end
+            end
+        end
+    end
+
+    always @(posedge clk) begin
+        if(!rstn) begin
+            uart_tx_data <= 0;
+        end
+        else begin
+            if(drvalid) begin
+                uart_tx_data <= drdata;
+            end
+            else begin
+                uart_tx_data <= uart_tx_data;
+            end
+        end
+    end
+    // Send bus read data to UART TX
+    always @(posedge clk) begin
+        if (!rstn) begin
+            u_din                       <= 'b0;
+            u_en                        <= 1'b0;
+            prev_m_ready                <= 1'b0;
+        end
+        else begin
+            prev_m_ready                <= dready;
+            // Read request finished
+            if (!prev_m_ready & dready & expect_rdata) begin
+                u_din                   <= uart_tx_data;
+                u_en                    <= 1'b1;
+            end
+            else begin
+                u_din                   <= u_din;
+                u_en                    <= 1'b0;
+            end
+        end
+    end
+
+endmodule

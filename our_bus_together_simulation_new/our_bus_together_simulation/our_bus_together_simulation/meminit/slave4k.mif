@@ -1,0 +1,16 @@
+WIDTH=8;
+DEPTH=4096;
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+CONTENT BEGIN
+	0   : AA;
+	1   : 55;
+	2   : 3C;
+	3   : E7;
+	4   : 19;
+	5   : 8D;
+	6   : F0;
+	7   : 42;
+	[8..255]   : 00;
+	[256..4095]: FF;
+END;

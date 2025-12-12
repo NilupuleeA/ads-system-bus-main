@@ -1,16 +1,16 @@
-Fitter Status : Successful - Tue Dec  2 10:16:29 2025
+Fitter Status : Successful - Wed Dec 10 10:49:24 2025
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : ADS_busSystem
-Top-level Entity Name : demo_top_bb
+Top-level Entity Name : demo_top
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 1,560 / 22,320 ( 7 % )
-    Total combinational functions : 1,419 / 22,320 ( 6 % )
-    Dedicated logic registers : 992 / 22,320 ( 4 % )
-Total registers : 992
-Total pins : 9 / 154 ( 6 % )
+Total logic elements : 1,162 / 22,320 ( 5 % )
+    Total combinational functions : 1,110 / 22,320 ( 5 % )
+    Dedicated logic registers : 680 / 22,320 ( 3 % )
+Total registers : 680
+Total pins : 17 / 154 ( 11 % )
 Total virtual pins : 0
-Total memory bits : 49,408 / 608,256 ( 8 % )
+Total memory bits : 82,432 / 608,256 ( 14 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )

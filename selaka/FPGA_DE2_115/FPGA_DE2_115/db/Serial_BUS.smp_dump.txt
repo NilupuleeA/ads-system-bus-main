@@ -1,0 +1,68 @@
+
+State Machine - |top_fpga_single_bus|serial_bus:bus_inst|addr_dec:addr_decoder|state
+Name state.WAIT_TXN state.S_CONNECT state.S_ADDR_RECEIVE state.IDLE 
+state.IDLE 0 0 0 0 
+state.S_ADDR_RECEIVE 0 0 1 1 
+state.S_CONNECT 0 1 0 1 
+state.WAIT_TXN 1 0 0 1 
+
+State Machine - |top_fpga_single_bus|serial_bus:bus_inst|arbiter:arbiter_inst|split_owner
+Name split_owner.NONE split_owner.SM2 split_owner.SM1 
+split_owner.NONE 0 0 0 
+split_owner.SM1 1 0 1 
+split_owner.SM2 1 1 0 
+
+State Machine - |top_fpga_single_bus|serial_bus:bus_inst|arbiter:arbiter_inst|state
+Name state.IDLE state.M2 state.M1 
+state.IDLE 0 0 0 
+state.M1 1 0 1 
+state.M2 1 1 0 
+
+State Machine - |top_fpga_single_bus|slave:slave3|slave_interface:u_if|state
+Name state.WDATA_MEM state.RDATA_BUS state.WDATA state.RDATA state.ADDR state.IDLE 
+state.IDLE 0 0 0 0 0 0 
+state.ADDR 0 0 0 0 1 1 
+state.RDATA 0 0 0 1 0 1 
+state.WDATA 0 0 1 0 0 1 
+state.RDATA_BUS 0 1 0 0 0 1 
+state.WDATA_MEM 1 0 0 0 0 1 
+
+State Machine - |top_fpga_single_bus|slave:slave2|slave_interface:u_if|state
+Name state.WDATA_MEM state.RDATA_BUS state.WDATA state.RDATA state.ADDR state.IDLE 
+state.IDLE 0 0 0 0 0 0 
+state.ADDR 0 0 0 0 1 1 
+state.RDATA 0 0 0 1 0 1 
+state.WDATA 0 0 1 0 0 1 
+state.RDATA_BUS 0 1 0 0 0 1 
+state.WDATA_MEM 1 0 0 0 0 1 
+
+State Machine - |top_fpga_single_bus|slave:slave1|slave_interface:u_if|state
+Name state.WDATA_MEM state.RDATA_BUS state.WDATA state.RDATA state.ADDR state.IDLE 
+state.IDLE 0 0 0 0 0 0 
+state.ADDR 0 0 0 0 1 1 
+state.RDATA 0 0 0 1 0 1 
+state.WDATA 0 0 1 0 0 1 
+state.RDATA_BUS 0 1 0 0 0 1 
+state.WDATA_MEM 1 0 0 0 0 1 
+
+State Machine - |top_fpga_single_bus|master_interface:master2_inst|state
+Name state.READ_HOLD state.SPLIT state.WDATA state.RDATA state.ADDR state.SLAVE_ADDR state.REQ state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.REQ 0 0 0 0 0 0 1 1 
+state.SLAVE_ADDR 0 0 0 0 0 1 0 1 
+state.ADDR 0 0 0 0 1 0 0 1 
+state.RDATA 0 0 0 1 0 0 0 1 
+state.WDATA 0 0 1 0 0 0 0 1 
+state.SPLIT 0 1 0 0 0 0 0 1 
+state.READ_HOLD 1 0 0 0 0 0 0 1 
+
+State Machine - |top_fpga_single_bus|master_interface:master1_inst|state
+Name state.READ_HOLD state.SPLIT state.WDATA state.RDATA state.ADDR state.SLAVE_ADDR state.REQ state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.REQ 0 0 0 0 0 0 1 1 
+state.SLAVE_ADDR 0 0 0 0 0 1 0 1 
+state.ADDR 0 0 0 0 1 0 0 1 
+state.RDATA 0 0 0 1 0 0 0 1 
+state.WDATA 0 0 1 0 0 0 0 1 
+state.SPLIT 0 1 0 0 0 0 0 1 
+state.READ_HOLD 1 0 0 0 0 0 0 1 

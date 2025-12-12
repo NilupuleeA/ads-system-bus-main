@@ -1,0 +1,125 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ready",
+					"strict" : false
+				},
+				{
+					"name" : "m_u_tx",
+					"strict" : false
+				},
+				{
+					"name" : "s_u_tx",
+					"strict" : false
+				},
+				{
+					"name" : "LED[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_demo[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_demo[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_demo[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_demo[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_demo[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_demo[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_demo[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_demo[7]",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "rstn",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "mode",
+					"strict" : false
+				},
+				{
+					"name" : "s_u_rx",
+					"strict" : false
+				},
+				{
+					"name" : "m_u_rx",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

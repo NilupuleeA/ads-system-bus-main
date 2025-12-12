@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Dec 10 10:59:40 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : Serial_BUS
+Top-level Entity Name : top_fpga_single_bus
+Family : Cyclone IV E
+Total logic elements : 815
+    Total combinational functions : 790
+    Dedicated logic registers : 413
+Total registers : 413
+Total pins : 39
+Total virtual pins : 0
+Total memory bits : 98,304
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

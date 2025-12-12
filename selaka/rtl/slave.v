@@ -1,0 +1,100 @@
+module slave #(
+    parameter ADDR_WIDTH = 12,
+    parameter DATA_WIDTH = 8,
+    parameter SPLIT_EN   = 0,       // 1 -> split enabled, 0 -> normal
+    parameter SPLIT_DELAY       = 4,
+    parameter DEBUG_ADDR = 0
+)(
+    input  wire                     clk,
+    input  wire                     rstn,
+
+    // BUS → SLAVE signals
+    input  wire                     bwdata,
+    output wire                     brdata,
+    input  wire                     bmode,
+    input  wire                     bwvalid,
+    output  wire                    brvalid,
+    output wire                     sready,
+
+    // SPLIT signals (only used when SPLIT_EN=1)
+    input  wire                     split_grant,
+    output wire                     ssplit,
+    output  [DATA_WIDTH-1:0]    debug_led_out   
+);
+
+    //-------------------------------
+    // Internal memory wires
+    //-------------------------------
+    wire [ADDR_WIDTH-1:0]  mem_addr;
+    wire                   mem_wen;
+    wire                   mem_ren;
+
+    wire [DATA_WIDTH-1:0]  mem_wdata;
+    wire                   mem_wvalid;
+
+    wire [DATA_WIDTH-1:0]  mem_rdata;
+    wire                   mem_rvalid;
+
+    //-------------------------------
+    // slave_interface instance
+    //-------------------------------
+    slave_interface #(
+        .ADDR_WIDTH(ADDR_WIDTH),
+        .DATA_WIDTH(DATA_WIDTH),
+        .SPLIT_EN(SPLIT_EN),
+        .SPLIT_DELAY(SPLIT_DELAY)
+    ) u_if (
+        .clk(clk),
+        .rstn(rstn),
+
+        .mem_addr(mem_addr),
+        .mem_wen(mem_wen),
+        .mem_ren(mem_ren),
+        .mem_wdata(mem_wdata),
+        .mem_wvalid(mem_wvalid),
+        .mem_rdata(mem_rdata),
+        .mem_rvalid(mem_rvalid),
+
+        .bwdata(bwdata),
+        .brdata(brdata),
+        .bmode(bmode),
+        .bwvalid(bwvalid),
+        .brvalid(brvalid),
+        .sready(sready),
+
+        .split_grant(split_grant),
+        .ssplit(ssplit)
+    );
+
+    //-------------------------------
+    // slave_memory instance
+    //-------------------------------
+    slave_memory #(
+        .DATA_WIDTH(DATA_WIDTH),
+        .ADDR_WIDTH(ADDR_WIDTH),
+        .DEBUG_ADDR(DEBUG_ADDR)
+    ) u_mem (
+        .clk(clk),
+        .wen(mem_wen),
+        .ren(mem_ren),
+        .wvalid(mem_wvalid),
+        .wdata(mem_wdata),
+        .addr(mem_addr),
+
+        .rdata(mem_rdata),
+        .rvalid(mem_rvalid),
+		  .debug_led_out(debug_led_out)
+    );
+
+/*
+	 always @(posedge clk) begin
+		 if(!rstn) begin
+			debug_led_out <= 8'b00000000;
+		 end
+		 else begin
+			if(brvalid) debug_led_out <= 8'b11111111;
+
+		 end
+	 end
+*/
+endmodule

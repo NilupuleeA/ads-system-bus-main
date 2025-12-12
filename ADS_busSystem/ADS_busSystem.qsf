@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE22F17C6
-set_global_assignment -name TOP_LEVEL_ENTITY demo_top_bb
+set_global_assignment -name TOP_LEVEL_ENTITY demo_top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 24.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:28:17  OCTOBER 11, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
@@ -73,9 +73,20 @@ set_location_assignment PIN_F3 -to demo_data[2]
 set_location_assignment PIN_B1 -to demo_data[1]
 set_location_assignment PIN_L3 -to demo_data[0]
 set_location_assignment PIN_A8 -to debug
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE RTL_files/slave_with_bram.v
+set_global_assignment -name VERILOG_FILE RTL_files/slave_port.v
+set_global_assignment -name VERILOG_FILE RTL_files/slave_memory_bram.v
+set_global_assignment -name VERILOG_FILE RTL_files/slave_bram_2k.v
+set_global_assignment -name VERILOG_FILE RTL_files/slave_bram.v
+set_global_assignment -name VERILOG_FILE RTL_files/mux3.v
+set_global_assignment -name VERILOG_FILE RTL_files/mux2.v
+set_global_assignment -name SYSTEMVERILOG_FILE RTL_files/demo_top_tb.sv
+set_global_assignment -name VERILOG_FILE RTL_files/demo_top.v
+set_global_assignment -name VERILOG_FILE RTL_files/demo_master.v
+set_global_assignment -name VERILOG_FILE RTL_files/dec3.v
+set_global_assignment -name VERILOG_FILE RTL_files/bus_m2_s3.v
+set_global_assignment -name VERILOG_FILE RTL_files/arbiter.v
+set_global_assignment -name VERILOG_FILE RTL_files/addr_decoder.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/master_bram.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/top_with_bb_v1.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/demo_top_bb.v
@@ -102,4 +113,7 @@ set_global_assignment -name SYSTEMVERILOG_FILE ../ADS_bus_simulation/RTL/baudrat
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/arbiter.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/addr_decoder.v
 set_global_assignment -name VERILOG_FILE ../ADS_bus_simulation/RTL/addr_convert.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

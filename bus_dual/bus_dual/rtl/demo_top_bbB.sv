@@ -1,0 +1,239 @@
+`timescale 1ns/1ps
+
+module demo_top_bbB (
+    input  logic       clk,
+    input  logic       btn_reset,
+    input  logic       uart_b_rx,
+    output logic       uart_b_tx,
+    output logic [7:0] leds
+
+);
+    // Synchronise reset input to the local clock domain.
+    logic ff1_reset_sync;
+    logic ff2_reset_sync;
+    always_ff @(posedge clk) begin
+        ff1_reset_sync <= btn_reset;
+        ff2_reset_sync <= ff1_reset_sync;
+    end
+
+    logic rst_n;
+    assign rst_n = ff2_reset_sync;
+
+    // Address map for Bus B resources.
+    localparam logic [15:0] TARGET1_BASE = 16'h0000;
+    localparam int unsigned TARGET1_SIZE = 16'd2048;
+    localparam logic [15:0] TARGET2_BASE = 16'h4000;
+    localparam int unsigned TARGET2_SIZE = 16'd4096;
+    localparam logic [15:0] SPLIT_TARGET_BASE = 16'h8000;
+    localparam int unsigned SPLIT_TARGET_SIZE = 16'd4096;
+
+    // Initiator (bridge wrapper) interface wires.
+    logic         bridge_m_req;
+    logic [15:0]  bridge_m_address_out;
+    logic         bridge_m_address_out_valid;
+    logic [7:0]   bridge_m_data_out;
+    logic         bridge_m_data_out_valid;
+    logic         bridge_m_rw;
+    logic         bridge_m_ready;
+    logic         bridge_m_grant;
+    logic [7:0]   bridge_m_data_in;
+    logic         bridge_m_data_in_valid;
+    logic         bridge_m_ack;
+    logic         bridge_m_split_ack;
+
+    // Target 1 interface wires.
+    logic [15:0]  s1_address_in;
+    logic         s1_address_in_valid;
+    logic [7:0]   s1_data_in;
+    logic         s1_data_in_valid;
+    logic         s1_rw;
+    logic [7:0]   s1_data_out;
+    logic         s1_data_out_valid;
+    logic         s1_ack;
+    logic         s1_ready;
+
+    // Target 2 interface wires.
+    logic [15:0]  s2_address_in;
+    logic         s2_address_in_valid;
+    logic [7:0]   s2_data_in;
+    logic         s2_data_in_valid;
+    logic         s2_rw;
+    logic [7:0]   s2_data_out;
+    logic         s2_data_out_valid;
+    logic         s2_ack;
+    logic         s2_ready;
+
+    // Split slave interface wires.
+    logic [15:0]  split_s_address_in;
+    logic         split_s_address_in_valid;
+    logic [7:0]   split_s_data_in;
+    logic         split_s_data_in_valid;
+    logic         split_s_rw;
+    logic [7:0]   split_s_data_out;
+    logic         split_s_data_out_valid;
+    logic         split_s_ack;
+    logic         split_s_ready;
+    logic         split_s_split_ack;
+    logic         split_s_req;
+    logic         split_s_grant;
+    logic [7:0]   split_s_last_write;
+
+    // Tied-off signals for the unused second master slot.
+    logic         m2_grant_unused;
+    logic [7:0]   m2_data_in_unused;
+    logic         m2_data_in_valid_unused;
+    logic         m2_ack_unused;
+    logic         m2_split_ack_unused;
+
+    // UART-connected bus bridge master wrapper.
+    bus_bridge_master_uart_wrapper u_bridge_master (
+        .clk(clk),
+        .rst_n(rst_n),
+        .uart_rx(uart_b_rx),
+        .uart_tx(uart_b_tx),
+        .m_req(bridge_m_req),
+        .m_address_out(bridge_m_address_out),
+        .m_address_out_valid(bridge_m_address_out_valid),
+        .m_data_out(bridge_m_data_out),
+        .m_data_out_valid(bridge_m_data_out_valid),
+        .m_rw(bridge_m_rw),
+        .m_ready(bridge_m_ready),
+        .m_grant(bridge_m_grant),
+        .m_data_in(bridge_m_data_in),
+        .m_data_in_valid(bridge_m_data_in_valid),
+        .m_ack(bridge_m_ack),
+        .m_split_ack(bridge_m_split_ack)
+    );
+
+    // Local bus slaves.
+    slave #(
+        .INTERNAL_ADDR_BITS(11)
+    ) u_s_1 (
+        .clk(clk),
+        .rst_n(rst_n),
+        .s_address_in(s1_address_in),
+        .s_address_in_valid(s1_address_in_valid),
+        .s_data_in(s1_data_in),
+        .s_data_in_valid(s1_data_in_valid),
+        .s_rw(s1_rw),
+        .s_data_out(s1_data_out),
+        .s_data_out_valid(s1_data_out_valid),
+        .s_ack(s1_ack),
+        .s_ready(s1_ready),
+        .s_last_write()
+    );
+
+    slave #(
+        .INTERNAL_ADDR_BITS(12)
+    ) u_s_2 (
+        .clk(clk),
+        .rst_n(rst_n),
+        .s_address_in(s2_address_in),
+        .s_address_in_valid(s2_address_in_valid),
+        .s_data_in(s2_data_in),
+        .s_data_in_valid(s2_data_in_valid),
+        .s_rw(s2_rw),
+        .s_data_out(s2_data_out),
+        .s_data_out_valid(s2_data_out_valid),
+        .s_ack(s2_ack),
+        .s_ready(s2_ready),
+        .s_last_write()
+    );
+
+    split_s #(
+        .INTERNAL_ADDR_BITS(12),
+        .READ_LATENCY(4)
+    ) u_split_s (
+        .clk(clk),
+        .rst_n(rst_n),
+        .split_grant(split_s_grant),
+        .s_address_in(split_s_address_in),
+        .s_address_in_valid(split_s_address_in_valid),
+        .s_data_in(split_s_data_in),
+        .s_data_in_valid(split_s_data_in_valid),
+        .s_rw(split_s_rw),
+        .split_req(split_s_req),
+        .s_data_out(split_s_data_out),
+        .s_data_out_valid(split_s_data_out_valid),
+        .s_ack(split_s_ack),
+        .s_split_ack(split_s_split_ack),
+        .s_ready(split_s_ready),
+        .split_s_last_write(split_s_last_write)
+    );
+
+    // Bus interconnect instantiation.
+    bus #(
+        .TARGET1_BASE(TARGET1_BASE),
+        .TARGET1_SIZE(TARGET1_SIZE),
+        .TARGET2_BASE(TARGET2_BASE),
+        .TARGET2_SIZE(TARGET2_SIZE),
+        .TARGET3_BASE(SPLIT_TARGET_BASE),
+        .TARGET3_SIZE(SPLIT_TARGET_SIZE)
+    ) bus_b (
+        .clk(clk),
+        .rst_n(rst_n),
+        // Initiator 1 (bridge wrapper)
+        .m1_req(bridge_m_req),
+        .m1_data_out(bridge_m_data_out),
+        .m1_data_out_valid(bridge_m_data_out_valid),
+        .m1_address_out(bridge_m_address_out),
+        .m1_address_out_valid(bridge_m_address_out_valid),
+        .m1_rw(bridge_m_rw),
+        .m1_ready(bridge_m_ready),
+        .m1_grant(bridge_m_grant),
+        .m1_data_in(bridge_m_data_in),
+        .m1_data_in_valid(bridge_m_data_in_valid),
+        .m1_ack(bridge_m_ack),
+        .m1_split_ack(bridge_m_split_ack),
+        // Initiator 2 (unused)
+        .m2_req(1'b0),
+        .m2_data_out(8'd0),
+        .m2_data_out_valid(1'b0),
+        .m2_address_out(16'd0),
+        .m2_address_out_valid(1'b0),
+        .m2_rw(1'b1),
+        .m2_ready(1'b1),
+        .m2_grant(m2_grant_unused),
+        .m2_data_in(m2_data_in_unused),
+        .m2_data_in_valid(m2_data_in_valid_unused),
+        .m2_ack(m2_ack_unused),
+        .m2_split_ack(m2_split_ack_unused),
+        // Target 1
+        .s1_ready(s1_ready),
+        .s1_ack(s1_ack),
+        .s1_data_out(s1_data_out),
+        .s1_data_out_valid(s1_data_out_valid),
+        .s1_address_in(s1_address_in),
+        .s1_address_in_valid(s1_address_in_valid),
+        .s1_data_in(s1_data_in),
+        .s1_data_in_valid(s1_data_in_valid),
+        .s1_rw(s1_rw),
+        // Target 2
+        .s2_ready(s2_ready),
+        .s2_ack(s2_ack),
+        .s2_data_out(s2_data_out),
+        .s2_data_out_valid(s2_data_out_valid),
+        .s2_address_in(s2_address_in),
+        .s2_address_in_valid(s2_address_in_valid),
+        .s2_data_in(s2_data_in),
+        .s2_data_in_valid(s2_data_in_valid),
+        .s2_rw(s2_rw),
+        // Split slave
+        .split_s_ready(split_s_ready),
+        .split_s_ack(split_s_ack),
+        .split_s_split_ack(split_s_split_ack),
+        .split_s_data_out(split_s_data_out),
+        .split_s_data_out_valid(split_s_data_out_valid),
+        .split_s_req(split_s_req),
+        .split_s_address_in(split_s_address_in),
+        .split_s_address_in_valid(split_s_address_in_valid),
+        .split_s_data_in(split_s_data_in),
+        .split_s_data_in_valid(split_s_data_in_valid),
+        .split_s_rw(split_s_rw),
+        .split_s_grant(split_s_grant)
+    );
+
+    // Display most recent write observed by the split-capable slave.
+    assign leds = split_s_last_write;
+
+endmodule
